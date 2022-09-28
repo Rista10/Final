@@ -59,11 +59,17 @@ background-color:#D7463A
       <height>548</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">#label_2
+{
+background-image:url(&quot;C:/Users/user/Documents/Final/infosame.jpg&quot;);
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../semesterProject/infosame.jpg</pixmap>
+     <pixmap>infosame.jpg</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -75,11 +81,17 @@ background-color:#D7463A
       <height>154</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">#label_3
+{
+background-image:url(&quot;C:/Users/user/Documents/Final/logo1.png&quot;);
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../semesterProject/logo1.png</pixmap>
+     <pixmap>logo1.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
