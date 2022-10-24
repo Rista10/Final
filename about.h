@@ -15,6 +15,11 @@ public:
     explicit about(QWidget *parent = nullptr);
     ~about();
 
+private slots:
+    void on_home_clicked();
+
+    void on_about_2_clicked();
+
 private:
     Ui::about *ui;
 };

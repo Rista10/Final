@@ -1,5 +1,8 @@
 #include "patient_requests.h"
 #include "ui_patient_requests.h"
+#include "mainwindow.h"
+#include "about.h"
+#include "why_become_donor.h"
 
 patient_requests::patient_requests(QWidget *parent) :
     QDialog(parent),

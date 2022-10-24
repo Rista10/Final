@@ -16,7 +16,10 @@ public:
     ~log_in();
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_signin_clicked();
+
+    void on_home_2_clicked();
 
 private:
     Ui::log_in *ui;

@@ -15,6 +15,15 @@ public:
     explicit my_details(QWidget *parent = nullptr);
     ~my_details();
 
+private slots:
+    void on_my_details_4_clicked();
+
+    void on_my_details_3_clicked();
+
+    void on_my_details_2_clicked();
+
+    void on_login_clicked();
+
 private:
     Ui::my_details *ui;
 };

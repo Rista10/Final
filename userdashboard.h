@@ -22,6 +22,8 @@ private slots:
 
     void on_my_details_clicked();
 
+    void on_login_clicked();
+
 private:
     Ui::userDashboard *ui;
 };

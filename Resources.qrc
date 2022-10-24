@@ -20,10 +20,14 @@
         <file>Images/donate_blood.jpg</file>
         <file>Images/vision.png</file>
         <file>Images/reLiv.png</file>
-        <file>Images/person.jpg</file>
         <file>Images/why.jpg</file>
         <file>Images/benefits.jpg</file>
         <file>Images/background.png</file>
         <file>Images/person_photo.png</file>
+        <file>Images/profile1.jfif</file>
+        <file>Images/log_in.png</file>
+        <file>Images/login.jpg</file>
+        <file>Images/arrow.png</file>
+        <file>Images/person.jpg</file>
     </qresource>
 </RCC>

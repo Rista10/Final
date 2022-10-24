@@ -586,7 +586,7 @@ border-radius:5px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="gender">
    <property name="geometry">
     <rect>
      <x>825</x>
@@ -672,7 +672,7 @@ border-radius:5px;</string>
     <string>Announcements</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="phone_number">
    <property name="geometry">
     <rect>
      <x>575</x>
@@ -692,7 +692,7 @@ background-color:#F1EEEE;
     <string>   Phone Number</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="name">
    <property name="geometry">
     <rect>
      <x>575</x>
@@ -740,7 +740,7 @@ background-color:#F1EEEE;
 9 December,2022</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="age">
    <property name="geometry">
     <rect>
      <x>575</x>
@@ -760,7 +760,7 @@ background-color:#F1EEEE;
     <string>     Age  </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_7">
+  <widget class="QLineEdit" name="location">
    <property name="geometry">
     <rect>
      <x>575</x>
@@ -811,7 +811,7 @@ background-image: url(:/Images/donate_blood.jpg);
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_8">
+  <widget class="QLineEdit" name="disease">
    <property name="geometry">
     <rect>
      <x>575</x>
@@ -831,7 +831,7 @@ background-color:#F1EEEE;
     <string>   Specify disease(if any)</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_9">
+  <widget class="QLineEdit" name="blood_group">
    <property name="geometry">
     <rect>
      <x>680</x>
@@ -979,20 +979,20 @@ border-radius:5px;
   <zorder>label_26</zorder>
   <zorder>label_28</zorder>
   <zorder>label_3</zorder>
-  <zorder>lineEdit_6</zorder>
+  <zorder>gender</zorder>
   <zorder>label_25</zorder>
   <zorder>label_15</zorder>
   <zorder>calendarWidget</zorder>
   <zorder>label_32</zorder>
-  <zorder>lineEdit_3</zorder>
-  <zorder>lineEdit</zorder>
+  <zorder>phone_number</zorder>
+  <zorder>name</zorder>
   <zorder>label_31</zorder>
-  <zorder>lineEdit_2</zorder>
-  <zorder>lineEdit_7</zorder>
+  <zorder>age</zorder>
+  <zorder>location</zorder>
   <zorder>label_33</zorder>
   <zorder>label_8</zorder>
-  <zorder>lineEdit_8</zorder>
-  <zorder>lineEdit_9</zorder>
+  <zorder>disease</zorder>
+  <zorder>blood_group</zorder>
   <zorder>donate</zorder>
   <zorder>label_35</zorder>
   <zorder>label_37</zorder>

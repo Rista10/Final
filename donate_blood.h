@@ -2,6 +2,10 @@
 #define DONATE_BLOOD_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class donate_blood;
@@ -21,6 +25,10 @@ private slots:
     void on_my_details_2_clicked();
 
     void on_my_details_clicked();
+
+    void on_login_clicked();
+
+    void on_donate_clicked();
 
 private:
     Ui::donate_blood *ui;

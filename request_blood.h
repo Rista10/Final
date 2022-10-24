@@ -2,6 +2,10 @@
 #define REQUEST_BLOOD_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class request_blood;
@@ -21,6 +25,10 @@ private slots:
     void on_my_details_3_clicked();
 
     void on_my_details_clicked();
+
+    void on_login_clicked();
+
+    void on_register_2_clicked();
 
 private:
     Ui::request_blood *ui;

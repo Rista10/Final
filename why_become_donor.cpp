@@ -1,5 +1,7 @@
 #include "why_become_donor.h"
 #include "ui_why_become_donor.h"
+#include "mainwindow.h"
+#include "about.h"
 
 why_become_donor::why_become_donor(QWidget *parent) :
     QDialog(parent),

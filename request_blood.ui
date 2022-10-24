@@ -384,7 +384,7 @@ border-image: url(:/Images/request_blood.jpg);
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="age">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -404,12 +404,12 @@ background-color:#F1EEEE;
     <string>     Age  </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="phone_number">
    <property name="geometry">
     <rect>
      <x>570</x>
      <y>390</y>
-     <width>371</width>
+     <width>201</width>
      <height>50</height>
     </rect>
    </property>
@@ -424,7 +424,7 @@ background-color:#F1EEEE;
     <string>   Phone Number</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="contact_person">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -444,7 +444,7 @@ background-color:#F1EEEE;
     <string>    Contact Person Name</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="blood_group">
    <property name="geometry">
     <rect>
      <x>680</x>
@@ -465,7 +465,7 @@ background-color:#F1EEEE;
     <string>   Blood Group</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="gender">
    <property name="geometry">
     <rect>
      <x>820</x>
@@ -533,7 +533,7 @@ border-radius:5px;
     <string>Request Blood</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_7">
+  <widget class="QLineEdit" name="patient_name">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -553,7 +553,7 @@ background-color:#F1EEEE;
     <string>     Patient Name</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="detail">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -793,6 +793,26 @@ border-radius:5px;</string>
     <string/>
    </property>
   </widget>
+  <widget class="QLineEdit" name="required_unit">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>390</y>
+     <width>161</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*
+{
+border-radius:5px;
+background-color:#F1EEEE;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Required unit</string>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>label_7</zorder>
   <zorder>home</zorder>
@@ -812,15 +832,15 @@ border-radius:5px;</string>
   <zorder>line_6</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
-  <zorder>lineEdit_2</zorder>
-  <zorder>lineEdit_3</zorder>
-  <zorder>lineEdit</zorder>
-  <zorder>lineEdit_5</zorder>
-  <zorder>lineEdit_6</zorder>
+  <zorder>age</zorder>
+  <zorder>phone_number</zorder>
+  <zorder>contact_person</zorder>
+  <zorder>blood_group</zorder>
+  <zorder>gender</zorder>
   <zorder>label_15</zorder>
   <zorder>register_2</zorder>
-  <zorder>lineEdit_7</zorder>
-  <zorder>lineEdit_4</zorder>
+  <zorder>patient_name</zorder>
+  <zorder>detail</zorder>
   <zorder>label_32</zorder>
   <zorder>label_6</zorder>
   <zorder>label_26</zorder>
@@ -835,6 +855,7 @@ border-radius:5px;</string>
   <zorder>label_25</zorder>
   <zorder>label_33</zorder>
   <zorder>label_34</zorder>
+  <zorder>required_unit</zorder>
  </widget>
  <resources/>
  <connections/>
