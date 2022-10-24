@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Images/announcement.png</file>
+        <file>Images/blood.png</file>
+        <file>Images/blood_bag.png</file>
+        <file>Images/blood_donor.png</file>
+        <file>Images/blood_drop.png</file>
+        <file>Images/Donor.png</file>
+        <file>Images/infosame.jpg</file>
+        <file>Images/logo_small.png</file>
+        <file>Images/logo1.png</file>
+        <file>Images/Profile.png</file>
+        <file>Images/blood_main.png</file>
+        <file>Images/logo.png</file>
+        <file>Images/camp.png</file>
+        <file>Images/hospital.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Images/request_blood.jpg</file>
+        <file>Images/donate_blood.jpg</file>
+        <file>Images/vision.png</file>
+        <file>Images/reLiv.png</file>
+        <file>Images/person.jpg</file>
+        <file>Images/why.jpg</file>
+        <file>Images/benefits.jpg</file>
+        <file>Images/background.png</file>
+        <file>Images/person_photo.png</file>
+    </qresource>
+</RCC>
