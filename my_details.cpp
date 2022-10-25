@@ -54,3 +54,21 @@ void my_details::on_login_clicked()
     ud.exec();
 }
 
+
+void my_details::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void my_details::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
+}
+

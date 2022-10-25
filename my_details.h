@@ -24,6 +24,10 @@ private slots:
 
     void on_login_clicked();
 
+    void on_about_clicked();
+
+    void on_why_clicked();
+
 private:
     Ui::my_details *ui;
 };

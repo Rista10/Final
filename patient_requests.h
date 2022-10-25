@@ -2,6 +2,10 @@
 #define PATIENT_REQUESTS_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class patient_requests;
@@ -14,6 +18,19 @@ class patient_requests : public QDialog
 public:
     explicit patient_requests(QWidget *parent = nullptr);
     ~patient_requests();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_about_clicked();
+
+    void on_why_clicked();
+
+    void on_login_clicked();
+
+    void on_my_details_2_clicked();
+
+    void on_my_details_clicked();
 
 private:
     Ui::patient_requests *ui;

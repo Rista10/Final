@@ -100,3 +100,21 @@ void request_blood::on_register_2_clicked()
 
 }
 
+
+void request_blood::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void request_blood::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
+}
+

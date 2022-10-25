@@ -54,3 +54,21 @@ void userDashboard::on_login_clicked()
     ud.exec();
 }
 
+
+void userDashboard::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void userDashboard::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
+}
+

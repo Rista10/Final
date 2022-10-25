@@ -53,3 +53,12 @@ void MainWindow::on_signin_3_clicked()
     ca.exec();
 }
 
+
+void MainWindow::on_see_more_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
+}
+

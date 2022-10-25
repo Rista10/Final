@@ -20,6 +20,12 @@ private slots:
 
     void on_about_2_clicked();
 
+    void on_login_clicked();
+
+    void on_register_2_clicked();
+
+    void on_why_clicked();
+
 private:
     Ui::about *ui;
 };

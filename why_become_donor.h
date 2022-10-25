@@ -15,6 +15,13 @@ public:
     explicit why_become_donor(QWidget *parent = nullptr);
     ~why_become_donor();
 
+private slots:
+    void on_about_2_clicked();
+
+    void on_login_clicked();
+
+    void on_register_2_clicked();
+
 private:
     Ui::why_become_donor *ui;
 };

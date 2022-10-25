@@ -30,6 +30,10 @@ private slots:
 
     void on_donate_clicked();
 
+    void on_about_clicked();
+
+    void on_why_clicked();
+
 private:
     Ui::donate_blood *ui;
 };

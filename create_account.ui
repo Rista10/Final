@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
+    <width>1270</width>
     <height>700</height>
    </rect>
   </property>
@@ -136,7 +136,7 @@ border-radius:5px;
     <string>Create account</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="phone_number">
+  <widget class="QLineEdit" name="email">
    <property name="geometry">
     <rect>
      <x>720</x>
@@ -175,7 +175,7 @@ background-color: #EDEDED;}</string>
     <string>  Gender</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="blood_group">
    <property name="geometry">
     <rect>
      <x>840</x>
@@ -216,7 +216,7 @@ background-color:#EDEDED;
     <string>   Location</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="phone_number_2">
+  <widget class="QLineEdit" name="phone_number">
    <property name="geometry">
     <rect>
      <x>720</x>
@@ -236,7 +236,7 @@ background-color: #EDEDED;
     <string>   Phone Number</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="phone_number_3">
+  <widget class="QLineEdit" name="password">
    <property name="geometry">
     <rect>
      <x>720</x>
@@ -255,8 +255,11 @@ background-color: #EDEDED;
    <property name="text">
     <string>   Password</string>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Normal</enum>
+   </property>
   </widget>
-  <widget class="QLineEdit" name="phone_number_4">
+  <widget class="QLineEdit" name="disease">
    <property name="geometry">
     <rect>
      <x>720</x>

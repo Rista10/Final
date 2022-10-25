@@ -25,6 +25,7 @@ void admin_dashboard::on_my_details_clicked()
     u1.setModal(true);
     hide();
     u1.exec();
+
 }
 
 
@@ -43,5 +44,23 @@ void admin_dashboard::on_my_details_3_clicked()
     r1.setModal(true);
     hide();
     r1.exec();
+}
+
+
+void admin_dashboard::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void admin_dashboard::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
 }
 

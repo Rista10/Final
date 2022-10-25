@@ -2,6 +2,10 @@
 #define LOG_IN_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class log_in;

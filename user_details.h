@@ -2,6 +2,10 @@
 #define USER_DETAILS_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class user_details;
@@ -14,6 +18,17 @@ class user_details : public QDialog
 public:
     explicit user_details(QWidget *parent = nullptr);
     ~user_details();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_about_clicked();
+
+    void on_why_clicked();
+
+    void on_login_clicked();
+
+    void on_my_details_2_clicked();
 
 private:
     Ui::user_details *ui;

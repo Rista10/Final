@@ -23,6 +23,7 @@ void donate_blood::on_my_details_3_clicked()
 {
     request_blood rq;
     rq.setModal(true);
+    hide();
     rq.exec();
 
 }
@@ -96,5 +97,23 @@ void donate_blood::on_donate_clicked()
         QMessageBox::information(this,"Error"," Database not connected");
     }
 
+}
+
+
+void donate_blood::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void donate_blood::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
 }
 

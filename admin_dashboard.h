@@ -2,7 +2,10 @@
 #define ADMIN_DASHBOARD_H
 
 #include <QDialog>
-
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 namespace Ui {
 class admin_dashboard;
 }
@@ -21,6 +24,10 @@ private slots:
     void on_my_details_2_clicked();
 
     void on_my_details_3_clicked();
+
+    void on_about_clicked();
+
+    void on_why_clicked();
 
 private:
     Ui::admin_dashboard *ui;
