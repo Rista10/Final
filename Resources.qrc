@@ -29,5 +29,6 @@
         <file>Images/login.jpg</file>
         <file>Images/arrow.png</file>
         <file>Images/person.jpg</file>
+        <file>Images/create_account.jpg</file>
     </qresource>
 </RCC>

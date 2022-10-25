@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     about.cpp \
     admin_dashboard.cpp \
+    create_account.cpp \
     donate_blood.cpp \
     donor_request.cpp \
     log_in.cpp \
@@ -19,12 +20,14 @@ SOURCES += \
     my_details.cpp \
     patient_requests.cpp \
     request_blood.cpp \
+    user_details.cpp \
     userdashboard.cpp \
     why_become_donor.cpp
 
 HEADERS += \
     about.h \
     admin_dashboard.h \
+    create_account.h \
     donate_blood.h \
     donor_request.h \
     log_in.h \
@@ -32,12 +35,14 @@ HEADERS += \
     my_details.h \
     patient_requests.h \
     request_blood.h \
+    user_details.h \
     userdashboard.h \
     why_become_donor.h
 
 FORMS += \
     about.ui \
     admin_dashboard.ui \
+    create_account.ui \
     donate_blood.ui \
     donor_request.ui \
     log_in.ui \
@@ -45,6 +50,7 @@ FORMS += \
     my_details.ui \
     patient_requests.ui \
     request_blood.ui \
+    user_details.ui \
     userdashboard.ui \
     why_become_donor.ui
 

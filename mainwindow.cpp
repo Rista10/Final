@@ -3,6 +3,7 @@
 #include "log_in.h"
 #include "about.h"
 #include "why_become_donor.h"
+#include "create_account.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -42,5 +43,13 @@ void MainWindow::on_why_clicked()
     wh.setModal(true);
     hide();
     wh.exec();
+}
+
+
+void MainWindow::on_signin_3_clicked()
+{
+    create_account ca;
+    ca.setModal(true);
+    ca.exec();
 }
 

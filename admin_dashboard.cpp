@@ -3,6 +3,9 @@
 #include "mainwindow.h"
 #include "about.h"
 #include "why_become_donor.h"
+#include "user_details.h"
+#include "donor_request.h"
+#include "patient_requests.h"
 
 admin_dashboard::admin_dashboard(QWidget *parent) :
     QDialog(parent),
@@ -15,3 +18,30 @@ admin_dashboard::~admin_dashboard()
 {
     delete ui;
 }
+
+void admin_dashboard::on_my_details_clicked()
+{
+    user_details u1;
+    u1.setModal(true);
+    hide();
+    u1.exec();
+}
+
+
+void admin_dashboard::on_my_details_2_clicked()
+{
+    donor_request d1;
+    d1.setModal(true);
+    hide();
+    d1.exec();
+}
+
+
+void admin_dashboard::on_my_details_3_clicked()
+{
+    patient_requests r1;
+    r1.setModal(true);
+    hide();
+    r1.exec();
+}
+

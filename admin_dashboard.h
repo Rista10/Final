@@ -15,6 +15,13 @@ public:
     explicit admin_dashboard(QWidget *parent = nullptr);
     ~admin_dashboard();
 
+private slots:
+    void on_my_details_clicked();
+
+    void on_my_details_2_clicked();
+
+    void on_my_details_3_clicked();
+
 private:
     Ui::admin_dashboard *ui;
 };

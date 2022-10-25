@@ -22,6 +22,8 @@ private slots:
 
     void on_why_clicked();
 
+    void on_signin_3_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -1,0 +1,28 @@
+#include "my_details.h"
+#include "ui_my_details.h"
+#include "mainwindow.h"
+#include "about.h"
+#include "why_become_donor.h"
+#include "donate_blood.h"
+#inclu
+
+my_details::my_details(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::my_details)
+{
+    ui->setupUi(this);
+}
+
+my_details::~my_details()
+{
+    delete ui;
+}
+
+void my_details::on_my_details_4_clicked()
+{
+    donate_blood di;
+    di.setModal(true);
+    hide();
+    di.exec();
+}
+
