@@ -16,6 +16,8 @@ create_account::~create_account()
 
 void create_account::on_register_2_clicked()
 {
+
+
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
 
@@ -30,6 +32,18 @@ void create_account::on_register_2_clicked()
         QString phone_number=ui->phone_number->text();
         QString password=ui->password->text();
         QString disease=ui->disease->text();
+        if(name != "" && age != "" && blood_group != "" && gender != "" && location != "" && email != "" && phone_number != "" && password != ""){
+
+        int em=0,ph_no=0,p=0;
+        QRegularExpression re("(\\w+)(\\w*)@(\\w+)(\\.(\\w+))+");
+        if(re.match(email).hasMatch()) em = 1;
+        if(phone_number.length()>=10)  ph_no=1;
+        if(password.length()>=8)   p=1;
+
+        if(p){
+            if(em){
+            if(ph_no){
+
 
         QSqlQuery qry;
         qry.prepare("INSERT INTO user_details(name,age,blood_group,gender,location,email,phone_number,password,disease) "
@@ -50,10 +64,35 @@ void create_account::on_register_2_clicked()
         }
         else
         {
-              QMessageBox::information(this,"Error","Database not connected");
+               QMessageBox::information(this,"Information","Database not connected");
+        }
+      }
+            else
+            {
+                ui->phone_number->setStyleSheet("border: 1px solid rgb(144, 10, 18) ");
+                QMessageBox::information(this, "Error", "Please Enter valid Phone number.");
+            }
+        }
+        else
+        {
+                 ui->email->setStyleSheet("border: 1px solid rgb(144, 10, 18) ");
+                QMessageBox::information(this, "Error", "Please Enter valid Email.");
+
         }
     }
-}
+        else
+        {
+            ui->password->setStyleSheet("border: 1px solid rgb(144, 10, 18)");
+            QMessageBox::information(this, "Error", "Password must be at least 8 character long.");
+        }
+    }
+
+        else {
+            QMessageBox::information(this, "Error", "Fill in all the input fields to create account.");
+        }
+    }
+    }
+
 
 
 void create_account::on_back_clicked()
