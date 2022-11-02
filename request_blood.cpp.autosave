@@ -70,7 +70,7 @@ void request_blood::on_register_2_clicked()
         QString gender=ui->gender->text();
         QString phone_number=ui->phone_number->text();
         QString required_units=ui->required_unit->text();
-        QString detail=ui->detail->text();
+        QString detail=ui->required_unit->text();
 
         QSqlQuery qry;
         qry.prepare("INSERT INTO patient_details(contact_person_name,patient_name,age,blood_group,gender,phone_number,required_units,detail_about_case) "
@@ -82,7 +82,7 @@ void request_blood::on_register_2_clicked()
         qry.bindValue(":gender", gender);
         qry.bindValue(":phone_number", phone_number);
         qry.bindValue(":required_units", required_units);
-        qry.bindValue(":detail_about_case", detail);
+        qry.bindValue(":detail_about_case", detail); 
 
         if(qry.exec())
         {
@@ -95,34 +95,8 @@ void request_blood::on_register_2_clicked()
     }
     else
     {
-        QMessageBox::information(this,"Error"," Database not connected");
+        QMessageBox::information(this,"E"," not connected");
     }
-
-}
-
-
-void request_blood::on_about_clicked()
-{
-    about ab;
-    ab.setModal(true);
-    hide();
-    ab.exec();
-}
-
-
-void request_blood::on_why_clicked()
-{
-    why_become_donor wh;
-    wh.setModal(true);
-    hide();
-    wh.exec();
-}
-
-
-void request_blood::on_home_clicked()
-{
-    this->close();
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
+    
 }
 

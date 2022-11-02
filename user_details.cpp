@@ -72,3 +72,11 @@ void user_details::on_my_details_2_clicked()
 
 }
 
+
+void user_details::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

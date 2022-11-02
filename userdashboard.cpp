@@ -72,3 +72,11 @@ void userDashboard::on_why_clicked()
     wh.exec();
 }
 
+
+void userDashboard::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

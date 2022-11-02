@@ -1,0 +1,23 @@
+#include "userdashboard.h"
+#include "ui_userdashboard.h"
+
+
+userDashboard::userDashboard(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::userDashboard)
+{
+    ui->setupUi(this);
+}
+
+userDashboard::~userDashboard()
+{
+    delete ui;
+}
+
+void userDashboard::on_my_details_2_clicked()
+{
+    donate_blood di;
+    di.setmodal(true);
+    di.exec();
+}
+

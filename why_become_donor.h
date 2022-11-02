@@ -22,6 +22,8 @@ private slots:
 
     void on_register_2_clicked();
 
+    void on_home_clicked();
+
 private:
     Ui::why_become_donor *ui;
 };

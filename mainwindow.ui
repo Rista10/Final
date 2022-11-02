@@ -67,12 +67,23 @@ background-color:rgb(255, 255, 255)
        <bold>true</bold>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
-      <string notr="true">#signin_3
+      <string notr="true">
+*
 {
- background-color:#D81E12;
-border-radius:5px;
-}</string>
+ background-color:rgb(144,10,18);
+border-radius:20px;
+color:white;
+}
+#signin_3:hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}
+</string>
      </property>
      <property name="text">
       <string>Register</string>
@@ -93,12 +104,22 @@ border-radius:5px;
        <bold>true</bold>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">#login
 {
- background-color:#D81E12;
-border-radius:5px;
-}</string>
+ background-color:rgb(144,10,18);
+border-radius:20px;
+color:white;
+}
+#login:hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}
+</string>
      </property>
      <property name="text">
       <string>Login</string>
@@ -187,12 +208,23 @@ So be the reason for someone's heartbeat.</string>
        <bold>true</bold>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
-      <string notr="true">#see_more
+      <string notr="true">
+#see_more
 {
- background-color:#D81E12;
-border-radius:5px;
-}</string>
+ background-color:rgb(144,10,18);
+border-radius:20px;
+color:white;
+}
+#see_more:hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}
+</string>
      </property>
      <property name="text">
       <string>See more</string>
@@ -201,9 +233,9 @@ border-radius:5px;
     <widget class="QPushButton" name="home">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>290</x>
        <y>60</y>
-       <width>151</width>
+       <width>71</width>
        <height>41</height>
       </rect>
      </property>
@@ -213,12 +245,20 @@ border-radius:5px;
        <bold>true</bold>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">#home
-
 {
- background-color:#rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+background-color: rgb(255, 255, 255);
+}
+
+#home::hover
+{
+   border-bottom:3px solid rgb(144, 10, 18);
+	color: rgb(144, 10, 18);
 }</string>
      </property>
      <property name="text">
@@ -228,9 +268,9 @@ border-radius:5px;
     <widget class="QPushButton" name="about">
      <property name="geometry">
       <rect>
-       <x>360</x>
+       <x>390</x>
        <y>60</y>
-       <width>151</width>
+       <width>101</width>
        <height>41</height>
       </rect>
      </property>
@@ -240,12 +280,21 @@ border-radius:5px;
        <bold>true</bold>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">#about
 
 {
  background-color:#rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+#about::hover
+{
+   border-bottom:3px solid rgb(144, 10, 18);
+	color: rgb(144, 10, 18);
+
 }</string>
      </property>
      <property name="text">
@@ -255,9 +304,9 @@ border-radius:5px;
     <widget class="QPushButton" name="why">
      <property name="geometry">
       <rect>
-       <x>510</x>
+       <x>512</x>
        <y>60</y>
-       <width>231</width>
+       <width>201</width>
        <height>41</height>
       </rect>
      </property>
@@ -267,12 +316,19 @@ border-radius:5px;
        <bold>true</bold>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">#why
-
 {
  background-color:#rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+#why::hover
+{
+   border-bottom:3px solid rgb(144, 10, 18);
+	color: rgb(144, 10, 18);
 }</string>
      </property>
      <property name="text">

@@ -64,3 +64,11 @@ void admin_dashboard::on_why_clicked()
     wh.exec();
 }
 
+
+void admin_dashboard::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

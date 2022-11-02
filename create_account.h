@@ -22,6 +22,8 @@ public:
 private slots:
     void on_register_2_clicked();
 
+    void on_back_clicked();
+
 private:
     Ui::create_account *ui;
 };

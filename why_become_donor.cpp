@@ -39,6 +39,15 @@ void why_become_donor::on_register_2_clicked()
 {
     create_account ca;
     ca.setModal(true);
+    hide();
     ca.exec();
+}
+
+
+void why_become_donor::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

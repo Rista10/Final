@@ -31,10 +31,19 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">*{
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:5px;}
+
+#my_details_3::hover
+{
+
+	color: rgb(144, 10, 18);
+}
 </string>
    </property>
    <property name="text">
@@ -50,6 +59,9 @@ Blood</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
@@ -67,6 +79,9 @@ border-image: url(:/img/Images/Profile.png);</string>
      <width>51</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/announcement.png);</string>
@@ -100,6 +115,9 @@ border-radius:5px;</string>
      <width>51</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/hospital.png);</string>
@@ -157,12 +175,20 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#why
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#why::hover
+{border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -184,11 +210,20 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#login
 {
- background-color:rgb(218, 73, 0);
-border-radius:5px;
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+#login::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -203,6 +238,17 @@ border-radius:5px;
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#label_30::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Last donated:
@@ -246,6 +292,9 @@ border-radius:5px;
      <width>212</width>
      <height>66</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -304,12 +353,20 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#about
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#about::hover
+{border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -331,6 +388,9 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#my_details_2
 
@@ -338,6 +398,12 @@ border-radius:5px;
 {
  background-color:rgb(255, 255, 255);
 border-radius:5px;
+}
+
+#my_details_2::hover
+{
+
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -350,7 +416,7 @@ Details</string>
     <rect>
      <x>300</x>
      <y>30</y>
-     <width>151</width>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>
@@ -360,12 +426,20 @@ Details</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#home
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#home::hover
+{border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -393,6 +467,9 @@ border-radius:5px;
      <width>212</width>
      <height>66</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -427,6 +504,9 @@ border-radius:5px;</string>
      <height>219</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
 border-radius:5px;</string>
@@ -441,6 +521,17 @@ border-radius:5px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#label_32::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
    <property name="text">
     <string>Announcements</string>
    </property>
@@ -453,6 +544,17 @@ border-radius:5px;</string>
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#label_31::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Donation time:
@@ -467,6 +569,9 @@ border-radius:5px;</string>
      <width>51</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/Donor.png);</string>
@@ -483,6 +588,9 @@ border-radius:5px;</string>
      <width>212</width>
      <height>66</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -519,10 +627,20 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">*{
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:5px;}
+
+
+#my_details_4::hover
+{
+
+	color: rgb(144, 10, 18);
+}
 </string>
    </property>
    <property name="text">
@@ -538,6 +656,9 @@ Blood</string>
      <width>361</width>
      <height>471</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Images/background.png);
@@ -556,6 +677,9 @@ border-radius:20px;</string>
      <height>181</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Images/background.png);
 border-radius:20px;</string>
@@ -572,6 +696,9 @@ border-radius:20px;</string>
      <width>361</width>
      <height>251</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Images/background.png);
@@ -612,6 +739,9 @@ border-radius:20px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Images/background.png);</string>
    </property>
@@ -619,7 +749,7 @@ border-radius:20px;</string>
     <string>Blood Group</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_34">
+  <widget class="QLabel" name="blood_group">
    <property name="geometry">
     <rect>
      <x>710</x>
@@ -638,15 +768,15 @@ border-radius:20px;</string>
     <string notr="true">border-image: url(:/Images/background.png);</string>
    </property>
    <property name="text">
-    <string>A+</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
+  <widget class="QLabel" name="name">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>290</x>
      <y>420</y>
-     <width>301</width>
+     <width>201</width>
      <height>31</height>
     </rect>
    </property>
@@ -655,21 +785,24 @@ border-radius:20px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Name  : Kittyyy Shrestha</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_12">
+  <widget class="QLabel" name="age">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>290</x>
      <y>460</y>
-     <width>301</width>
+     <width>221</width>
      <height>31</height>
     </rect>
    </property>
@@ -678,21 +811,24 @@ padding-bottom:7px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Age : 19</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_13">
+  <widget class="QLabel" name="gender">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>290</x>
      <y>500</y>
-     <width>301</width>
+     <width>221</width>
      <height>31</height>
     </rect>
    </property>
@@ -701,19 +837,22 @@ padding-bottom:7px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Gender  : Female</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>200</x>
      <y>540</y>
      <width>301</width>
      <height>31</height>
@@ -724,21 +863,24 @@ padding-bottom:7px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Joined  : October 14</string>
+    <string>  Joined  :     October 14</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>210</x>
      <y>580</y>
-     <width>291</width>
+     <width>301</width>
      <height>41</height>
     </rect>
    </property>
@@ -749,19 +891,26 @@ padding-bottom:7px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius: 5px;
-background-color: rgb(209, 66, 47);</string>
+    <string notr="true">*{border-radius: 20px;
+background-color: rgb(144, 10, 18);
+color: rgb(255, 255, 255);}
+
+*::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Save</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_15">
+  <widget class="QLabel" name="email">
    <property name="geometry">
     <rect>
-     <x>610</x>
+     <x>680</x>
      <y>420</y>
-     <width>301</width>
+     <width>231</width>
      <height>31</height>
     </rect>
    </property>
@@ -770,21 +919,24 @@ background-color: rgb(209, 66, 47);</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Email  : user5678@gmail.com</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_16">
+  <widget class="QLabel" name="phone_number">
    <property name="geometry">
     <rect>
-     <x>610</x>
+     <x>760</x>
      <y>460</y>
-     <width>301</width>
+     <width>141</width>
      <height>31</height>
     </rect>
    </property>
@@ -793,21 +945,24 @@ padding-bottom:7px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Phone number  : 9841853610</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_17">
+  <widget class="QLabel" name="password">
    <property name="geometry">
     <rect>
-     <x>610</x>
+     <x>715</x>
      <y>540</y>
-     <width>301</width>
+     <width>191</width>
      <height>31</height>
     </rect>
    </property>
@@ -816,16 +971,19 @@ padding-bottom:7px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Password  : Kittyyy5678</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_18">
+  <widget class="QLabel" name="location_1">
    <property name="geometry">
     <rect>
      <x>610</x>
@@ -839,13 +997,16 @@ padding-bottom:7px;</string>
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:none;
 background-color: rgba(0,0,0,0);
 padding-bottom:7px;</string>
    </property>
    <property name="text">
-    <string>  Location  : Lagankhel</string>
+    <string>  Location  :</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -863,12 +1024,205 @@ padding-bottom:7px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">border-radius: 5px;
-background-color: rgb(209, 66, 47);</string>
+    <string notr="true">*{border-radius: 20px;
+background-color: rgb(144, 10, 18);
+	color: rgb(255, 255, 255);
+}
+
+#pushButton_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Change information</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="name_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>420</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>  Name  : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="age_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>460</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Age :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gender_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>500</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Gender:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="email_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>420</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>Email:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="phone_number_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>460</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>  Phone number  : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="location">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>500</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="password_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>540</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background-color: rgba(0,0,0,0);
+padding-bottom:7px;</string>
+   </property>
+   <property name="text">
+    <string>  Password  : </string>
    </property>
   </widget>
   <zorder>label_2</zorder>
@@ -904,17 +1258,24 @@ background-color: rgb(209, 66, 47);</string>
   <zorder>label_9</zorder>
   <zorder>label_10</zorder>
   <zorder>label_33</zorder>
-  <zorder>label_34</zorder>
-  <zorder>label_11</zorder>
-  <zorder>label_12</zorder>
-  <zorder>label_13</zorder>
+  <zorder>blood_group</zorder>
+  <zorder>name</zorder>
+  <zorder>age</zorder>
+  <zorder>gender</zorder>
   <zorder>label_14</zorder>
   <zorder>pushButton</zorder>
-  <zorder>label_15</zorder>
-  <zorder>label_16</zorder>
-  <zorder>label_17</zorder>
-  <zorder>label_18</zorder>
+  <zorder>email</zorder>
+  <zorder>phone_number</zorder>
+  <zorder>password</zorder>
+  <zorder>location_1</zorder>
   <zorder>pushButton_2</zorder>
+  <zorder>name_2</zorder>
+  <zorder>age_2</zorder>
+  <zorder>gender_2</zorder>
+  <zorder>email_2</zorder>
+  <zorder>phone_number_2</zorder>
+  <zorder>location</zorder>
+  <zorder>password_2</zorder>
  </widget>
  <resources/>
  <connections/>

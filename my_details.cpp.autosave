@@ -45,7 +45,8 @@ void my_details::on_my_details_2_clicked()
 //    hide();
 //    m1.exec();
 
-
+    log_in l1;
+    l1.user_
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
 

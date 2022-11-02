@@ -14,7 +14,8 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color: rgb(255, 255, 255);
+</string>
   </property>
   <widget class="QPushButton" name="home">
    <property name="geometry">
@@ -31,12 +32,22 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#home
 
 {
  background-color:#rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#home::hover
+{
+
+border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -74,11 +85,20 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#login
 {
- background-color:#D81E12;
-border-radius:5px;
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+}
+
+#login::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -100,11 +120,20 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#register_2
 {
- background-color:#D81E12;
-border-radius:5px;
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+}
+
+#register_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -139,12 +168,21 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#why
 
 {
  background-color:rgb(255, 255, 255);
 border-radius:5px;
+}
+
+#why::hover
+{
+border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -166,12 +204,21 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#about_2
 
 {
  background-color:#rgb(255, 255, 255);
 border-radius:5px;
+}
+
+#about_2::hover
+{
+border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -182,7 +229,7 @@ border-radius:5px;
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>150</y>
+     <y>130</y>
      <width>281</width>
      <height>61</height>
     </rect>
@@ -201,7 +248,7 @@ border-radius:5px;
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>220</y>
+     <y>200</y>
      <width>391</width>
      <height>61</height>
     </rect>
@@ -220,7 +267,7 @@ border-radius:5px;
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>280</y>
+     <y>260</y>
      <width>501</width>
      <height>181</height>
     </rect>
@@ -236,16 +283,14 @@ border-radius:5px;
 and donor data management to provide blood immediately
 to the patient without any delay.In addition, it keeps the
 records of all the donors,recipients,blood donation programs 
-and so on. Also,it will be a means to aware public about blood 
-donation events.
-</string>
+and so on. </string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>280</y>
+     <y>260</y>
      <width>150</width>
      <height>149</height>
     </rect>
@@ -261,7 +306,7 @@ donation events.
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>460</y>
+     <y>440</y>
      <width>201</width>
      <height>171</height>
     </rect>
@@ -277,7 +322,7 @@ donation events.
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>430</y>
+     <y>410</y>
      <width>391</width>
      <height>61</height>
     </rect>
@@ -296,7 +341,7 @@ donation events.
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>490</y>
+     <y>470</y>
      <width>501</width>
      <height>181</height>
     </rect>
@@ -312,8 +357,7 @@ donation events.
 respective blood group and make a request for blood.
 It help volunteer donors to know about different blood 
 donations campaign.It encourage and publicize blood 
-donation programs.Also it improve the management of blood 
-and provide blood according to the request.
+donation programs.
 </string>
    </property>
   </widget>
@@ -321,7 +365,7 @@ and provide blood according to the request.
    <property name="geometry">
     <rect>
      <x>820</x>
-     <y>150</y>
+     <y>130</y>
      <width>281</width>
      <height>61</height>
     </rect>

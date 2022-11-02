@@ -31,6 +31,12 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>O-</string>
    </property>
@@ -43,6 +49,9 @@
      <width>178</width>
      <height>80</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -61,6 +70,9 @@ border-radius:5px;</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
    </property>
@@ -76,6 +88,9 @@ border-radius:5px;</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -98,6 +113,12 @@ border-radius:5px;</string>
      <pointsize>20</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>O+</string>
@@ -141,6 +162,9 @@ border-radius:5px;</string>
      <height>80</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
 border-radius:5px;</string>
@@ -164,6 +188,12 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>AB+</string>
    </property>
@@ -184,8 +214,14 @@ border-radius:5px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-background-color: #E6E6E6;</string>
+    <string notr="true">*{border-radius:5px;
+background-color: #E6E6E6;}
+
+#label_20::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>      View Details</string>
@@ -199,6 +235,9 @@ background-color: #E6E6E6;</string>
      <width>212</width>
      <height>66</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -222,6 +261,9 @@ background-color: #E6E6E6;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>Blood donated
 today</string>
@@ -235,6 +277,9 @@ today</string>
      <width>178</width>
      <height>80</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -259,11 +304,21 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#login
 {
- background-color:rgb(218, 73, 0);
-border-radius:5px;
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -278,6 +333,9 @@ border-radius:5px;
      <width>178</width>
      <height>80</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -295,6 +353,9 @@ border-radius:5px;</string>
      <width>178</width>
      <height>80</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -330,6 +391,9 @@ border-radius:5px;</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
    </property>
@@ -346,6 +410,16 @@ border-radius:5px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_31::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
    <property name="text">
     <string>12 December,2022</string>
    </property>
@@ -355,7 +429,7 @@ border-radius:5px;</string>
     <rect>
      <x>420</x>
      <y>30</y>
-     <width>151</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
@@ -365,12 +439,21 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#about
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#about::hover
+{
+border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -409,6 +492,9 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>Available
 Donor</string>
@@ -429,6 +515,12 @@ Donor</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>AB-</string>
    </property>
@@ -441,6 +533,9 @@ Donor</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -457,6 +552,9 @@ Donor</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -480,6 +578,12 @@ Donor</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>A+</string>
    </property>
@@ -492,6 +596,16 @@ Donor</string>
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_30::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>9 September,2022</string>
@@ -518,6 +632,9 @@ Donor</string>
      <width>178</width>
      <height>80</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -558,6 +675,9 @@ border-radius:5px;</string>
      <height>175</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
    </property>
@@ -591,6 +711,9 @@ border-image: url(:/img/Images/logo1.png);</string>
      <height>66</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
    </property>
@@ -614,8 +737,14 @@ border-image: url(:/img/Images/logo1.png);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-background-color: #E6E6E6;</string>
+    <string notr="true">#label_22{border-radius:5px;
+background-color: #E6E6E6;}
+
+#label_22::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>      View Details</string>
@@ -629,6 +758,9 @@ background-color: #E6E6E6;</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -665,10 +797,19 @@ background-color: #E6E6E6;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">*{
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:5px;}
+
+#my_details_3::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}
 </string>
    </property>
    <property name="text">
@@ -685,6 +826,9 @@ Requests</string>
      <height>66</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
    </property>
@@ -700,6 +844,9 @@ Requests</string>
      <width>52</width>
      <height>52</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood.png);</string>
@@ -736,6 +883,12 @@ Requests</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>B-</string>
    </property>
@@ -748,6 +901,9 @@ Requests</string>
      <width>253</width>
      <height>175</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -764,6 +920,9 @@ Requests</string>
      <width>253</width>
      <height>175</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -817,13 +976,19 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#my_details
-
-
 {
  background-color:rgb(255, 255, 255);
 border-radius:5px;
+}
+
+#my_details::hover
+{
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -862,10 +1027,19 @@ Details</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">*{
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:5px;}
+
+#my_details_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}
 </string>
    </property>
    <property name="text">
@@ -881,6 +1055,9 @@ Requests</string>
      <width>178</width>
      <height>80</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -915,6 +1092,16 @@ border-radius:5px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_32::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
    <property name="text">
     <string>Announcements</string>
    </property>
@@ -933,6 +1120,12 @@ border-radius:5px;</string>
      <pointsize>20</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>A-</string>
@@ -970,8 +1163,14 @@ border-radius:5px;</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:5px;
-background-color: #E6E6E6;</string>
+    <string notr="true">*{border-radius:5px;
+background-color: #E6E6E6;}
+
+#label_21::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>      View Details</string>
@@ -991,6 +1190,12 @@ background-color: #E6E6E6;</string>
      <pointsize>20</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>B+</string>
@@ -1027,6 +1232,9 @@ background-color: #E6E6E6;</string>
      <height>80</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
 border-radius:5px;</string>
@@ -1044,6 +1252,9 @@ border-radius:5px;</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
    </property>
@@ -1056,7 +1267,7 @@ border-radius:5px;</string>
     <rect>
      <x>290</x>
      <y>30</y>
-     <width>151</width>
+     <width>121</width>
      <height>41</height>
     </rect>
    </property>
@@ -1066,12 +1277,20 @@ border-radius:5px;</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#home
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+#home:hover
+{
+border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -1093,12 +1312,21 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#why
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#why::hover
+{
+border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -1120,6 +1348,9 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
     <string>Campaigns
 Available</string>
@@ -1133,6 +1364,9 @@ Available</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
@@ -1151,6 +1385,9 @@ border-image: url(:/img/Images/Profile.png);</string>
      <height>219</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
 border-radius:5px;</string>
@@ -1164,6 +1401,9 @@ border-radius:5px;</string>
      <width>63</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -1181,6 +1421,9 @@ border-radius:5px;</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/announcement.png);</string>
    </property>
@@ -1196,6 +1439,9 @@ border-radius:5px;</string>
      <width>52</width>
      <height>52</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood.png);</string>

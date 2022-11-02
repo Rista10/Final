@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     about.cpp \
     admin_dashboard.cpp \
+    campaign.cpp \
     create_account.cpp \
     donate_blood.cpp \
     donor_request.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
 HEADERS += \
     about.h \
     admin_dashboard.h \
+    campaign.h \
     create_account.h \
     donate_blood.h \
     donor_request.h \
@@ -42,6 +44,7 @@ HEADERS += \
 FORMS += \
     about.ui \
     admin_dashboard.ui \
+    campaign.ui \
     create_account.ui \
     donate_blood.ui \
     donor_request.ui \

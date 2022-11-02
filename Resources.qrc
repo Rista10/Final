@@ -27,8 +27,10 @@
         <file>Images/profile1.jfif</file>
         <file>Images/log_in.png</file>
         <file>Images/login.jpg</file>
-        <file>Images/arrow.png</file>
         <file>Images/person.jpg</file>
         <file>Images/create_account.jpg</file>
+        <file>Images/back_arrow.png</file>
+        <file>Images/donateBlood.png</file>
+        <file>Images/blood-donation2.gif</file>
     </qresource>
 </RCC>

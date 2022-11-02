@@ -1,5 +1,6 @@
 #include "create_account.h"
 #include "ui_create_account.h"
+#include "mainwindow.h"
 
 create_account::create_account(QWidget *parent) :
     QDialog(parent),
@@ -52,5 +53,13 @@ void create_account::on_register_2_clicked()
               QMessageBox::information(this,"Error","Database not connected");
         }
     }
+}
+
+
+void create_account::on_back_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

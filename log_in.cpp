@@ -3,7 +3,7 @@
 #include "mainwindow.h"
 #include "userdashboard.h"
 #include "admin_dashboard.h"
-
+QString user_id;
 
 log_in::log_in(QWidget *parent) :
     QDialog(parent),
@@ -27,6 +27,7 @@ void log_in::on_signin_clicked()
         {
             admin_dashboard ad;
             ad.setModal(true);
+            hide();
             ad.exec();
 
         }
@@ -41,23 +42,26 @@ void log_in::on_signin_clicked()
                 int count=0;
                 if(qry.exec("select * from user_details where email='"+email+"' and password='"+password+"'"))
                 {
-
                     while(qry.next())
                     {
+//                        ui->user_id->
+                        QString user_id="setText(qry.value(0).toString())";
                         count++;
                     }
+                    if(count==1)
+                    {
+                        userDashboard h1;
+                        h1.setModal(true);
+                        hide();
+                        h1.exec();
+
+                    }
+                    else
+                    {
+                         QMessageBox::information(this,"Information","Wrong email and password");
+                    }
                 }
-                if(count==1)
-                {
-                    userDashboard h1;
-                    h1.setModal(true);
-                    hide();
-                    h1.exec();
-                }
-                else
-                {
-                     QMessageBox::information(this,"Information","Wrong email and password");
-                }
+
 
             }
             else
@@ -68,8 +72,11 @@ void log_in::on_signin_clicked()
 
 
 
+
 void log_in::on_home_2_clicked()
 {
-
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

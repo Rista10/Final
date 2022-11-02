@@ -32,6 +32,8 @@ private slots:
 
     void on_my_details_clicked();
 
+    void on_home_clicked();
+
 private:
     Ui::patient_requests *ui;
 };

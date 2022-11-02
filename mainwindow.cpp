@@ -50,6 +50,7 @@ void MainWindow::on_signin_3_clicked()
 {
     create_account ca;
     ca.setModal(true);
+    hide();
     ca.exec();
 }
 

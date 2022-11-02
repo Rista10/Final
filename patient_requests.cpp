@@ -80,3 +80,11 @@ void patient_requests::on_my_details_clicked()
     ud.exec();
 }
 
+
+void patient_requests::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

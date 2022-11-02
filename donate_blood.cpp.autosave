@@ -23,7 +23,6 @@ void donate_blood::on_my_details_3_clicked()
 {
     request_blood rq;
     rq.setModal(true);
-    hide();
     rq.exec();
 
 }
@@ -85,43 +84,17 @@ void donate_blood::on_donate_clicked()
 
         if(qry.exec())
         {
-               QMessageBox::information(this,"Information","You will be notified soon about blood donating location");
+               QMessageBox::information(this,"connection","You will be notified about blood donat");
         }
         else
         {
-              QMessageBox::information(this,"Error","Database not connected");
+              QMessageBox::information(this,"Connection","Database not connected");
         }
     }
     else
     {
-        QMessageBox::information(this,"Error"," Database not connected");
+        QMessageBox::information(this,"connection"," not connected");
     }
 
-}
-
-
-void donate_blood::on_about_clicked()
-{
-    about ab;
-    ab.setModal(true);
-    hide();
-    ab.exec();
-}
-
-
-void donate_blood::on_why_clicked()
-{
-    why_become_donor wh;
-    wh.setModal(true);
-    hide();
-    wh.exec();
-}
-
-
-void donate_blood::on_home_clicked()
-{
-    this->close();
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
 }
 

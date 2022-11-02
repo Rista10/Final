@@ -81,3 +81,11 @@ void donor_request::on_my_details_3_clicked()
     pr.exec();
 }
 
+
+void donor_request::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

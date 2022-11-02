@@ -34,6 +34,8 @@ private slots:
 
     void on_why_clicked();
 
+    void on_home_clicked();
+
 private:
     Ui::request_blood *ui;
 };

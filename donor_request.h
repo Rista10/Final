@@ -32,6 +32,8 @@ private slots:
 
     void on_my_details_3_clicked();
 
+    void on_home_clicked();
+
 private:
     Ui::donor_request *ui;
 };

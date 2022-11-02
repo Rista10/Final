@@ -38,7 +38,7 @@ border-image: url(:/img/Images/logo1.png);</string>
     <rect>
      <x>300</x>
      <y>30</y>
-     <width>151</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
@@ -48,12 +48,20 @@ border-image: url(:/img/Images/logo1.png);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#home
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#home::hover
+{border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -75,12 +83,20 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#about
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#about::hover
+{border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -90,9 +106,9 @@ border-radius:5px;
   <widget class="QPushButton" name="why">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>580</x>
      <y>30</y>
-     <width>231</width>
+     <width>221</width>
      <height>41</height>
     </rect>
    </property>
@@ -102,12 +118,20 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#why
 
 {
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:0.5px;
+}
+
+#why::hover
+{border-bottom :3px solid rgb(144, 10, 18);
+color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -129,11 +153,21 @@ border-radius:5px;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#login
 {
- background-color:rgb(218, 73, 0);
-border-radius:5px;
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+color:rgb(255, 255, 255)
+}
+
+#login::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -208,6 +242,9 @@ border-radius:5px;</string>
      <height>61</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
 border-image: url(:/img/Images/Profile.png);</string>
@@ -244,10 +281,18 @@ border-image: url(:/img/Images/Profile.png);</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">*{
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:5px;}
+#my_details_3::hover
+{
+
+	color: rgb(144, 10, 18);
+}
 </string>
    </property>
    <property name="text">
@@ -270,13 +315,20 @@ Blood</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#my_details
-
-
 {
  background-color:rgb(255, 255, 255);
 border-radius:5px;
+}
+
+#my_details::hover
+{
+
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -325,10 +377,19 @@ Details</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">*{
  background-color:rgb(255, 255, 255);
-border-radius:5px;
+border-radius:5px;}
+
+#my_details_2::hover
+{
+
+	color: rgb(144, 10, 18);
+}
 </string>
    </property>
    <property name="text">
@@ -546,6 +607,9 @@ border-radius:5px;</string>
      <height>66</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
    </property>
@@ -561,6 +625,9 @@ border-radius:5px;</string>
      <width>51</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/hospital.png);</string>
@@ -603,6 +670,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>  Gender</string>
    </property>
   </widget>
@@ -614,6 +684,9 @@ background-color:#F1EEEE;
      <width>212</width>
      <height>66</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>
@@ -653,6 +726,9 @@ background-color:#F1EEEE;
      <height>219</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
 font: 9pt &quot;Segoe UI&quot;;
@@ -689,6 +765,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>   Phone Number</string>
    </property>
   </widget>
@@ -709,6 +788,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>    Donor Name</string>
    </property>
   </widget>
@@ -720,6 +802,16 @@ background-color:#F1EEEE;
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_30::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Last donated:
@@ -734,6 +826,16 @@ background-color:#F1EEEE;
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_31::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Donation time:
@@ -757,6 +859,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>     Age  </string>
    </property>
   </widget>
@@ -777,6 +882,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>   Location</string>
    </property>
   </widget>
@@ -788,6 +896,16 @@ background-color:#F1EEEE;
      <width>131</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_33::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
    </property>
    <property name="text">
     <string>Announcements</string>
@@ -828,6 +946,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>   Specify disease(if any)</string>
    </property>
   </widget>
@@ -849,6 +970,9 @@ background-color:#F1EEEE;
 }</string>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>   Blood Group</string>
    </property>
   </widget>
@@ -867,12 +991,22 @@ background-color:#F1EEEE;
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">#donate
 
 {
-background-color:#F25019;
-border-radius:5px;
+background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#donate::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
@@ -887,6 +1021,9 @@ border-radius:5px;
      <width>51</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/announcement.png);</string>
@@ -904,6 +1041,9 @@ border-radius:5px;
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/img/Images/Donor.png);</string>
    </property>
@@ -919,6 +1059,9 @@ border-radius:5px;
      <width>212</width>
      <height>66</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius:5px;</string>

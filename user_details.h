@@ -30,6 +30,8 @@ private slots:
 
     void on_my_details_2_clicked();
 
+    void on_home_clicked();
+
 private:
     Ui::user_details *ui;
 };
