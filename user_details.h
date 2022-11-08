@@ -20,7 +20,6 @@ public:
     ~user_details();
 
 private slots:
-    void on_pushButton_clicked();
 
     void on_about_clicked();
 

@@ -72,6 +72,8 @@ void request_blood::on_register_2_clicked()
         QString required_units=ui->required_unit->text();
         QString detail=ui->detail->text();
 
+        if(contact_person_name != "" && patient_name != "" && age != "" && blood_group != "" && gender != "" && phone_number != "" && required_units != "" && detail != ""){
+
         QSqlQuery qry;
         qry.prepare("INSERT INTO patient_details(contact_person_name,patient_name,age,blood_group,gender,phone_number,required_units,detail_about_case) "
                     "VALUES('"+contact_person_name+"', '"+patient_name+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+phone_number+"', '"+required_units+"', '"+detail+"')");
@@ -88,9 +90,10 @@ void request_blood::on_register_2_clicked()
         {
                QMessageBox::information(this,"Information","You will be notified soon about blood");
         }
+        }
         else
         {
-              QMessageBox::information(this,"Error","Database not connected");
+               QMessageBox::information(this, "Error", "Fill in all the input fields .");
         }
     }
     else

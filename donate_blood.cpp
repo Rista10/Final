@@ -71,6 +71,7 @@ void donate_blood::on_donate_clicked()
         QString gender=ui->gender->text();
         QString phone_number=ui->phone_number->text();
         QString disease=ui->disease->text();
+        if(name != "" && location != "" && age != "" && blood_group != "" && gender != "" && phone_number != "" ){
 
         QSqlQuery qry;
         qry.prepare("INSERT INTO donor_details(donor_name,location,age,blood_group,gender,phone_number,any_disease) "
@@ -87,9 +88,10 @@ void donate_blood::on_donate_clicked()
         {
                QMessageBox::information(this,"Information","You will be notified soon about blood donating location");
         }
+       }
         else
         {
-              QMessageBox::information(this,"Error","Database not connected");
+               QMessageBox::information(this, "Error", "Fill in all the input fields .");
         }
     }
     else

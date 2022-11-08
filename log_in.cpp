@@ -3,13 +3,14 @@
 #include "mainwindow.h"
 #include "userdashboard.h"
 #include "admin_dashboard.h"
-QString user_id;
+int id;
 
 log_in::log_in(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::log_in)
 {
     ui->setupUi(this);
+
 }
 
 log_in::~log_in()
@@ -38,6 +39,7 @@ void log_in::on_signin_clicked()
 
             if(db.open())
             {
+                if(email!="" && password!=""){
                 QSqlQuery qry;
                 int count=0;
                 if(qry.exec("select * from user_details where email='"+email+"' and password='"+password+"'"))
@@ -45,9 +47,10 @@ void log_in::on_signin_clicked()
                     while(qry.next())
                     {
 //                        ui->user_id->
-                        QString user_id="setText(qry.value(0).toString())";
+                         id=qry.value(0).toInt();
                         count++;
                     }
+
                     if(count==1)
                     {
                         userDashboard h1;
@@ -61,6 +64,13 @@ void log_in::on_signin_clicked()
                          QMessageBox::information(this,"Information","Wrong email and password");
                     }
                 }
+
+                }
+                else
+                {
+                       QMessageBox::information(this, "Error", "Fill in all the input fields .");
+                }
+
 
 
             }

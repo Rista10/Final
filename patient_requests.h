@@ -20,8 +20,6 @@ public:
     ~patient_requests();
 
 private slots:
-    void on_pushButton_clicked();
-
     void on_about_clicked();
 
     void on_why_clicked();

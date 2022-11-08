@@ -7,12 +7,41 @@
 #include "request_blood.h"
 #include "userdashboard.h"
 #include "log_in.h"
+extern int id;
 
 my_details::my_details(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::my_details)
 {
     ui->setupUi(this);
+
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
+
+    if(db.open())
+    {
+        ui->label_11->setText(QString::number(id));
+
+//         ui->label_11->setValue(id);
+        QSqlQuery qry;
+
+        qry.bindValue(":id", id);
+        qry.prepare("select * from user_details where user_id=id");
+        if(qry.exec())
+        {
+            while(qry.next())
+            {
+                ui->name->setText(qry.value(1).toString());
+                ui->age->setText(qry.value(2).toString());
+                ui->blood_group->setText(qry.value(3).toString());
+                ui->gender->setText(qry.value(4).toString());
+                ui->location->setText(qry.value(5).toString());
+                ui->email->setText(qry.value(6).toString());
+                ui->phone_number->setText(qry.value(7).toString());
+                ui->password->setText(qry.value(8).toString());
+            }
+        }
+    }
 }
 
 my_details::~my_details()
@@ -38,44 +67,7 @@ void my_details::on_my_details_3_clicked()
 }
 
 
-void my_details::on_my_details_2_clicked()
-{
-//    my_details m1;
-//    m1.setModal(true);
-//    hide();
-//    m1.exec();
 
-
-    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
-
-    if(db.open())
-    {
-        QSqlQuery qry;
-        qry.prepare("select * from user_details where user_id=4");
-        if(qry.exec())
-        {
-            while(qry.next())
-            {
-                ui->name->setText(qry.value(1).toString());
-                ui->age->setText(qry.value(2).toString());
-                ui->blood_group->setText(qry.value(3).toString());
-                ui->gender->setText(qry.value(4).toString());
-                ui->location->setText(qry.value(5).toString());
-                ui->email->setText(qry.value(6).toString());
-                ui->phone_number->setText(qry.value(7).toString());
-                ui->password->setText(qry.value(8).toString());
-            }
-        }
-
-        else
-        {
-             QMessageBox::information(this,"Connection","Database not connected");
-        }
-    }
-
-
-}
 
 
 void my_details::on_login_clicked()

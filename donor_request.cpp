@@ -12,15 +12,6 @@ donor_request::donor_request(QWidget *parent) :
     ui(new Ui::donor_request)
 {
     ui->setupUi(this);
-}
-
-donor_request::~donor_request()
-{
-    delete ui;
-}
-
-void donor_request::on_pushButton_clicked()
-{
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
     if(db.open())
@@ -35,6 +26,12 @@ void donor_request::on_pushButton_clicked()
         qDebug()<<(modal->rowCount());
     }
 }
+
+donor_request::~donor_request()
+{
+    delete ui;
+}
+
 
 
 void donor_request::on_about_clicked()

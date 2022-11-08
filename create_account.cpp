@@ -45,7 +45,21 @@ void create_account::on_register_2_clicked()
             if(ph_no){
 
 
-        QSqlQuery qry;
+        QSqlQuery qry,check;
+        int user_id=0;
+        if(check.exec("select * from user_details where email='"+email+"' "))
+        {
+            while(check.next())
+            {
+                 user_id++;
+            }
+        }
+        if(user_id==1)
+        {
+              QMessageBox::information(this,"Error","Your account is already registered with this email.");
+        }
+        else
+        {
         qry.prepare("INSERT INTO user_details(name,age,blood_group,gender,location,email,phone_number,password,disease) "
                     "VALUES('"+name+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+location+"', '"+email+"', '"+phone_number+"', '"+password+"', '"+disease+"')");
         qry.bindValue(":name", name);
@@ -62,9 +76,6 @@ void create_account::on_register_2_clicked()
         {
                QMessageBox::information(this,"Information","Your account is created");
         }
-        else
-        {
-               QMessageBox::information(this,"Information","Database not connected");
         }
       }
             else
@@ -90,8 +101,9 @@ void create_account::on_register_2_clicked()
         else {
             QMessageBox::information(this, "Error", "Fill in all the input fields to create account.");
         }
+        }
     }
-    }
+
 
 
 

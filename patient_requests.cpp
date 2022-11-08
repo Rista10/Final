@@ -12,15 +12,6 @@ patient_requests::patient_requests(QWidget *parent) :
     ui(new Ui::patient_requests)
 {
     ui->setupUi(this);
-}
-
-patient_requests::~patient_requests()
-{
-    delete ui;
-}
-
-void patient_requests::on_pushButton_clicked()
-{
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
     if(db.open())
@@ -35,6 +26,13 @@ void patient_requests::on_pushButton_clicked()
         qDebug()<<(modal->rowCount());
     }
 }
+
+patient_requests::~patient_requests()
+{
+    delete ui;
+}
+
+
 
 void patient_requests::on_about_clicked()
 {

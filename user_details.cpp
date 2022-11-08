@@ -11,15 +11,6 @@ user_details::user_details(QWidget *parent) :
     ui(new Ui::user_details)
 {
     ui->setupUi(this);
-}
-
-user_details::~user_details()
-{
-    delete ui;
-}
-
-void user_details::on_pushButton_clicked()
-{
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
     if(db.open())
@@ -34,6 +25,13 @@ void user_details::on_pushButton_clicked()
         qDebug()<<(modal->rowCount());
     }
 }
+
+user_details::~user_details()
+{
+    delete ui;
+}
+
+
 
 
 void user_details::on_about_clicked()

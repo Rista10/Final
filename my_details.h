@@ -20,8 +20,6 @@ private slots:
 
     void on_my_details_3_clicked();
 
-    void on_my_details_2_clicked();
-
     void on_login_clicked();
 
     void on_about_clicked();
