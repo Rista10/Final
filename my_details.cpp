@@ -20,13 +20,12 @@ my_details::my_details(QWidget *parent) :
 
     if(db.open())
     {
-        ui->label_11->setText(QString::number(id));
 
-//         ui->label_11->setValue(id);
         QSqlQuery qry;
 
-        qry.bindValue(":id", id);
-        qry.prepare("select * from user_details where user_id=id");
+        qry.prepare("select * from user_details where user_id=:id");
+        qry.bindValue(":id" ,id);
+
         if(qry.exec())
         {
             while(qry.next())

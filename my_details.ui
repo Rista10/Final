@@ -1225,19 +1225,6 @@ padding-bottom:7px;</string>
     <string>  Password  : </string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>50</y>
-     <width>63</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
   <zorder>label_4</zorder>
@@ -1289,7 +1276,6 @@ padding-bottom:7px;</string>
   <zorder>phone_number_2</zorder>
   <zorder>location</zorder>
   <zorder>password_2</zorder>
-  <zorder>label_11</zorder>
  </widget>
  <resources/>
  <connections/>
