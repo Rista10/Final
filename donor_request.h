@@ -34,6 +34,8 @@ private slots:
 
     void on_home_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::donor_request *ui;
 };

@@ -642,9 +642,9 @@ border-radius:5px;</string>
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>160</y>
+     <y>170</y>
      <width>777</width>
-     <height>471</height>
+     <height>461</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -653,6 +653,36 @@ background-color: rgb(255, 255, 255);
 border-width : 1.2px;
 border-style:inset;
 </string>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>132</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 10, 18);
+color: rgb(255, 255, 255);
+border-radius:3px;</string>
+   </property>
+   <property name="text">
+    <string>Edit</string>
    </property>
   </widget>
   <zorder>label_3</zorder>
@@ -684,6 +714,7 @@ border-style:inset;
   <zorder>label_28</zorder>
   <zorder>label_29</zorder>
   <zorder>tableView</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources/>
  <connections/>

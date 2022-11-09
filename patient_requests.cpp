@@ -2,6 +2,7 @@
 #include "ui_patient_requests.h"
 #include "mainwindow.h"
 #include "about.h"
+#include "edit_patient.h"
 #include "why_become_donor.h"
 #include "admin_dashboard.h"
 #include "donor_request.h"
@@ -84,5 +85,14 @@ void patient_requests::on_home_clicked()
     this->close();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
+}
+
+
+void patient_requests::on_pushButton_clicked()
+{
+    edit_patient ep;
+    ep.setModal(true);
+    hide();
+    ep.exec();
 }
 

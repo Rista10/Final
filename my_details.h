@@ -28,6 +28,8 @@ private slots:
 
     void on_home_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::my_details *ui;
 };

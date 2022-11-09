@@ -12,9 +12,12 @@ SOURCES += \
     about.cpp \
     admin_dashboard.cpp \
     campaign.cpp \
+    change_information.cpp \
     create_account.cpp \
     donate_blood.cpp \
     donor_request.cpp \
+    edit_donor.cpp \
+    edit_patient.cpp \
     log_in.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -29,9 +32,12 @@ HEADERS += \
     about.h \
     admin_dashboard.h \
     campaign.h \
+    change_information.h \
     create_account.h \
     donate_blood.h \
     donor_request.h \
+    edit_donor.h \
+    edit_patient.h \
     log_in.h \
     mainwindow.h \
     my_details.h \
@@ -45,9 +51,12 @@ FORMS += \
     about.ui \
     admin_dashboard.ui \
     campaign.ui \
+    change_information.ui \
     create_account.ui \
     donate_blood.ui \
     donor_request.ui \
+    edit_donor.ui \
+    edit_patient.ui \
     log_in.ui \
     mainwindow.ui \
     my_details.ui \

@@ -87,19 +87,19 @@ void create_account::on_register_2_clicked()
         else
         {
                  ui->email->setStyleSheet("border: 1px solid rgb(144, 10, 18) ");
-                QMessageBox::information(this, "Error", "Please Enter valid Email.");
+                QMessageBox::critical(this, "Error", "Please Enter valid Email.");
 
         }
     }
         else
         {
             ui->password->setStyleSheet("border: 1px solid rgb(144, 10, 18)");
-            QMessageBox::information(this, "Error", "Password must be at least 8 character long.");
+            QMessageBox::critical(this, "Error", "Password must be at least 8 character long.");
         }
     }
 
         else {
-            QMessageBox::information(this, "Error", "Fill in all the input fields to create account.");
+            QMessageBox::critical(this, "Error", "Fill in all the input fields to create account.");
         }
         }
     }

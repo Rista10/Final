@@ -10,7 +10,11 @@ log_in::log_in(QWidget *parent) :
     ui(new Ui::log_in)
 {
     ui->setupUi(this);
+    QIcon email ("C:/Users/user/Downloads/profile.png");
+    QIcon password ("C:/Users/user/Downloads/lockk.png");
 
+    ui->email->addAction(email,QLineEdit::LeadingPosition);
+    ui->password->addAction(password,QLineEdit::LeadingPosition);
 }
 
 log_in::~log_in()

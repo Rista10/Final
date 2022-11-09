@@ -6,6 +6,7 @@
 #include "admin_dashboard.h"
 #include "user_details.h"
 #include "patient_requests.h"
+#include "edit_donor.h"
 
 donor_request::donor_request(QWidget *parent) :
     QDialog(parent),
@@ -84,5 +85,14 @@ void donor_request::on_home_clicked()
     this->close();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
+}
+
+
+void donor_request::on_pushButton_clicked()
+{
+    edit_donor ed;
+    ed.setModal(true);
+    hide();
+    ed.exec();
 }
 

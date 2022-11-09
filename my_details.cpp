@@ -7,6 +7,7 @@
 #include "request_blood.h"
 #include "userdashboard.h"
 #include "log_in.h"
+#include "change_information.h"
 extern int id;
 
 my_details::my_details(QWidget *parent) :
@@ -101,5 +102,14 @@ void my_details::on_home_clicked()
     this->close();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
+}
+
+
+void my_details::on_pushButton_2_clicked()
+{
+    this->close();
+    change_information ci ;
+    ci.setModal(true);
+    ci.exec();
 }
 

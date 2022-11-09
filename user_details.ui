@@ -637,6 +637,12 @@ border-width : 1.2px;
 border-style:inset;
 </string>
    </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
   </widget>
   <zorder>label_4</zorder>
   <zorder>label_2</zorder>
