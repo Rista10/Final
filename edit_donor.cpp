@@ -7,6 +7,7 @@
 #include "user_details.h"
 #include "patient_requests.h"
 #include "edit_donor.h"
+#include "donor_request.h"
 
 
 edit_donor::edit_donor(QWidget *parent) :
@@ -69,6 +70,10 @@ void edit_donor::on_pushButton_clicked()
         if(qry1.exec())
         {
               QMessageBox :: critical(this, tr("Deleted"), tr("Deleted"));
+              donor_request dr;
+              dr.setModal(true);
+              hide();
+              dr.exec();
 
         }
 

@@ -12,6 +12,8 @@ donor_request::donor_request(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::donor_request)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
@@ -26,6 +28,9 @@ donor_request::donor_request(QWidget *parent) :
         ui->tableView->setModel(modal);
         qDebug()<<(modal->rowCount());
     }
+    QIcon search (":/Images/search.jpg");
+
+    ui->search->addAction(search,QLineEdit::LeadingPosition);
 }
 
 donor_request::~donor_request()
@@ -94,5 +99,25 @@ void donor_request::on_pushButton_clicked()
     ed.setModal(true);
     hide();
     ed.exec();
+}
+
+
+void donor_request::on_search_textChanged(const QString &arg1)
+{
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
+    if(db.open())
+    {
+        QString search=ui->search->text();
+        QSqlQueryModel *modal =new QSqlQueryModel();
+
+        QSqlQuery * qry=new QSqlQuery();
+        qry->prepare("select * from donor_details where donor_name like '"+search+"%"+"'");
+        qry->bindValue(":search", search);
+        qry->exec();
+        modal->setQuery(*qry);
+        ui->tableView->setModel(modal);
+        qDebug()<<(modal->rowCount());
+    }
 }
 

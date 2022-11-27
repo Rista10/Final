@@ -642,9 +642,9 @@ border-radius:5px;</string>
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>170</y>
+     <y>209</y>
      <width>777</width>
-     <height>461</height>
+     <height>431</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -661,25 +661,56 @@ border-style:inset;
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLineEdit" name="search">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>132</y>
-     <width>81</width>
-     <height>31</height>
+     <x>170</x>
+     <y>148</y>
+     <width>461</width>
+     <height>38</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <family>Andale Mono</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F1EEEE;;
+color:grey;
+border-radius:15px;
+font-family:Andale Mono;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>   Search</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>148</y>
+     <width>101</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(144, 10, 18);
 color: rgb(255, 255, 255);
-border-radius:3px;</string>
+border-radius:10px;</string>
    </property>
    <property name="text">
     <string>Edit</string>
@@ -714,6 +745,7 @@ border-radius:3px;</string>
   <zorder>label_28</zorder>
   <zorder>label_29</zorder>
   <zorder>tableView</zorder>
+  <zorder>search</zorder>
   <zorder>pushButton</zorder>
  </widget>
  <resources/>

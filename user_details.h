@@ -31,6 +31,8 @@ private slots:
 
     void on_home_clicked();
 
+    void on_search_textChanged(const QString &arg1);
+
 private:
     Ui::user_details *ui;
 };

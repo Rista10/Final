@@ -11,6 +11,9 @@ donate_blood::donate_blood(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::donate_blood)
 {
+
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

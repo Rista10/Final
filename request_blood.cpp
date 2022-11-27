@@ -11,6 +11,8 @@ request_blood::request_blood(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::request_blood)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

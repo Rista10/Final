@@ -14,6 +14,8 @@ my_details::my_details(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::my_details)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");

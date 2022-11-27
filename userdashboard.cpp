@@ -11,6 +11,8 @@ userDashboard::userDashboard(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::userDashboard)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

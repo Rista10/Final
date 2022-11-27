@@ -10,6 +10,8 @@ user_details::user_details(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::user_details)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
@@ -24,6 +26,9 @@ user_details::user_details(QWidget *parent) :
         ui->tableView->setModel(modal);
         qDebug()<<(modal->rowCount());
     }
+    QIcon search (":/Images/search.jpg");
+
+    ui->search->addAction(search,QLineEdit::LeadingPosition);
 }
 
 user_details::~user_details()
@@ -76,5 +81,25 @@ void user_details::on_home_clicked()
     this->close();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
+}
+
+
+void user_details::on_search_textChanged(const QString &arg1)
+{
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
+    if(db.open())
+    {
+        QString search=ui->search->text();
+        QSqlQueryModel *modal =new QSqlQueryModel();
+
+        QSqlQuery * qry=new QSqlQuery();
+        qry->prepare("select * from user_details where name like '"+search+"%"+"'");
+        qry->bindValue(":search", search);
+        qry->exec();
+        modal->setQuery(*qry);
+        ui->tableView->setModel(modal);
+        qDebug()<<(modal->rowCount());
+    }
 }
 

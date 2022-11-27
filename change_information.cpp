@@ -1,11 +1,14 @@
 #include "change_information.h"
 #include "ui_change_information.h"
 extern int id;
+#include "my_details.h"
 
 change_information::change_information(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::change_information)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
@@ -65,6 +68,10 @@ void change_information::on_pushButton_2_clicked()
                 if(qry1.exec())
                 {
                        QMessageBox::information(this,"Information","Your changes are saved");
+                       my_details m1;
+                       m1.setModal(true);
+                       hide();
+                       m1.exec();
                 }
                 else
                 {

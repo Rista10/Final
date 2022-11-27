@@ -32,5 +32,6 @@
         <file>Images/back_arrow.png</file>
         <file>Images/donateBlood.png</file>
         <file>Images/blood-donation2.gif</file>
+        <file>Images/search.jpg</file>
     </qresource>
 </RCC>

@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     about.cpp \
     admin_dashboard.cpp \
+    camaign_admin.cpp \
     campaign.cpp \
     change_information.cpp \
     create_account.cpp \
@@ -18,6 +19,8 @@ SOURCES += \
     donor_request.cpp \
     edit_donor.cpp \
     edit_patient.cpp \
+    emergencyrequest_admin.cpp \
+    emergencyrequest_patient.cpp \
     log_in.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -31,6 +34,7 @@ SOURCES += \
 HEADERS += \
     about.h \
     admin_dashboard.h \
+    camaign_admin.h \
     campaign.h \
     change_information.h \
     create_account.h \
@@ -38,6 +42,8 @@ HEADERS += \
     donor_request.h \
     edit_donor.h \
     edit_patient.h \
+    emergencyrequest_admin.h \
+    emergencyrequest_patient.h \
     log_in.h \
     mainwindow.h \
     my_details.h \
@@ -50,6 +56,7 @@ HEADERS += \
 FORMS += \
     about.ui \
     admin_dashboard.ui \
+    camaign_admin.ui \
     campaign.ui \
     change_information.ui \
     create_account.ui \
@@ -57,6 +64,8 @@ FORMS += \
     donor_request.ui \
     edit_donor.ui \
     edit_patient.ui \
+    emergencyrequest_admin.ui \
+    emergencyrequest_patient.ui \
     log_in.ui \
     mainwindow.ui \
     my_details.ui \

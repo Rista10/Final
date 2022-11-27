@@ -6,6 +6,8 @@ create_account::create_account(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::create_account)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

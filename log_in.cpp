@@ -9,6 +9,8 @@ log_in::log_in(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::log_in)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     QIcon email ("C:/Users/user/Downloads/profile.png");
     QIcon password ("C:/Users/user/Downloads/lockk.png");

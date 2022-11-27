@@ -14,6 +14,8 @@ edit_patient::edit_patient(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::edit_patient)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
@@ -69,6 +71,10 @@ void edit_patient::on_pushButton_clicked()
         if(qry.exec())
         {
               QMessageBox :: critical(this, tr("Deleted"), tr("Deleted"));
+              patient_requests pr;
+              pr.setModal(true);
+              hide();
+              pr.exec();
 
         }
 

@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>720</height>
+    <width>1270</width>
+    <height>700</height>
    </rect>
   </property>
-  <property name="minimumSize">
+  <property name="maximumSize">
    <size>
-    <width>1280</width>
-    <height>720</height>
+    <width>16777215</width>
+    <height>16777215</height>
    </size>
   </property>
   <property name="font">
@@ -31,6 +31,9 @@ background-color:rgb(255, 255, 255);
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
@@ -130,8 +133,8 @@ background-color:white;
       <rect>
        <x>80</x>
        <y>225</y>
-       <width>791</width>
-       <height>251</height>
+       <width>531</width>
+       <height>191</height>
       </rect>
      </property>
      <property name="font">
@@ -358,12 +361,11 @@ border-radius:0.5px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1280</width>
+     <width>1270</width>
      <height>25</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

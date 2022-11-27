@@ -9,6 +9,10 @@ about::about(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::about)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
+
+
     ui->setupUi(this);
 }
 

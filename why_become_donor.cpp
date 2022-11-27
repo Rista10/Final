@@ -9,6 +9,8 @@ why_become_donor::why_become_donor(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::why_become_donor)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 

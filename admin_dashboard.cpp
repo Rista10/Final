@@ -6,11 +6,14 @@
 #include "user_details.h"
 #include "donor_request.h"
 #include "patient_requests.h"
+#include "campaign.h"
 
 admin_dashboard::admin_dashboard(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::admin_dashboard)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
 }
 
@@ -71,4 +74,7 @@ void admin_dashboard::on_home_clicked()
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
 }
+
+
+
 

@@ -12,6 +12,8 @@ patient_requests::patient_requests(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::patient_requests)
 {
+    setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
+    setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
@@ -26,6 +28,10 @@ patient_requests::patient_requests(QWidget *parent) :
         ui->tableView->setModel(modal);
         qDebug()<<(modal->rowCount());
     }
+
+    QIcon search (":/Images/search.jpg");
+
+    ui->search->addAction(search,QLineEdit::LeadingPosition);
 }
 
 patient_requests::~patient_requests()
@@ -95,4 +101,26 @@ void patient_requests::on_pushButton_clicked()
     hide();
     ep.exec();
 }
+
+
+
+void patient_requests::on_search_textChanged(const QString &arg1)
+{
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
+    if(db.open())
+    {
+        QString search=ui->search->text();
+        QSqlQueryModel *modal =new QSqlQueryModel();
+
+        QSqlQuery * qry=new QSqlQuery();
+        qry->prepare("select * from patient_details where contact_person_name like '"+search+"%"+"'");
+        qry->bindValue(":search", search);
+        qry->exec();
+        modal->setQuery(*qry);
+        ui->tableView->setModel(modal);
+        qDebug()<<(modal->rowCount());
+    }
+}
+
 

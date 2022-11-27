@@ -625,9 +625,9 @@ Details</string>
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>160</y>
+     <y>209</y>
      <width>777</width>
-     <height>471</height>
+     <height>421</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -643,6 +643,37 @@ border-style:inset;
    <attribute name="verticalHeaderHighlightSections">
     <bool>false</bool>
    </attribute>
+  </widget>
+  <widget class="QLineEdit" name="search">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>150</y>
+     <width>461</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Andale Mono</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F1EEEE;;
+color:grey;
+border-radius:15px;
+font-family:Andale Mono;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>   Search</string>
+   </property>
   </widget>
   <zorder>label_4</zorder>
   <zorder>label_2</zorder>
@@ -673,6 +704,7 @@ border-style:inset;
   <zorder>label_29</zorder>
   <zorder>label_32</zorder>
   <zorder>tableView</zorder>
+  <zorder>search</zorder>
  </widget>
  <resources/>
  <connections/>
