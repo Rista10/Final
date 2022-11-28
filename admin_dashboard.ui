@@ -198,35 +198,6 @@ border-radius:5px;</string>
     <string>AB+</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_20">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>580</y>
-     <width>253</width>
-     <height>58</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{border-radius:5px;
-background-color: #E6E6E6;}
-
-#label_20::hover
-{
-
-	color: rgb(144, 10, 18);
-}</string>
-   </property>
-   <property name="text">
-    <string>      View Details</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_25">
    <property name="geometry">
     <rect>
@@ -265,8 +236,8 @@ background-color: #E6E6E6;}
     <string notr="true"/>
    </property>
    <property name="text">
-    <string>Blood donated
-today</string>
+    <string>Emergency
+request</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
@@ -721,35 +692,6 @@ border-image: url(:/img/Images/logo1.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_22">
-   <property name="geometry">
-    <rect>
-     <x>700</x>
-     <y>580</y>
-     <width>253</width>
-     <height>58</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">#label_22{border-radius:5px;
-background-color: #E6E6E6;}
-
-#label_22::hover
-{
-
-	color: rgb(144, 10, 18);
-}</string>
-   </property>
-   <property name="text">
-    <string>      View Details</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_41">
    <property name="geometry">
     <rect>
@@ -853,19 +795,6 @@ Requests</string>
    </property>
    <property name="text">
     <string/>
-   </property>
-  </widget>
-  <widget class="Line" name="line_5">
-   <property name="geometry">
-    <rect>
-     <x>138</x>
-     <y>160</y>
-     <width>845</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_38">
@@ -1145,35 +1074,6 @@ border-radius:5px;</string>
    </property>
    <property name="text">
     <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_21">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>580</y>
-     <width>253</width>
-     <height>58</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{border-radius:5px;
-background-color: #E6E6E6;}
-
-#label_21::hover
-{
-
-	color: rgb(144, 10, 18);
-}</string>
-   </property>
-   <property name="text">
-    <string>      View Details</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_40">
@@ -1486,6 +1386,106 @@ border-radius:5px;</string>
     <string>1</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>580</y>
+     <width>253</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton{border-radius:5px;
+background-color: #E6E6E6;}
+
+#pushButton::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>      View Details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>580</y>
+     <width>253</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{border-radius:5px;
+background-color: #E6E6E6;}
+
+#label_21::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>      View Details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>580</y>
+     <width>253</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_3{border-radius:5px;
+background-color: #E6E6E6;}
+
+#pushButton_3::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>      View Details</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>155</y>
+     <width>845</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_13</zorder>
@@ -1503,7 +1503,6 @@ border-radius:5px;</string>
   <zorder>label_41</zorder>
   <zorder>label_24</zorder>
   <zorder>label_27</zorder>
-  <zorder>line_5</zorder>
   <zorder>label_17</zorder>
   <zorder>label_16</zorder>
   <zorder>label_2</zorder>
@@ -1533,12 +1532,9 @@ border-radius:5px;</string>
   <zorder>my_details_3</zorder>
   <zorder>label_52</zorder>
   <zorder>label_49</zorder>
-  <zorder>label_20</zorder>
   <zorder>label_50</zorder>
   <zorder>label_53</zorder>
-  <zorder>label_21</zorder>
   <zorder>label_54</zorder>
-  <zorder>label_22</zorder>
   <zorder>label_11</zorder>
   <zorder>label_37</zorder>
   <zorder>label_38</zorder>
@@ -1554,6 +1550,10 @@ border-radius:5px;</string>
   <zorder>label_28</zorder>
   <zorder>label_51</zorder>
   <zorder>a_positive</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>line_5</zorder>
  </widget>
  <resources/>
  <connections/>

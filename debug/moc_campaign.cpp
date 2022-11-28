@@ -28,38 +28,38 @@ namespace {
 struct qt_meta_stringdata_campaign_t {
     uint offsetsAndSizes[18];
     char stringdata0[9];
-    char stringdata1[22];
+    char stringdata1[24];
     char stringdata2[1];
     char stringdata3[24];
-    char stringdata4[24];
-    char stringdata5[18];
-    char stringdata6[19];
-    char stringdata7[17];
-    char stringdata8[19];
+    char stringdata4[18];
+    char stringdata5[19];
+    char stringdata6[17];
+    char stringdata7[19];
+    char stringdata8[24];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_campaign_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_campaign_t qt_meta_stringdata_campaign = {
     {
         QT_MOC_LITERAL(0, 8),  // "campaign"
-        QT_MOC_LITERAL(9, 21),  // "on_my_details_clicked"
-        QT_MOC_LITERAL(31, 0),  // ""
-        QT_MOC_LITERAL(32, 23),  // "on_my_details_2_clicked"
-        QT_MOC_LITERAL(56, 23),  // "on_my_details_3_clicked"
-        QT_MOC_LITERAL(80, 17),  // "on_home_2_clicked"
-        QT_MOC_LITERAL(98, 18),  // "on_about_2_clicked"
-        QT_MOC_LITERAL(117, 16),  // "on_why_2_clicked"
-        QT_MOC_LITERAL(134, 18)   // "on_login_2_clicked"
+        QT_MOC_LITERAL(9, 23),  // "on_my_details_2_clicked"
+        QT_MOC_LITERAL(33, 0),  // ""
+        QT_MOC_LITERAL(34, 23),  // "on_my_details_3_clicked"
+        QT_MOC_LITERAL(58, 17),  // "on_home_2_clicked"
+        QT_MOC_LITERAL(76, 18),  // "on_about_2_clicked"
+        QT_MOC_LITERAL(95, 16),  // "on_why_2_clicked"
+        QT_MOC_LITERAL(112, 18),  // "on_login_2_clicked"
+        QT_MOC_LITERAL(131, 23)   // "on_my_details_4_clicked"
     },
     "campaign",
-    "on_my_details_clicked",
-    "",
     "on_my_details_2_clicked",
+    "",
     "on_my_details_3_clicked",
     "on_home_2_clicked",
     "on_about_2_clicked",
     "on_why_2_clicked",
-    "on_login_2_clicked"
+    "on_login_2_clicked",
+    "on_my_details_4_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -107,8 +107,6 @@ Q_CONSTINIT const QMetaObject campaign::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_campaign_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<campaign, std::true_type>,
-        // method 'on_my_details_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_my_details_2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_my_details_3_clicked'
@@ -120,6 +118,8 @@ Q_CONSTINIT const QMetaObject campaign::staticMetaObject = { {
         // method 'on_why_2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_login_2_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_my_details_4_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -131,13 +131,13 @@ void campaign::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         auto *_t = static_cast<campaign *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_my_details_clicked(); break;
-        case 1: _t->on_my_details_2_clicked(); break;
-        case 2: _t->on_my_details_3_clicked(); break;
-        case 3: _t->on_home_2_clicked(); break;
-        case 4: _t->on_about_2_clicked(); break;
-        case 5: _t->on_why_2_clicked(); break;
-        case 6: _t->on_login_2_clicked(); break;
+        case 0: _t->on_my_details_2_clicked(); break;
+        case 1: _t->on_my_details_3_clicked(); break;
+        case 2: _t->on_home_2_clicked(); break;
+        case 3: _t->on_about_2_clicked(); break;
+        case 4: _t->on_why_2_clicked(); break;
+        case 5: _t->on_login_2_clicked(); break;
+        case 6: _t->on_my_details_4_clicked(); break;
         default: ;
         }
     }

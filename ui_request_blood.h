@@ -66,6 +66,7 @@ public:
     QLabel *label_33;
     QLabel *label_34;
     QLineEdit *required_unit;
+    QPushButton *register_3;
 
     void setupUi(QDialog *request_blood)
     {
@@ -234,6 +235,9 @@ public:
         label_3 = new QLabel(request_blood);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(138, 125, 845, 542));
+        QFont font2;
+        font2.setPointSize(8);
+        label_3->setFont(font2);
         label_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;"));
         label_4 = new QLabel(request_blood);
@@ -286,20 +290,23 @@ public:
         label_15 = new QLabel(request_blood);
         label_15->setObjectName("label_15");
         label_15->setGeometry(QRect(570, 150, 231, 41));
-        QFont font2;
-        font2.setPointSize(18);
-        font2.setBold(true);
-        label_15->setFont(font2);
+        QFont font3;
+        font3.setPointSize(18);
+        font3.setBold(true);
+        label_15->setFont(font3);
         label_15->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         register_2 = new QPushButton(request_blood);
         register_2->setObjectName("register_2");
-        register_2->setGeometry(QRect(570, 560, 371, 50));
-        register_2->setFont(font);
+        register_2->setGeometry(QRect(570, 560, 181, 61));
+        QFont font4;
+        font4.setPointSize(10);
+        font4.setBold(true);
+        register_2->setFont(font4);
         register_2->setCursor(QCursor(Qt::PointingHandCursor));
         register_2->setStyleSheet(QString::fromUtf8("#register_2\n"
 "{\n"
 "background-color:rgb(144, 10, 18);\n"
-"border-radius:20px;\n"
+"border-radius:8px;\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
@@ -416,6 +423,23 @@ public:
 "border-radius:5px;\n"
 "background-color:#F1EEEE;\n"
 "}"));
+        register_3 = new QPushButton(request_blood);
+        register_3->setObjectName("register_3");
+        register_3->setGeometry(QRect(760, 560, 181, 61));
+        register_3->setFont(font4);
+        register_3->setCursor(QCursor(Qt::PointingHandCursor));
+        register_3->setStyleSheet(QString::fromUtf8("#register_3\n"
+"{\n"
+"background-color:rgb(144, 10, 18);\n"
+"border-radius:8px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#register_3::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label->raise();
         label_7->raise();
         home->raise();
@@ -459,6 +483,7 @@ public:
         label_33->raise();
         label_34->raise();
         required_unit->raise();
+        register_3->raise();
 
         retranslateUi(request_blood);
 
@@ -517,6 +542,7 @@ public:
         label_34->setText(QString());
         required_unit->setText(QString());
         required_unit->setPlaceholderText(QCoreApplication::translate("request_blood", "  Required unit", nullptr));
+        register_3->setText(QCoreApplication::translate("request_blood", "Emergency request", nullptr));
     } // retranslateUi
 
 };

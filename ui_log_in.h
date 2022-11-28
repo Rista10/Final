@@ -133,9 +133,9 @@ public:
 "	border-image: url(:/Images/back_arrow.png);\n"
 "}\n"
 ""));
+        label_2->raise();
         label_5->raise();
         label->raise();
-        label_2->raise();
         label_3->raise();
         label_4->raise();
         signin->raise();

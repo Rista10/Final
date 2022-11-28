@@ -1,12 +1,13 @@
 #include "campaign.h"
 #include "ui_campaign.h"
-#include <user_details.h>
-#include <donor_request.h>
-#include <patient_requests.h>
-#include <mainwindow.h>
-#include <about.h>
-#include <why_become_donor.h>
-#include <userdashboard.h>
+#include "donate_blood.h"
+#include "request_blood.h"
+#include "my_details.h"
+#include "mainwindow.h"
+#include "about.h"
+#include "why_become_donor.h"
+#include "user_details.h"
+#include "userdashboard.h"
 
 campaign::campaign(QWidget *parent) :
     QDialog(parent),
@@ -15,6 +16,31 @@ campaign::campaign(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
     setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+
+
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
+
+    if(db.open())
+    {
+
+        QSqlQuery qry;
+
+        qry.prepare("select * from camapaign where status='upcoming'");
+
+        if(qry.exec())
+        {
+            while(qry.next())
+            {
+                ui->motive->setText(qry.value(4).toString());
+                ui->date->setText(qry.value(1).toString());
+                ui->time->setText(qry.value(2).toString());
+                ui->location->setText(qry.value(3).toString());
+
+            }
+        }
+
+    }
 }
 
 campaign::~campaign()
@@ -22,30 +48,25 @@ campaign::~campaign()
     delete ui;
 }
 
-void campaign::on_my_details_clicked()
-{
-    user_details u1;
-    u1.setModal(true);
-    hide();
-    u1.exec();
-}
 
 
 void campaign::on_my_details_2_clicked()
 {
-    donor_request d1;
-    d1.setModal(true);
+
+    my_details m1;
+    m1.setModal(true);
     hide();
-    d1.exec();
+    m1.exec();
 }
 
 
 void campaign::on_my_details_3_clicked()
 {
-    patient_requests r1;
-    r1.setModal(true);
+    request_blood rq;
+    rq.setModal(true);
     hide();
-    r1.exec();
+    rq.exec();
+
 }
 
 
@@ -82,5 +103,14 @@ void campaign::on_login_2_clicked()
     ud.setModal(true);
     hide();
     ud.exec();
+}
+
+
+void campaign::on_my_details_4_clicked()
+{
+    donate_blood di;
+    di.setModal(true);
+    hide();
+    di.exec();
 }
 

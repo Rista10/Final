@@ -33,5 +33,7 @@
         <file>Images/donateBlood.png</file>
         <file>Images/blood-donation2.gif</file>
         <file>Images/search.jpg</file>
+        <file>Images/campaign.png</file>
+        <file>Images/emergency.png</file>
     </qresource>
 </RCC>

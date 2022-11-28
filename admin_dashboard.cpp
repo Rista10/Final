@@ -6,7 +6,8 @@
 #include "user_details.h"
 #include "donor_request.h"
 #include "patient_requests.h"
-#include "campaign.h"
+#include "camaign_admin.h"
+#include "emergencyrequest_admin.h"
 
 admin_dashboard::admin_dashboard(QWidget *parent) :
     QDialog(parent),
@@ -77,4 +78,31 @@ void admin_dashboard::on_home_clicked()
 
 
 
+
+
+void admin_dashboard::on_pushButton_clicked()
+{
+    emergencyRequest_admin a;
+    a.setModal(true);
+    hide();
+    a.exec();
+}
+
+
+void admin_dashboard::on_login_clicked()
+{
+    user_details u1;
+    u1.setModal(true);
+    hide();
+    u1.exec();
+}
+
+
+void admin_dashboard::on_pushButton_3_clicked()
+{
+    camaign_admin ca;
+    ca.setModal(true);
+    hide();
+    ca.exec();
+}
 

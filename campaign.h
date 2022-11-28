@@ -2,6 +2,10 @@
 #define CAMPAIGN_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
+#include <QMessageBox>
 
 namespace Ui {
 class campaign;
@@ -16,7 +20,6 @@ public:
     ~campaign();
 
 private slots:
-    void on_my_details_clicked();
 
     void on_my_details_2_clicked();
 
@@ -29,6 +32,10 @@ private slots:
     void on_why_2_clicked();
 
     void on_login_2_clicked();
+
+
+
+    void on_my_details_4_clicked();
 
 private:
     Ui::campaign *ui;

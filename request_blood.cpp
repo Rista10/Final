@@ -131,3 +131,52 @@ void request_blood::on_home_clicked()
     mainWindow->show();
 }
 
+
+void request_blood::on_register_3_clicked()
+{
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("C:/Users/user/OneDrive/Documents/Final/Databases/final.db");
+
+    if(db.open())
+    {
+        QString contact_person_name=ui->contact_person->text();
+        QString patient_name=ui->patient_name->text();
+        QString age=ui->age->text();
+        QString blood_group=ui->blood_group->text();
+        QString gender=ui->gender->text();
+        QString phone_number=ui->phone_number->text();
+        QString required_units=ui->required_unit->text();
+        QString detail=ui->detail->text();
+        QString status="emergency";
+
+        if(contact_person_name != "" && patient_name != "" && age != "" && blood_group != "" && gender != "" && phone_number != "" && required_units != "" && detail != ""){
+
+        QSqlQuery qry;
+        qry.prepare("INSERT INTO patient_details(contact_person_name,patient_name,age,blood_group,gender,phone_number,required_units,detail_about_case,status) "
+                    "VALUES('"+contact_person_name+"', '"+patient_name+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+phone_number+"', '"+required_units+"', '"+detail+"', '"+status+"')");
+        qry.bindValue(":contact_person_name", contact_person_name);
+        qry.bindValue(":patient_name", patient_name);
+        qry.bindValue(":age", age);
+        qry.bindValue(":blood_group", blood_group);
+        qry.bindValue(":gender", gender);
+        qry.bindValue(":phone_number", phone_number);
+        qry.bindValue(":required_units", required_units);
+        qry.bindValue(":detail_about_case", detail);
+        qry.bindValue(":status", status);
+
+        if(qry.exec())
+        {
+               QMessageBox::information(this,"Information","You will be notified soon about blood");
+        }
+        }
+        else
+        {
+               QMessageBox::information(this, "Error", "Fill in all the input fields .");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this,"Error"," Database not connected");
+    }
+}
+

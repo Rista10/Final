@@ -112,19 +112,6 @@ color: rgb(144, 10, 18);
     <string>About us</string>
    </property>
   </widget>
-  <widget class="Line" name="line_6">
-   <property name="geometry">
-    <rect>
-     <x>25</x>
-     <y>440</y>
-     <width>89</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
@@ -812,6 +799,134 @@ border-radius:5px;}
 Blood</string>
    </property>
   </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>211</y>
+     <width>411</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(31, 31, 31);
+background-color: rgb(255, 255, 255);
+border-width : 1.2px;
+border-style:inset;
+</string>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="search">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>150</y>
+     <width>411</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Andale Mono</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F1EEEE;;
+color:grey;
+border-radius:15px;
+font-family:Andale Mono;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>   Search</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>560</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(144, 10, 18);</string>
+   </property>
+   <property name="text">
+    <string>Ready to Donate ?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>560</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{background-color: rgb(144, 10, 18);
+color: rgb(255, 255, 255);
+border-radius:5px;}
+
+#pushButton:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Yes</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>150</y>
+     <width>321</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Images/emergency.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>label_6</zorder>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
@@ -819,7 +934,6 @@ Blood</string>
   <zorder>lineEdit_5</zorder>
   <zorder>label_3</zorder>
   <zorder>about</zorder>
-  <zorder>line_6</zorder>
   <zorder>label_5</zorder>
   <zorder>my_details_2</zorder>
   <zorder>label_26</zorder>
@@ -850,6 +964,11 @@ Blood</string>
   <zorder>line_2</zorder>
   <zorder>calendarWidget</zorder>
   <zorder>my_details_3</zorder>
+  <zorder>tableView</zorder>
+  <zorder>search</zorder>
+  <zorder>label_19</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label_4</zorder>
  </widget>
  <resources/>
  <connections/>

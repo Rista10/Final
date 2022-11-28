@@ -14,8 +14,11 @@
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 
 QT_BEGIN_NAMESPACE
 
@@ -50,6 +53,8 @@ public:
     QLabel *label_28;
     QLabel *label_27;
     QLabel *label;
+    QTableView *tableView;
+    QLineEdit *search;
 
     void setupUi(QDialog *emergencyRequest_admin)
     {
@@ -275,6 +280,29 @@ public:
         label->setObjectName("label");
         label->setGeometry(QRect(0, 0, 1280, 99));
         label->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        tableView = new QTableView(emergencyRequest_admin);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(170, 219, 777, 421));
+        tableView->setStyleSheet(QString::fromUtf8("border-color: rgb(31, 31, 31);\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-width : 1.2px;\n"
+"border-style:inset;\n"
+""));
+        tableView->verticalHeader()->setVisible(false);
+        tableView->verticalHeader()->setHighlightSections(false);
+        tableView->verticalHeader()->setProperty("showSortIndicator", QVariant(false));
+        search = new QLineEdit(emergencyRequest_admin);
+        search->setObjectName("search");
+        search->setGeometry(QRect(170, 158, 461, 38));
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Andale Mono")});
+        font2.setPointSize(11);
+        search->setFont(font2);
+        search->setCursor(QCursor(Qt::IBeamCursor));
+        search->setStyleSheet(QString::fromUtf8("background-color: #F1EEEE;;\n"
+"color:grey;\n"
+"border-radius:15px;\n"
+"font-family:Andale Mono;"));
         label_4->raise();
         label_24->raise();
         label_25->raise();
@@ -303,6 +331,8 @@ public:
         label_31->raise();
         line->raise();
         why->raise();
+        tableView->raise();
+        search->raise();
 
         retranslateUi(emergencyRequest_admin);
 
@@ -338,6 +368,8 @@ public:
         label_28->setText(QString());
         label_27->setText(QString());
         label->setText(QString());
+        search->setText(QString());
+        search->setPlaceholderText(QCoreApplication::translate("emergencyRequest_admin", "   Search", nullptr));
     } // retranslateUi
 
 };

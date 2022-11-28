@@ -14,9 +14,11 @@
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 
 QT_BEGIN_NAMESPACE
 
@@ -27,7 +29,6 @@ public:
     QLineEdit *lineEdit_5;
     QLabel *label_3;
     QPushButton *about;
-    QFrame *line_6;
     QLabel *label_5;
     QPushButton *my_details_2;
     QLabel *label_26;
@@ -61,6 +62,11 @@ public:
     QFrame *line_2;
     QCalendarWidget *calendarWidget;
     QPushButton *my_details_3;
+    QTableView *tableView;
+    QLineEdit *search;
+    QLabel *label_19;
+    QPushButton *pushButton;
+    QLabel *label_4;
 
     void setupUi(QDialog *emergencyRequest_patient)
     {
@@ -109,11 +115,6 @@ public:
 "{border-bottom :3px solid rgb(144, 10, 18);\n"
 "color: rgb(144, 10, 18);\n"
 "}"));
-        line_6 = new QFrame(emergencyRequest_patient);
-        line_6->setObjectName("line_6");
-        line_6->setGeometry(QRect(25, 440, 89, 3));
-        line_6->setFrameShape(QFrame::HLine);
-        line_6->setFrameShadow(QFrame::Sunken);
         label_5 = new QLabel(emergencyRequest_patient);
         label_5->setObjectName("label_5");
         label_5->setGeometry(QRect(40, 130, 63, 61));
@@ -354,6 +355,55 @@ public:
 "	color: rgb(144, 10, 18);\n"
 "}\n"
 ""));
+        tableView = new QTableView(emergencyRequest_patient);
+        tableView->setObjectName("tableView");
+        tableView->setGeometry(QRect(180, 211, 411, 311));
+        tableView->setStyleSheet(QString::fromUtf8("border-color: rgb(31, 31, 31);\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-width : 1.2px;\n"
+"border-style:inset;\n"
+""));
+        tableView->verticalHeader()->setVisible(false);
+        tableView->verticalHeader()->setHighlightSections(false);
+        tableView->verticalHeader()->setProperty("showSortIndicator", QVariant(false));
+        search = new QLineEdit(emergencyRequest_patient);
+        search->setObjectName("search");
+        search->setGeometry(QRect(180, 150, 411, 38));
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Andale Mono")});
+        font2.setPointSize(11);
+        search->setFont(font2);
+        search->setCursor(QCursor(Qt::IBeamCursor));
+        search->setStyleSheet(QString::fromUtf8("background-color: #F1EEEE;;\n"
+"color:grey;\n"
+"border-radius:15px;\n"
+"font-family:Andale Mono;"));
+        label_19 = new QLabel(emergencyRequest_patient);
+        label_19->setObjectName("label_19");
+        label_19->setGeometry(QRect(190, 560, 301, 31));
+        QFont font3;
+        font3.setPointSize(13);
+        font3.setBold(true);
+        label_19->setFont(font3);
+        label_19->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(144, 10, 18);"));
+        pushButton = new QPushButton(emergencyRequest_patient);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(500, 560, 91, 31));
+        pushButton->setFont(font1);
+        pushButton->setCursor(QCursor(Qt::OpenHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("*{background-color: rgb(144, 10, 18);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius:5px;}\n"
+"\n"
+"#pushButton:hover{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
+        label_4 = new QLabel(emergencyRequest_patient);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(640, 150, 321, 481));
+        label_4->setStyleSheet(QString::fromUtf8("background-image: url(:/Images/emergency.png);"));
         label_6->raise();
         label_2->raise();
         label->raise();
@@ -361,7 +411,6 @@ public:
         lineEdit_5->raise();
         label_3->raise();
         about->raise();
-        line_6->raise();
         label_5->raise();
         my_details_2->raise();
         label_26->raise();
@@ -392,6 +441,11 @@ public:
         line_2->raise();
         calendarWidget->raise();
         my_details_3->raise();
+        tableView->raise();
+        search->raise();
+        label_19->raise();
+        pushButton->raise();
+        label_4->raise();
 
         retranslateUi(emergencyRequest_patient);
 
@@ -438,6 +492,11 @@ public:
         label_29->setText(QString());
         my_details_3->setText(QCoreApplication::translate("emergencyRequest_patient", "Request\n"
 "Blood", nullptr));
+        search->setText(QString());
+        search->setPlaceholderText(QCoreApplication::translate("emergencyRequest_patient", "   Search", nullptr));
+        label_19->setText(QCoreApplication::translate("emergencyRequest_patient", "Ready to Donate ?", nullptr));
+        pushButton->setText(QCoreApplication::translate("emergencyRequest_patient", "Yes", nullptr));
+        label_4->setText(QString());
     } // retranslateUi
 
 };

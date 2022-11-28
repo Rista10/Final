@@ -31,6 +31,12 @@ private slots:
 
     void on_home_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_login_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
     Ui::admin_dashboard *ui;
 };

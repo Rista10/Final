@@ -15,6 +15,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -50,6 +51,23 @@ public:
     QLabel *label_5;
     QLabel *label_26;
     QFrame *line;
+    QLabel *label_8;
+    QLabel *label_21;
+    QFrame *line_5;
+    QLabel *label_18;
+    QLabel *label_19;
+    QLabel *label_20;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_44;
+    QLabel *label_12;
+    QLineEdit *date;
+    QLineEdit *time;
+    QLineEdit *location;
+    QPushButton *Post;
+    QLabel *label_13;
+    QLineEdit *motive;
+    QLabel *label_6;
 
     void setupUi(QDialog *camaign_admin)
     {
@@ -275,6 +293,109 @@ public:
         line->setGeometry(QRect(20, 210, 89, 3));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
+        label_8 = new QLabel(camaign_admin);
+        label_8->setObjectName("label_8");
+        label_8->setGeometry(QRect(170, 230, 521, 141));
+        QFont font2;
+        font2.setPointSize(11);
+        font2.setBold(false);
+        label_8->setFont(font2);
+        label_8->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        label_21 = new QLabel(camaign_admin);
+        label_21->setObjectName("label_21");
+        label_21->setGeometry(QRect(170, 450, 481, 175));
+        label_21->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
+        line_5 = new QFrame(camaign_admin);
+        line_5->setObjectName("line_5");
+        line_5->setGeometry(QRect(138, 160, 845, 3));
+        line_5->setFrameShape(QFrame::HLine);
+        line_5->setFrameShadow(QFrame::Sunken);
+        label_18 = new QLabel(camaign_admin);
+        label_18->setObjectName("label_18");
+        label_18->setGeometry(QRect(160, 133, 211, 20));
+        label_18->setFont(font2);
+        label_18->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        label_19 = new QLabel(camaign_admin);
+        label_19->setObjectName("label_19");
+        label_19->setGeometry(QRect(170, 170, 301, 31));
+        QFont font3;
+        font3.setPointSize(13);
+        font3.setBold(true);
+        label_19->setFont(font3);
+        label_19->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(144, 10, 18);"));
+        label_20 = new QLabel(camaign_admin);
+        label_20->setObjectName("label_20");
+        label_20->setGeometry(QRect(170, 385, 301, 31));
+        label_20->setFont(font3);
+        label_20->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(144, 10, 18);"));
+        label_9 = new QLabel(camaign_admin);
+        label_9->setObjectName("label_9");
+        label_9->setGeometry(QRect(190, 540, 63, 20));
+        QFont font4;
+        font4.setPointSize(10);
+        font4.setBold(true);
+        label_9->setFont(font4);
+        label_10 = new QLabel(camaign_admin);
+        label_10->setObjectName("label_10");
+        label_10->setGeometry(QRect(190, 580, 111, 20));
+        label_10->setFont(font4);
+        label_44 = new QLabel(camaign_admin);
+        label_44->setObjectName("label_44");
+        label_44->setGeometry(QRect(190, 460, 181, 20));
+        label_44->setFont(font4);
+        label_44->setStyleSheet(QString::fromUtf8("color: rgb(144, 10, 18);"));
+        label_12 = new QLabel(camaign_admin);
+        label_12->setObjectName("label_12");
+        label_12->setGeometry(QRect(190, 500, 63, 20));
+        label_12->setFont(font4);
+        date = new QLineEdit(camaign_admin);
+        date->setObjectName("date");
+        date->setGeometry(QRect(270, 500, 151, 20));
+        QFont font5;
+        font5.setPointSize(10);
+        date->setFont(font5);
+        date->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
+        time = new QLineEdit(camaign_admin);
+        time->setObjectName("time");
+        time->setGeometry(QRect(270, 540, 113, 20));
+        time->setFont(font5);
+        time->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
+        location = new QLineEdit(camaign_admin);
+        location->setObjectName("location");
+        location->setGeometry(QRect(270, 580, 241, 20));
+        location->setFont(font5);
+        location->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
+        Post = new QPushButton(camaign_admin);
+        Post->setObjectName("Post");
+        Post->setGeometry(QRect(530, 570, 91, 41));
+        QFont font6;
+        font6.setPointSize(9);
+        font6.setBold(true);
+        Post->setFont(font6);
+        Post->setCursor(QCursor(Qt::PointingHandCursor));
+        Post->setStyleSheet(QString::fromUtf8("*{background-color: rgb(144, 10, 18);\n"
+"	color: rgb(255, 255, 255);\n"
+"border-radius: 10px;\n"
+"}\n"
+"\n"
+"#Post:hover{\n"
+"background-color: rgb(255, 255, 255);\n"
+"	color: rgb(144, 10, 18);}"));
+        label_13 = new QLabel(camaign_admin);
+        label_13->setObjectName("label_13");
+        label_13->setGeometry(QRect(410, 500, 63, 20));
+        label_13->setFont(font4);
+        motive = new QLineEdit(camaign_admin);
+        motive->setObjectName("motive");
+        motive->setGeometry(QRect(410, 530, 211, 20));
+        motive->setFont(font5);
+        motive->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
+        label_6 = new QLabel(camaign_admin);
+        label_6->setObjectName("label_6");
+        label_6->setGeometry(QRect(690, 180, 271, 441));
+        label_6->setStyleSheet(QString::fromUtf8("background-image: url(:/Images/campaign.png);"));
         label_4->raise();
         label->raise();
         label_25->raise();
@@ -303,6 +424,23 @@ public:
         label_28->raise();
         label_5->raise();
         line->raise();
+        label_8->raise();
+        label_21->raise();
+        line_5->raise();
+        label_18->raise();
+        label_19->raise();
+        label_20->raise();
+        label_9->raise();
+        label_10->raise();
+        label_44->raise();
+        label_12->raise();
+        date->raise();
+        time->raise();
+        location->raise();
+        Post->raise();
+        label_13->raise();
+        motive->raise();
+        label_6->raise();
 
         retranslateUi(camaign_admin);
 
@@ -338,6 +476,36 @@ public:
         label_28->setText(QString());
         label_5->setText(QString());
         label_26->setText(QString());
+#if QT_CONFIG(tooltip)
+        label_8->setToolTip(QCoreApplication::translate("camaign_admin", "We need to make sure there is the right blood available for patients throughout the year. To do this we run local and national campaigns to encourage: people to sign up as blood donors and start saving lives existing do nors to continue donating to help us keep blood stocks healthy\n"
+"", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_8->setText(QCoreApplication::translate("camaign_admin", "We need to make sure there is the right blood available for\n"
+"patients throughout the year.To do this we run local \n"
+"and national campaigns to encourage:\n"
+"-people to sign up as blood donors and start saving lives\n"
+"-existing donors to continue donating to help us keep\n"
+"blood stocks healthy\n"
+"", nullptr));
+        label_21->setText(QString());
+        label_18->setText(QCoreApplication::translate("camaign_admin", "Campaign", nullptr));
+        label_19->setText(QCoreApplication::translate("camaign_admin", "Why  Do We Campaign ?", nullptr));
+        label_20->setText(QCoreApplication::translate("camaign_admin", "Upcoming Campaign", nullptr));
+        label_9->setText(QCoreApplication::translate("camaign_admin", "Time:", nullptr));
+        label_10->setText(QCoreApplication::translate("camaign_admin", "Location:", nullptr));
+        label_44->setText(QCoreApplication::translate("camaign_admin", "Post about campaign", nullptr));
+        label_12->setText(QCoreApplication::translate("camaign_admin", "Date:", nullptr));
+        date->setText(QString());
+        date->setPlaceholderText(QCoreApplication::translate("camaign_admin", "Enter date", nullptr));
+        time->setText(QString());
+        time->setPlaceholderText(QCoreApplication::translate("camaign_admin", "Enter time", nullptr));
+        location->setText(QString());
+        location->setPlaceholderText(QCoreApplication::translate("camaign_admin", "Enter location", nullptr));
+        Post->setText(QCoreApplication::translate("camaign_admin", "Post", nullptr));
+        label_13->setText(QCoreApplication::translate("camaign_admin", "Motive:", nullptr));
+        motive->setText(QString());
+        motive->setPlaceholderText(QCoreApplication::translate("camaign_admin", " Enter motive", nullptr));
+        label_6->setText(QString());
     } // retranslateUi
 
 };

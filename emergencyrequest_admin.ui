@@ -622,6 +622,63 @@ Details</string>
     <string/>
    </property>
   </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>219</y>
+     <width>777</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(31, 31, 31);
+background-color: rgb(255, 255, 255);
+border-width : 1.2px;
+border-style:inset;
+</string>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="search">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>158</y>
+     <width>461</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Andale Mono</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F1EEEE;;
+color:grey;
+border-radius:15px;
+font-family:Andale Mono;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>   Search</string>
+   </property>
+  </widget>
   <zorder>label_4</zorder>
   <zorder>label_24</zorder>
   <zorder>label_25</zorder>
@@ -650,6 +707,8 @@ Details</string>
   <zorder>label_31</zorder>
   <zorder>line</zorder>
   <zorder>why</zorder>
+  <zorder>tableView</zorder>
+  <zorder>search</zorder>
  </widget>
  <resources/>
  <connections/>

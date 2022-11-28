@@ -26,16 +26,25 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_emergencyRequest_patient_t {
-    uint offsetsAndSizes[2];
+    uint offsetsAndSizes[8];
     char stringdata0[25];
+    char stringdata1[22];
+    char stringdata2[1];
+    char stringdata3[5];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_emergencyRequest_patient_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_emergencyRequest_patient_t qt_meta_stringdata_emergencyRequest_patient = {
     {
-        QT_MOC_LITERAL(0, 24)   // "emergencyRequest_patient"
+        QT_MOC_LITERAL(0, 24),  // "emergencyRequest_patient"
+        QT_MOC_LITERAL(25, 21),  // "on_search_textChanged"
+        QT_MOC_LITERAL(47, 0),  // ""
+        QT_MOC_LITERAL(48, 4)   // "arg1"
     },
-    "emergencyRequest_patient"
+    "emergencyRequest_patient",
+    "on_search_textChanged",
+    "",
+    "arg1"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -46,12 +55,18 @@ Q_CONSTINIT static const uint qt_meta_data_emergencyRequest_patient[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   20,    2, 0x08,    1 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void, QMetaType::QString,    3,
 
        0        // eod
 };
@@ -64,17 +79,24 @@ Q_CONSTINIT const QMetaObject emergencyRequest_patient::staticMetaObject = { {
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_emergencyRequest_patient_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<emergencyRequest_patient, std::true_type>
+        QtPrivate::TypeAndForceComplete<emergencyRequest_patient, std::true_type>,
+        // method 'on_search_textChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
 
 void emergencyRequest_patient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    (void)_o;
-    (void)_id;
-    (void)_c;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<emergencyRequest_patient *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: _t->on_search_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        default: ;
+        }
+    }
 }
 
 const QMetaObject *emergencyRequest_patient::metaObject() const
@@ -93,6 +115,17 @@ void *emergencyRequest_patient::qt_metacast(const char *_clname)
 int emergencyRequest_patient::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 1;
+    }
     return _id;
 }
 QT_WARNING_POP

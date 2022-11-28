@@ -22,7 +22,6 @@ QT_BEGIN_NAMESPACE
 class Ui_userDashboard
 {
 public:
-    QLabel *label_22;
     QLabel *label_41;
     QPushButton *about;
     QLabel *label_54;
@@ -51,7 +50,6 @@ public:
     QLabel *label;
     QLabel *label_51;
     QFrame *line_3;
-    QLabel *label_21;
     QLabel *label_8;
     QLabel *label_43;
     QLabel *label_12;
@@ -60,7 +58,6 @@ public:
     QLabel *label_3;
     QLabel *label_14;
     QLabel *label_40;
-    QLabel *label_20;
     QLabel *label_45;
     QLabel *label_18;
     QFrame *line_2;
@@ -89,6 +86,9 @@ public:
     QLabel *label_19;
     QLabel *label_28;
     QLabel *label_35;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
 
     void setupUi(QDialog *userDashboard)
     {
@@ -96,20 +96,6 @@ public:
             userDashboard->setObjectName("userDashboard");
         userDashboard->resize(1270, 700);
         userDashboard->setStyleSheet(QString::fromUtf8("background-color: #EFE6E7"));
-        label_22 = new QLabel(userDashboard);
-        label_22->setObjectName("label_22");
-        label_22->setGeometry(QRect(700, 580, 253, 58));
-        QFont font;
-        font.setPointSize(11);
-        font.setBold(true);
-        label_22->setFont(font);
-        label_22->setCursor(QCursor(Qt::PointingHandCursor));
-        label_22->setStyleSheet(QString::fromUtf8("*{border-radius:5px;\n"
-"background-color: #E6E6E6;}\n"
-"\n"
-"#label_22::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
-"color: rgb(144, 10, 18);}"));
         label_41 = new QLabel(userDashboard);
         label_41->setObjectName("label_41");
         label_41->setGeometry(QRect(680, 230, 63, 61));
@@ -118,10 +104,10 @@ public:
         about = new QPushButton(userDashboard);
         about->setObjectName("about");
         about->setGeometry(QRect(430, 30, 111, 41));
-        QFont font1;
-        font1.setPointSize(12);
-        font1.setBold(true);
-        about->setFont(font1);
+        QFont font;
+        font.setPointSize(12);
+        font.setBold(true);
+        about->setFont(font);
         about->setCursor(QCursor(Qt::PointingHandCursor));
         about->setStyleSheet(QString::fromUtf8("#about\n"
 "\n"
@@ -135,7 +121,10 @@ public:
         label_54 = new QLabel(userDashboard);
         label_54->setObjectName("label_54");
         label_54->setGeometry(QRect(790, 500, 141, 51));
-        label_54->setFont(font);
+        QFont font1;
+        font1.setPointSize(11);
+        font1.setBold(true);
+        label_54->setFont(font1);
         label_37 = new QLabel(userDashboard);
         label_37->setObjectName("label_37");
         label_37->setGeometry(QRect(480, 340, 63, 61));
@@ -163,7 +152,7 @@ public:
         why = new QPushButton(userDashboard);
         why->setObjectName("why");
         why->setGeometry(QRect(570, 30, 231, 41));
-        why->setFont(font1);
+        why->setFont(font);
         why->setCursor(QCursor(Qt::PointingHandCursor));
         why->setStyleSheet(QString::fromUtf8("#why\n"
 "{\n"
@@ -177,7 +166,7 @@ public:
         my_details = new QPushButton(userDashboard);
         my_details->setObjectName("my_details");
         my_details->setGeometry(QRect(30, 220, 81, 61));
-        my_details->setFont(font);
+        my_details->setFont(font1);
         my_details->setStyleSheet(QString::fromUtf8("#my_details\n"
 "\n"
 "\n"
@@ -192,7 +181,7 @@ public:
         label_52 = new QLabel(userDashboard);
         label_52->setObjectName("label_52");
         label_52->setGeometry(QRect(270, 500, 111, 51));
-        label_52->setFont(font);
+        label_52->setFont(font1);
         label_16 = new QLabel(userDashboard);
         label_16->setObjectName("label_16");
         label_16->setGeometry(QRect(430, 460, 253, 175));
@@ -224,7 +213,7 @@ public:
         my_details_3 = new QPushButton(userDashboard);
         my_details_3->setObjectName("my_details_3");
         my_details_3->setGeometry(QRect(30, 380, 81, 61));
-        my_details_3->setFont(font);
+        my_details_3->setFont(font1);
         my_details_3->setStyleSheet(QString::fromUtf8("*{\n"
 " background-color:rgb(255, 255, 255);\n"
 "border-radius:5px;}\n"
@@ -280,7 +269,7 @@ public:
         label_53 = new QLabel(userDashboard);
         label_53->setObjectName("label_53");
         label_53->setGeometry(QRect(550, 500, 111, 51));
-        label_53->setFont(font);
+        label_53->setFont(font1);
         label = new QLabel(userDashboard);
         label->setObjectName("label");
         label->setGeometry(QRect(0, 0, 1280, 99));
@@ -294,17 +283,6 @@ public:
         line_3->setGeometry(QRect(25, 370, 89, 3));
         line_3->setFrameShape(QFrame::HLine);
         line_3->setFrameShadow(QFrame::Sunken);
-        label_21 = new QLabel(userDashboard);
-        label_21->setObjectName("label_21");
-        label_21->setGeometry(QRect(430, 580, 253, 58));
-        label_21->setFont(font);
-        label_21->setCursor(QCursor(Qt::PointingHandCursor));
-        label_21->setStyleSheet(QString::fromUtf8("*{border-radius:5px;\n"
-"background-color: #E6E6E6;}\n"
-"\n"
-"#label_21::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
-"color: rgb(144, 10, 18);}"));
         label_8 = new QLabel(userDashboard);
         label_8->setObjectName("label_8");
         label_8->setGeometry(QRect(365, 220, 178, 80));
@@ -347,18 +325,6 @@ public:
         label_40->setGeometry(QRect(440, 230, 41, 51));
         label_40->setFont(font2);
         label_40->setCursor(QCursor(Qt::PointingHandCursor));
-        label_20 = new QLabel(userDashboard);
-        label_20->setObjectName("label_20");
-        label_20->setGeometry(QRect(160, 580, 253, 58));
-        label_20->setFont(font);
-        label_20->setCursor(QCursor(Qt::PointingHandCursor));
-        label_20->setStyleSheet(QString::fromUtf8("*{border-radius:5px;\n"
-"background-color: #E6E6E6;}\n"
-"\n"
-"\n"
-"#label_20::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
-"color: rgb(144, 10, 18);}"));
         label_45 = new QLabel(userDashboard);
         label_45->setObjectName("label_45");
         label_45->setGeometry(QRect(890, 230, 63, 61));
@@ -393,7 +359,7 @@ public:
         login = new QPushButton(userDashboard);
         login->setObjectName("login");
         login->setGeometry(QRect(1070, 30, 151, 41));
-        login->setFont(font1);
+        login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
 "{\n"
@@ -447,7 +413,7 @@ public:
         label_23 = new QLabel(userDashboard);
         label_23->setObjectName("label_23");
         label_23->setGeometry(QRect(1060, 140, 141, 31));
-        label_23->setFont(font);
+        label_23->setFont(font1);
         label_23->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_29 = new QLabel(userDashboard);
         label_29->setObjectName("label_29");
@@ -471,7 +437,7 @@ public:
         home = new QPushButton(userDashboard);
         home->setObjectName("home");
         home->setGeometry(QRect(300, 30, 111, 41));
-        home->setFont(font1);
+        home->setFont(font);
         home->setCursor(QCursor(Qt::PointingHandCursor));
         home->setStyleSheet(QString::fromUtf8("#home\n"
 "\n"
@@ -499,7 +465,7 @@ public:
         my_details_2 = new QPushButton(userDashboard);
         my_details_2->setObjectName("my_details_2");
         my_details_2->setGeometry(QRect(30, 300, 81, 61));
-        my_details_2->setFont(font);
+        my_details_2->setFont(font1);
         my_details_2->setStyleSheet(QString::fromUtf8("*{\n"
 " background-color:rgb(255, 255, 255);\n"
 "border-radius:5px;}\n"
@@ -516,7 +482,7 @@ public:
         label_19 = new QLabel(userDashboard);
         label_19->setObjectName("label_19");
         label_19->setGeometry(QRect(160, 170, 351, 31));
-        label_19->setFont(font);
+        label_19->setFont(font1);
         label_19->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_28 = new QLabel(userDashboard);
         label_28->setObjectName("label_28");
@@ -528,6 +494,42 @@ public:
         label_35->setGeometry(QRect(270, 340, 63, 61));
         label_35->setCursor(QCursor(Qt::PointingHandCursor));
         label_35->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
+        pushButton = new QPushButton(userDashboard);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(430, 580, 253, 58));
+        pushButton->setFont(font1);
+        pushButton->setStyleSheet(QString::fromUtf8("#pushButton{border-radius:5px;\n"
+"background-color: #E6E6E6;}\n"
+"\n"
+"#pushButton::hover\n"
+"{\n"
+"\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
+        pushButton_2 = new QPushButton(userDashboard);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(700, 580, 253, 58));
+        pushButton_2->setFont(font1);
+        pushButton_2->setStyleSheet(QString::fromUtf8("#pushButton_2{border-radius:5px;\n"
+"background-color: #E6E6E6;}\n"
+"\n"
+"#pushButton_2::hover\n"
+"{\n"
+"\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
+        pushButton_3 = new QPushButton(userDashboard);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(160, 580, 253, 58));
+        pushButton_3->setFont(font1);
+        pushButton_3->setStyleSheet(QString::fromUtf8("#pushButton_3{border-radius:5px;\n"
+"background-color: #E6E6E6;}\n"
+"\n"
+"#pushButton_3::hover\n"
+"{\n"
+"\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label->raise();
         label_3->raise();
         label_17->raise();
@@ -543,7 +545,6 @@ public:
         label_24->raise();
         label_25->raise();
         label_2->raise();
-        label_22->raise();
         label_41->raise();
         about->raise();
         label_54->raise();
@@ -569,11 +570,9 @@ public:
         label_53->raise();
         label_51->raise();
         line_3->raise();
-        label_21->raise();
         label_43->raise();
         label_12->raise();
         label_40->raise();
-        label_20->raise();
         label_45->raise();
         label_18->raise();
         line_2->raise();
@@ -595,6 +594,9 @@ public:
         label_19->raise();
         label_28->raise();
         label_35->raise();
+        pushButton->raise();
+        pushButton_2->raise();
+        pushButton_3->raise();
 
         retranslateUi(userDashboard);
 
@@ -604,11 +606,10 @@ public:
     void retranslateUi(QDialog *userDashboard)
     {
         userDashboard->setWindowTitle(QCoreApplication::translate("userDashboard", "Dialog", nullptr));
-        label_22->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
         label_41->setText(QString());
         about->setText(QCoreApplication::translate("userDashboard", "About us", nullptr));
         label_54->setText(QCoreApplication::translate("userDashboard", "Emergency\n"
-"Announcements", nullptr));
+"Requests", nullptr));
         label_37->setText(QString());
         label_44->setText(QCoreApplication::translate("userDashboard", "O-", nullptr));
         label_6->setText(QString());
@@ -637,7 +638,6 @@ public:
 "Available", nullptr));
         label->setText(QString());
         label_51->setText(QString());
-        label_21->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
         label_8->setText(QString());
         label_43->setText(QString());
         label_12->setText(QString());
@@ -646,7 +646,6 @@ public:
         label_3->setText(QString());
         label_14->setText(QString());
         label_40->setText(QCoreApplication::translate("userDashboard", "B+", nullptr));
-        label_20->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
         label_45->setText(QString());
         label_18->setText(QCoreApplication::translate("userDashboard", "Welcome back!!", nullptr));
         label_15->setText(QString());
@@ -673,6 +672,9 @@ public:
         label_19->setText(QCoreApplication::translate("userDashboard", "Available blood groups in litre", nullptr));
         label_28->setText(QString());
         label_35->setText(QString());
+        pushButton->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
     } // retranslateUi
 
 };

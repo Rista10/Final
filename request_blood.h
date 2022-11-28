@@ -36,6 +36,8 @@ private slots:
 
     void on_home_clicked();
 
+    void on_register_3_clicked();
+
 private:
     Ui::request_blood *ui;
 };

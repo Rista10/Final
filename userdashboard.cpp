@@ -6,6 +6,8 @@
 #include "mainwindow.h"
 #include "about.h"
 #include "why_become_donor.h"
+#include "emergencyrequest_patient.h"
+#include "campaign.h"
 
 userDashboard::userDashboard(QWidget *parent) :
     QDialog(parent),
@@ -80,5 +82,23 @@ void userDashboard::on_home_clicked()
     this->close();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
+}
+
+
+void userDashboard::on_pushButton_2_clicked()
+{
+     emergencyRequest_patient er;
+    er.setModal(true);
+    hide();
+    er.exec();
+}
+
+
+void userDashboard::on_pushButton_clicked()
+{
+    campaign ca;
+    ca.setModal(true);
+    hide();
+    ca.exec();
 }
 
