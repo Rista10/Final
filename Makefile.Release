@@ -229,10 +229,12 @@ release/qrc_Resources.cpp: Resources.qrc \
 		Images/background.png \
 		Images/login.jpg \
 		Images/emergency.png \
+		Images/blood.jpg \
 		Images/request_blood.jpg \
 		Images/donate_blood.jpg \
 		Images/back_arrow.png \
 		Images/person_photo.png \
+		Images/donor_day.JPG \
 		Images/vision.png \
 		Images/donateBlood.png \
 		Images/benefits.jpg \
@@ -6057,6 +6059,7 @@ release/about.o: about.cpp about.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_about.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -6089,6 +6092,8 @@ release/about.o: about.cpp about.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QToolButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtoolbutton.h \
 		mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -6579,6 +6584,7 @@ release/admin_dashboard.o: admin_dashboard.cpp admin_dashboard.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_admin_dashboard.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -6932,6 +6938,7 @@ release/camaign_admin.o: camaign_admin.cpp camaign_admin.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_camaign_admin.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -6961,7 +6968,7 @@ release/camaign_admin.o: camaign_admin.cpp camaign_admin.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		about.h \
 		why_become_donor.h \
-		userdashboard.h
+		admin_dashboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\camaign_admin.o camaign_admin.cpp
 
 release/campaign.o: campaign.cpp campaign.h \
@@ -7284,6 +7291,7 @@ release/campaign.o: campaign.cpp campaign.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_campaign.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -7637,6 +7645,7 @@ release/change_information.o: change_information.cpp change_information.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_change_information.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -8333,6 +8342,7 @@ release/donate_blood.o: donate_blood.cpp donate_blood.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_donate_blood.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -8684,6 +8694,7 @@ release/donor_request.o: donor_request.cpp donor_request.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_donor_request.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -9040,6 +9051,7 @@ release/edit_donor.o: edit_donor.cpp edit_donor.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_edit_donor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -9396,6 +9408,7 @@ release/edit_patient.o: edit_patient.cpp edit_patient.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_edit_patient.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -9753,6 +9766,7 @@ release/emergencyrequest_admin.o: emergencyrequest_admin.cpp emergencyrequest_ad
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_emergencyrequest_admin.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -9786,7 +9800,8 @@ release/emergencyrequest_admin.o: emergencyrequest_admin.cpp emergencyrequest_ad
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		about.h \
 		why_become_donor.h \
-		userdashboard.h
+		userdashboard.h \
+		admin_dashboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\emergencyrequest_admin.o emergencyrequest_admin.cpp
 
 release/emergencyrequest_patient.o: emergencyrequest_patient.cpp emergencyrequest_patient.h \
@@ -10109,6 +10124,7 @@ release/emergencyrequest_patient.o: emergencyrequest_patient.cpp emergencyreques
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_emergencyrequest_patient.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -10472,6 +10488,7 @@ release/log_in.o: log_in.cpp log_in.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFrame \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
@@ -10492,7 +10509,9 @@ release/log_in.o: log_in.cpp log_in.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		userdashboard.h \
 		admin_dashboard.h \
-		create_account.h
+		create_account.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QDesktopServices \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\log_in.o log_in.cpp
 
 release/main.o: main.cpp mainwindow.h \
@@ -11142,6 +11161,7 @@ release/my_details.o: my_details.cpp my_details.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_my_details.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -11670,6 +11690,7 @@ release/patient_requests.o: patient_requests.cpp patient_requests.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_patient_requests.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -12026,6 +12047,7 @@ release/request_blood.o: request_blood.cpp request_blood.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_request_blood.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -12033,6 +12055,8 @@ release/request_blood.o: request_blood.cpp request_blood.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QCalendarWidget \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qcalendarwidget.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDateEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFrame \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
@@ -12377,6 +12401,7 @@ release/user_details.o: user_details.cpp user_details.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_user_details.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -12551,6 +12576,7 @@ release/userdashboard.o: userdashboard.cpp userdashboard.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_userdashboard.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -12584,6 +12610,12 @@ release/userdashboard.o: userdashboard.cpp userdashboard.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -12898,6 +12930,7 @@ release/why_become_donor.o: why_become_donor.cpp why_become_donor.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_why_become_donor.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -12930,6 +12963,8 @@ release/why_become_donor.o: why_become_donor.cpp why_become_donor.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QToolButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtoolbutton.h \
 		mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \

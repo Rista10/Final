@@ -114,3 +114,12 @@ void admin_dashboard::on_login_2_clicked()
     mainWindow->show();
 }
 
+
+void admin_dashboard::on_pushButton_2_clicked()
+{
+    donor_request d1;
+    d1.setModal(true);
+    hide();
+    d1.exec();
+}
+

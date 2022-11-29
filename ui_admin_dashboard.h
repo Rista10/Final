@@ -10,6 +10,7 @@
 #define UI_ADMIN_DASHBOARD_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QDialog>
@@ -32,7 +33,6 @@ public:
     QFrame *line_2;
     QLabel *label_14;
     QLabel *label_46;
-    QLabel *label_25;
     QLabel *label_53;
     QLabel *label_6;
     QPushButton *login;
@@ -40,7 +40,6 @@ public:
     QLabel *label_10;
     QLabel *label_4;
     QLabel *label_33;
-    QLabel *label_31;
     QPushButton *about;
     QLabel *label_3;
     QLabel *label_52;
@@ -48,18 +47,14 @@ public:
     QLabel *label_47;
     QLabel *label_37;
     QLabel *label_34;
-    QLabel *label_30;
     QFrame *line_3;
     QLabel *label_12;
     QLabel *label_19;
     QLabel *label_15;
     QLabel *label_7;
-    QLabel *label_26;
     QLabel *label_41;
     QFrame *line_4;
     QPushButton *my_details_3;
-    QLabel *label_24;
-    QLabel *label_27;
     QLabel *label_38;
     QLabel *label_17;
     QLabel *label_16;
@@ -70,11 +65,9 @@ public:
     QPushButton *my_details_2;
     QLabel *label_11;
     QLabel *label_50;
-    QLabel *label_32;
     QLabel *label_36;
     QLabel *label_49;
     QLabel *label_40;
-    QLabel *label_23;
     QLabel *label_9;
     QLabel *label_39;
     QPushButton *home;
@@ -83,8 +76,6 @@ public:
     QLabel *label_5;
     QCalendarWidget *calendarWidget;
     QLabel *label_35;
-    QLabel *label_29;
-    QLabel *label_28;
     QLabel *label_51;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
@@ -99,6 +90,7 @@ public:
     QLineEdit *lineEdit_6;
     QLineEdit *lineEdit_7;
     QLineEdit *lineEdit_8;
+    QPushButton *pushButton_4;
 
     void setupUi(QDialog *admin_dashboard)
     {
@@ -158,11 +150,6 @@ public:
         label_46->setFont(font);
         label_46->setCursor(QCursor(Qt::ArrowCursor));
         label_46->setStyleSheet(QString::fromUtf8(""));
-        label_25 = new QLabel(admin_dashboard);
-        label_25->setObjectName("label_25");
-        label_25->setGeometry(QRect(1020, 350, 212, 66));
-        label_25->setCursor(QCursor(Qt::PointingHandCursor));
-        label_25->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         label_53 = new QLabel(admin_dashboard);
         label_53->setObjectName("label_53");
         label_53->setGeometry(QRect(540, 500, 131, 51));
@@ -219,15 +206,6 @@ public:
         label_33->setGeometry(QRect(270, 230, 63, 61));
         label_33->setCursor(QCursor(Qt::ArrowCursor));
         label_33->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
-        label_31 = new QLabel(admin_dashboard);
-        label_31->setObjectName("label_31");
-        label_31->setGeometry(QRect(1095, 280, 131, 41));
-        label_31->setCursor(QCursor(Qt::PointingHandCursor));
-        label_31->setStyleSheet(QString::fromUtf8("#label_31::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
         about = new QPushButton(admin_dashboard);
         about->setObjectName("about");
         about->setGeometry(QRect(420, 30, 128, 41));
@@ -277,15 +255,6 @@ public:
         label_34->setFont(font);
         label_34->setCursor(QCursor(Qt::ArrowCursor));
         label_34->setStyleSheet(QString::fromUtf8(""));
-        label_30 = new QLabel(admin_dashboard);
-        label_30->setObjectName("label_30");
-        label_30->setGeometry(QRect(1095, 200, 131, 41));
-        label_30->setCursor(QCursor(Qt::PointingHandCursor));
-        label_30->setStyleSheet(QString::fromUtf8("#label_30::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
         line_3 = new QFrame(admin_dashboard);
         line_3->setObjectName("line_3");
         line_3->setGeometry(QRect(20, 370, 89, 3));
@@ -312,11 +281,6 @@ public:
         label_7->setGeometry(QRect(20, 0, 81, 91));
         label_7->setStyleSheet(QString::fromUtf8("background-color:rgb(255, 255, 255);\n"
 "border-image: url(:/img/Images/logo1.png);"));
-        label_26 = new QLabel(admin_dashboard);
-        label_26->setObjectName("label_26");
-        label_26->setGeometry(QRect(1020, 270, 212, 66));
-        label_26->setCursor(QCursor(Qt::PointingHandCursor));
-        label_26->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         label_41 = new QLabel(admin_dashboard);
         label_41->setObjectName("label_41");
         label_41->setGeometry(QRect(680, 230, 63, 61));
@@ -342,16 +306,6 @@ public:
 "	color: rgb(144, 10, 18);\n"
 "}\n"
 ""));
-        label_24 = new QLabel(admin_dashboard);
-        label_24->setObjectName("label_24");
-        label_24->setGeometry(QRect(1020, 190, 212, 66));
-        label_24->setCursor(QCursor(Qt::PointingHandCursor));
-        label_24->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_27 = new QLabel(admin_dashboard);
-        label_27->setObjectName("label_27");
-        label_27->setGeometry(QRect(1030, 200, 52, 52));
-        label_27->setCursor(QCursor(Qt::PointingHandCursor));
-        label_27->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood.png);"));
         label_38 = new QLabel(admin_dashboard);
         label_38->setObjectName("label_38");
         label_38->setGeometry(QRect(440, 340, 41, 51));
@@ -422,15 +376,6 @@ public:
         label_50->setObjectName("label_50");
         label_50->setGeometry(QRect(470, 500, 51, 51));
         label_50->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/Donor.png);"));
-        label_32 = new QLabel(admin_dashboard);
-        label_32->setObjectName("label_32");
-        label_32->setGeometry(QRect(1095, 360, 131, 41));
-        label_32->setCursor(QCursor(Qt::PointingHandCursor));
-        label_32->setStyleSheet(QString::fromUtf8("#label_32::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
         label_36 = new QLabel(admin_dashboard);
         label_36->setObjectName("label_36");
         label_36->setGeometry(QRect(230, 340, 41, 51));
@@ -447,11 +392,6 @@ public:
         label_40->setFont(font);
         label_40->setCursor(QCursor(Qt::ArrowCursor));
         label_40->setStyleSheet(QString::fromUtf8(""));
-        label_23 = new QLabel(admin_dashboard);
-        label_23->setObjectName("label_23");
-        label_23->setGeometry(QRect(1030, 140, 201, 31));
-        label_23->setFont(font1);
-        label_23->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_9 = new QLabel(admin_dashboard);
         label_9->setObjectName("label_9");
         label_9->setGeometry(QRect(775, 330, 178, 80));
@@ -518,16 +458,6 @@ public:
         label_35->setGeometry(QRect(270, 340, 63, 61));
         label_35->setCursor(QCursor(Qt::ArrowCursor));
         label_35->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
-        label_29 = new QLabel(admin_dashboard);
-        label_29->setObjectName("label_29");
-        label_29->setGeometry(QRect(1030, 360, 51, 41));
-        label_29->setCursor(QCursor(Qt::PointingHandCursor));
-        label_29->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/announcement.png);"));
-        label_28 = new QLabel(admin_dashboard);
-        label_28->setObjectName("label_28");
-        label_28->setGeometry(QRect(1030, 280, 52, 52));
-        label_28->setCursor(QCursor(Qt::PointingHandCursor));
-        label_28->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood.png);"));
         label_51 = new QLabel(admin_dashboard);
         label_51->setObjectName("label_51");
         label_51->setGeometry(QRect(740, 500, 52, 52));
@@ -549,10 +479,10 @@ public:
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(160, 580, 253, 58));
         pushButton_2->setFont(font1);
-        pushButton_2->setStyleSheet(QString::fromUtf8("*{border-radius:5px;\n"
+        pushButton_2->setStyleSheet(QString::fromUtf8("#pushButton_2{border-radius:5px;\n"
 "background-color: #E6E6E6;}\n"
 "\n"
-"#label_21::hover\n"
+"#pushButton_2::hover\n"
 "{\n"
 "\n"
 "	color: rgb(144, 10, 18);\n"
@@ -632,6 +562,16 @@ public:
         lineEdit_8->setGeometry(QRect(780, 350, 51, 28));
         lineEdit_8->setStyleSheet(QString::fromUtf8("border-radius:0px;\n"
 "color: rgb(144, 10, 18);"));
+        pushButton_4 = new QPushButton(admin_dashboard);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(1007, 127, 237, 306));
+        pushButton_4->setStyleSheet(QString::fromUtf8("background-color: rgb(250, 250, 250);\n"
+"border-radius:3px;\n"
+""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Images/donor_day.JPG"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_4->setIcon(icon);
+        pushButton_4->setIconSize(QSize(250, 400));
         label_3->raise();
         label_4->raise();
         label_13->raise();
@@ -639,16 +579,12 @@ public:
         label_18->raise();
         label_14->raise();
         label_46->raise();
-        label_25->raise();
         label_8->raise();
         label_10->raise();
         label_12->raise();
         label_19->raise();
         label_15->raise();
-        label_26->raise();
         label_41->raise();
-        label_24->raise();
-        label_27->raise();
         label_17->raise();
         label_16->raise();
         label_2->raise();
@@ -656,10 +592,8 @@ public:
         my_details->raise();
         label->raise();
         my_details_2->raise();
-        label_32->raise();
         label_36->raise();
         label_40->raise();
-        label_23->raise();
         label_9->raise();
         label_39->raise();
         home->raise();
@@ -667,7 +601,6 @@ public:
         label_5->raise();
         calendarWidget->raise();
         label_35->raise();
-        label_29->raise();
         about->raise();
         login->raise();
         label_6->raise();
@@ -691,9 +624,6 @@ public:
         label_42->raise();
         label_48->raise();
         label_47->raise();
-        label_30->raise();
-        label_31->raise();
-        label_28->raise();
         label_51->raise();
         pushButton->raise();
         pushButton_2->raise();
@@ -708,6 +638,7 @@ public:
         lineEdit_6->raise();
         lineEdit_7->raise();
         lineEdit_8->raise();
+        pushButton_4->raise();
 
         retranslateUi(admin_dashboard);
 
@@ -725,7 +656,6 @@ public:
         label_18->setText(QCoreApplication::translate("admin_dashboard", "Welcome back admin!!", nullptr));
         label_14->setText(QString());
         label_46->setText(QCoreApplication::translate("admin_dashboard", "AB+", nullptr));
-        label_25->setText(QString());
         label_53->setText(QCoreApplication::translate("admin_dashboard", "Emergency\n"
 "request", nullptr));
         label_6->setText(QString());
@@ -734,7 +664,6 @@ public:
         label_10->setText(QString());
         label_4->setText(QString());
         label_33->setText(QString());
-        label_31->setText(QCoreApplication::translate("admin_dashboard", "12 December,2022", nullptr));
         about->setText(QCoreApplication::translate("admin_dashboard", "About us", nullptr));
         label_3->setText(QString());
         label_52->setText(QCoreApplication::translate("admin_dashboard", "Available\n"
@@ -743,17 +672,13 @@ public:
         label_47->setText(QString());
         label_37->setText(QString());
         label_34->setText(QCoreApplication::translate("admin_dashboard", "A+", nullptr));
-        label_30->setText(QCoreApplication::translate("admin_dashboard", "9 September,2022", nullptr));
         label_12->setText(QString());
         label_19->setText(QCoreApplication::translate("admin_dashboard", "Available units of blood groups ", nullptr));
         label_15->setText(QString());
         label_7->setText(QString());
-        label_26->setText(QString());
         label_41->setText(QString());
         my_details_3->setText(QCoreApplication::translate("admin_dashboard", "Blood\n"
 "Requests", nullptr));
-        label_24->setText(QString());
-        label_27->setText(QString());
         label_38->setText(QCoreApplication::translate("admin_dashboard", "B-", nullptr));
         label_17->setText(QString());
         label_16->setText(QString());
@@ -765,11 +690,9 @@ public:
 "Requests", nullptr));
         label_11->setText(QString());
         label_50->setText(QString());
-        label_32->setText(QCoreApplication::translate("admin_dashboard", "Announcements", nullptr));
         label_36->setText(QCoreApplication::translate("admin_dashboard", "A-", nullptr));
         label_49->setText(QString());
         label_40->setText(QCoreApplication::translate("admin_dashboard", "B+", nullptr));
-        label_23->setText(QCoreApplication::translate("admin_dashboard", "Blood Donation Camps", nullptr));
         label_9->setText(QString());
         label_39->setText(QString());
         home->setText(QCoreApplication::translate("admin_dashboard", "Home", nullptr));
@@ -778,8 +701,6 @@ public:
 "Available", nullptr));
         label_5->setText(QString());
         label_35->setText(QString());
-        label_29->setText(QString());
-        label_28->setText(QString());
         label_51->setText(QString());
         pushButton->setText(QCoreApplication::translate("admin_dashboard", "      View Details", nullptr));
         pushButton_2->setText(QCoreApplication::translate("admin_dashboard", "      View Details", nullptr));
@@ -793,6 +714,7 @@ public:
         lineEdit_6->setText(QCoreApplication::translate("admin_dashboard", "1 units", nullptr));
         lineEdit_7->setText(QCoreApplication::translate("admin_dashboard", "1 units", nullptr));
         lineEdit_8->setText(QCoreApplication::translate("admin_dashboard", "0 units", nullptr));
+        pushButton_4->setText(QString());
     } // retranslateUi
 
 };

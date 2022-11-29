@@ -39,6 +39,8 @@ private slots:
 
     void on_login_2_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::emergencyRequest_patient *ui;
 };

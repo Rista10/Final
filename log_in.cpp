@@ -122,7 +122,7 @@ void log_in::on_pushButton_3_clicked()
 
 void log_in::on_pushButton_4_clicked()
 {
-    QDesktopServices::openUrl(QUrl("https://twitter.com/RentUs44528430"));
+    QDesktopServices::openUrl(QUrl("https://twitter.com/Reliv03?t=NvatLnWyaatWTUrOH-lLbw&s=07&fbclid=IwAR1bosSAwwgrRAYPHfwRHQkeFUwfX1LnxkWbI1e2Ea8LBEWeaMnU-qoWrLU"));
 }
 
 

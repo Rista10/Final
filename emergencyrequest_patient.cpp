@@ -129,3 +129,12 @@ void emergencyRequest_patient::on_login_2_clicked()
     mainWindow->show();
 }
 
+
+void emergencyRequest_patient::on_pushButton_clicked()
+{
+    donate_blood di;
+    di.setModal(true);
+    hide();
+    di.exec();
+}
+

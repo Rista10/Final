@@ -10,6 +10,7 @@
 #define UI_CHANGE_INFORMATION_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QDialog>
@@ -62,18 +63,8 @@ public:
     QLineEdit *phone_number;
     QLineEdit *location;
     QLineEdit *password;
-    QLabel *label_34;
-    QLabel *label_43;
-    QLabel *label_42;
-    QLabel *label_37;
-    QLabel *label_58;
-    QLabel *label_38;
-    QLabel *label_4;
-    QLabel *label_41;
-    QLabel *label_35;
-    QLabel *label_39;
-    QLabel *label_40;
     QPushButton *login_2;
+    QPushButton *pushButton_4;
 
     void setupUi(QDialog *change_information)
     {
@@ -438,76 +429,6 @@ public:
 "border-radius:5px;\n"
 "	border-image: url(:/Images/background.png);\n"
 "}"));
-        label_34 = new QLabel(change_information);
-        label_34->setObjectName("label_34");
-        label_34->setGeometry(QRect(1020, 270, 211, 66));
-        label_34->setCursor(QCursor(Qt::PointingHandCursor));
-        label_34->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_43 = new QLabel(change_information);
-        label_43->setObjectName("label_43");
-        label_43->setGeometry(QRect(1110, 360, 121, 41));
-        label_43->setCursor(QCursor(Qt::PointingHandCursor));
-        label_43->setStyleSheet(QString::fromUtf8("\n"
-"#label_43::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
-        label_42 = new QLabel(change_information);
-        label_42->setObjectName("label_42");
-        label_42->setGeometry(QRect(1040, 280, 51, 41));
-        label_42->setCursor(QCursor(Qt::PointingHandCursor));
-        label_42->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/hospital.png);"));
-        label_37 = new QLabel(change_information);
-        label_37->setObjectName("label_37");
-        label_37->setGeometry(QRect(1020, 350, 211, 66));
-        label_37->setCursor(QCursor(Qt::PointingHandCursor));
-        label_37->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_58 = new QLabel(change_information);
-        label_58->setObjectName("label_58");
-        label_58->setGeometry(QRect(1030, 140, 201, 31));
-        label_58->setFont(font1);
-        label_58->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        label_38 = new QLabel(change_information);
-        label_38->setObjectName("label_38");
-        label_38->setGeometry(QRect(1040, 360, 51, 41));
-        label_38->setCursor(QCursor(Qt::PointingHandCursor));
-        label_38->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/announcement.png);"));
-        label_4 = new QLabel(change_information);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(1007, 127, 237, 306));
-        label_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"border-radius:5px;"));
-        label_41 = new QLabel(change_information);
-        label_41->setObjectName("label_41");
-        label_41->setGeometry(QRect(1100, 200, 121, 41));
-        label_41->setCursor(QCursor(Qt::PointingHandCursor));
-        label_41->setStyleSheet(QString::fromUtf8("\n"
-"#label_41::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
-        label_35 = new QLabel(change_information);
-        label_35->setObjectName("label_35");
-        label_35->setGeometry(QRect(1020, 190, 211, 66));
-        label_35->setCursor(QCursor(Qt::PointingHandCursor));
-        label_35->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_39 = new QLabel(change_information);
-        label_39->setObjectName("label_39");
-        label_39->setGeometry(QRect(1110, 280, 121, 41));
-        label_39->setCursor(QCursor(Qt::PointingHandCursor));
-        label_39->setStyleSheet(QString::fromUtf8("\n"
-"#label_39::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
-        label_40 = new QLabel(change_information);
-        label_40->setObjectName("label_40");
-        label_40->setGeometry(QRect(1030, 200, 51, 41));
-        label_40->setCursor(QCursor(Qt::PointingHandCursor));
-        label_40->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/Donor.png);"));
         login_2 = new QPushButton(change_information);
         login_2->setObjectName("login_2");
         login_2->setGeometry(QRect(1100, 30, 151, 41));
@@ -525,9 +446,16 @@ public:
 "background-color:white;\n"
 "	color: rgb(144, 10, 18);\n"
 "}"));
-        label_4->raise();
-        label_35->raise();
-        label_37->raise();
+        pushButton_4 = new QPushButton(change_information);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(1010, 130, 237, 306));
+        pushButton_4->setStyleSheet(QString::fromUtf8("background-color: rgb(250, 250, 250);\n"
+"border-radius:3px;\n"
+""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Images/donor_day.JPG"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_4->setIcon(icon);
+        pushButton_4->setIconSize(QSize(250, 400));
         label_3->raise();
         label_6->raise();
         label_2->raise();
@@ -567,15 +495,8 @@ public:
         phone_number->raise();
         location->raise();
         password->raise();
-        label_34->raise();
-        label_43->raise();
-        label_42->raise();
-        label_58->raise();
-        label_38->raise();
-        label_41->raise();
-        label_39->raise();
-        label_40->raise();
         login_2->raise();
+        pushButton_4->raise();
 
         retranslateUi(change_information);
 
@@ -626,20 +547,8 @@ public:
         location->setPlaceholderText(QCoreApplication::translate("change_information", "  Enter location", nullptr));
         password->setText(QString());
         password->setPlaceholderText(QCoreApplication::translate("change_information", "  Enter password", nullptr));
-        label_34->setText(QString());
-        label_43->setText(QCoreApplication::translate("change_information", "Accounment ", nullptr));
-        label_42->setText(QString());
-        label_37->setText(QString());
-        label_58->setText(QCoreApplication::translate("change_information", "Blood Donation Camps", nullptr));
-        label_38->setText(QString());
-        label_4->setText(QString());
-        label_41->setText(QCoreApplication::translate("change_information", "Last donated:\n"
-"9 September,2022", nullptr));
-        label_35->setText(QString());
-        label_39->setText(QCoreApplication::translate("change_information", "Donation time:\n"
-"9 December,2022", nullptr));
-        label_40->setText(QString());
         login_2->setText(QCoreApplication::translate("change_information", "Logout", nullptr));
+        pushButton_4->setText(QString());
     } // retranslateUi
 
 };

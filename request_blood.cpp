@@ -14,6 +14,9 @@ request_blood::request_blood(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);
     setWindowFlags(windowFlags() | Qt::WindowMaximizeButtonHint);
     ui->setupUi(this);
+    QDate d = QDate::currentDate();
+
+    ui->dateEdit->setDate(d);
 }
 
 request_blood::~request_blood()
@@ -65,6 +68,7 @@ void request_blood::on_register_2_clicked()
 
     if(db.open())
     {
+
         QString contact_person_name=ui->contact_person->text();
         QString patient_name=ui->patient_name->text();
         QString age=ui->age->text();
@@ -73,12 +77,16 @@ void request_blood::on_register_2_clicked()
         QString phone_number=ui->phone_number->text();
         QString required_units=ui->required_unit->text();
         QString detail=ui->detail->text();
+        QDate date = ui->dateEdit->date();
+        QString RequiredDate = date.toString();
+
+
 
         if(contact_person_name != "" && patient_name != "" && age != "" && blood_group != "" && gender != "" && phone_number != "" && required_units != "" && detail != ""){
 
         QSqlQuery qry;
-        qry.prepare("INSERT INTO patient_details(contact_person_name,patient_name,age,blood_group,gender,phone_number,required_units,detail_about_case) "
-                    "VALUES('"+contact_person_name+"', '"+patient_name+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+phone_number+"', '"+required_units+"', '"+detail+"')");
+        qry.prepare("INSERT INTO patient_details(contact_person_name,patient_name,age,blood_group,gender,phone_number,required_units,detail_about_case,Required_Date) "
+                    "VALUES('"+contact_person_name+"', '"+patient_name+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+phone_number+"', '"+required_units+"', '"+detail+"','"+RequiredDate+"')");
         qry.bindValue(":contact_person_name", contact_person_name);
         qry.bindValue(":patient_name", patient_name);
         qry.bindValue(":age", age);
@@ -87,10 +95,15 @@ void request_blood::on_register_2_clicked()
         qry.bindValue(":phone_number", phone_number);
         qry.bindValue(":required_units", required_units);
         qry.bindValue(":detail_about_case", detail);
+        qry.bindValue(":Required_Date",RequiredDate);
 
         if(qry.exec())
         {
                QMessageBox::information(this,"Information","You will be notified soon about blood");
+               request_blood rq;
+               rq.setModal(true);
+               hide();
+               rq.exec();
         }
         }
         else

@@ -10,6 +10,7 @@
 #define UI_CAMPAIGN_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QDialog>
@@ -24,22 +25,12 @@ class Ui_campaign
 {
 public:
     QLabel *label_7;
-    QLabel *label_31;
-    QLabel *label_25;
-    QLabel *label_32;
-    QLabel *label_26;
-    QLabel *label_23;
-    QLabel *label_24;
-    QLabel *label_30;
     QPushButton *why;
-    QLabel *label_27;
-    QLabel *label_28;
     QPushButton *home;
     QLabel *label_3;
     QPushButton *about;
     QPushButton *login;
     QLabel *label;
-    QLabel *label_4;
     QFrame *line_5;
     QCalendarWidget *calendarWidget;
     QLabel *label_11;
@@ -47,16 +38,6 @@ public:
     QPushButton *home_2;
     QPushButton *about_2;
     QPushButton *login_2;
-    QLabel *label_58;
-    QLabel *label_33;
-    QLabel *label_34;
-    QLabel *label_37;
-    QLabel *label_38;
-    QLabel *label_39;
-    QLabel *label_40;
-    QLabel *label_41;
-    QLabel *label_42;
-    QLabel *label_43;
     QFrame *line_3;
     QPushButton *my_details_4;
     QPushButton *my_details_2;
@@ -74,13 +55,14 @@ public:
     QLabel *label_9;
     QLabel *label_13;
     QLineEdit *time;
-    QLineEdit *location;
     QLineEdit *date;
-    QLineEdit *motive;
     QLabel *label_21;
     QLabel *label_12;
     QLabel *label_6;
     QPushButton *login_3;
+    QPushButton *pushButton_4;
+    QLineEdit *location;
+    QLineEdit *motive;
 
     void setupUi(QDialog *campaign)
     {
@@ -93,59 +75,13 @@ public:
         label_7->setGeometry(QRect(40, 0, 81, 91));
         label_7->setStyleSheet(QString::fromUtf8("background-color:rgb(255, 255, 255);\n"
 "border-image: url(:/img/Images/logo1.png);"));
-        label_31 = new QLabel(campaign);
-        label_31->setObjectName("label_31");
-        label_31->setGeometry(QRect(1105, 280, 131, 41));
-        label_31->setCursor(QCursor(Qt::PointingHandCursor));
-        label_31->setStyleSheet(QString::fromUtf8("\n"
-"#label_31::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
-"color: rgb(144, 10, 18);}"));
-        label_25 = new QLabel(campaign);
-        label_25->setObjectName("label_25");
-        label_25->setGeometry(QRect(1030, 350, 212, 66));
-        label_25->setCursor(QCursor(Qt::PointingHandCursor));
-        label_25->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_32 = new QLabel(campaign);
-        label_32->setObjectName("label_32");
-        label_32->setGeometry(QRect(1105, 360, 131, 41));
-        label_32->setCursor(QCursor(Qt::PointingHandCursor));
-        label_32->setStyleSheet(QString::fromUtf8("\n"
-"#label_32::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
-"color: rgb(144, 10, 18);}"));
-        label_26 = new QLabel(campaign);
-        label_26->setObjectName("label_26");
-        label_26->setGeometry(QRect(1030, 270, 212, 66));
-        label_26->setCursor(QCursor(Qt::PointingHandCursor));
-        label_26->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_23 = new QLabel(campaign);
-        label_23->setObjectName("label_23");
-        label_23->setGeometry(QRect(1070, 140, 141, 31));
-        QFont font;
-        font.setPointSize(11);
-        font.setBold(true);
-        label_23->setFont(font);
-        label_23->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        label_24 = new QLabel(campaign);
-        label_24->setObjectName("label_24");
-        label_24->setGeometry(QRect(1030, 190, 212, 66));
-        label_24->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_30 = new QLabel(campaign);
-        label_30->setObjectName("label_30");
-        label_30->setGeometry(QRect(1105, 200, 131, 41));
-        label_30->setCursor(QCursor(Qt::PointingHandCursor));
-        label_30->setStyleSheet(QString::fromUtf8("\n"
-"#label_30::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
-"color: rgb(144, 10, 18);}"));
         why = new QPushButton(campaign);
         why->setObjectName("why");
         why->setGeometry(QRect(580, 30, 231, 41));
-        QFont font1;
-        font1.setPointSize(12);
-        font1.setBold(true);
-        why->setFont(font1);
+        QFont font;
+        font.setPointSize(12);
+        font.setBold(true);
+        why->setFont(font);
         why->setCursor(QCursor(Qt::PointingHandCursor));
         why->setStyleSheet(QString::fromUtf8("#why\n"
 "{\n"
@@ -156,20 +92,10 @@ public:
 "#why::hover{\n"
 "border-botton:3px solid rgb(144, 10, 18);\n"
 "color: rgb(144, 10, 18);}"));
-        label_27 = new QLabel(campaign);
-        label_27->setObjectName("label_27");
-        label_27->setGeometry(QRect(1040, 200, 51, 41));
-        label_27->setCursor(QCursor(Qt::PointingHandCursor));
-        label_27->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/Donor.png);"));
-        label_28 = new QLabel(campaign);
-        label_28->setObjectName("label_28");
-        label_28->setGeometry(QRect(1040, 280, 51, 41));
-        label_28->setCursor(QCursor(Qt::PointingHandCursor));
-        label_28->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/hospital.png);"));
         home = new QPushButton(campaign);
         home->setObjectName("home");
         home->setGeometry(QRect(310, 30, 111, 41));
-        home->setFont(font1);
+        home->setFont(font);
         home->setCursor(QCursor(Qt::PointingHandCursor));
         home->setStyleSheet(QString::fromUtf8("#home\n"
 "\n"
@@ -188,7 +114,7 @@ public:
         about = new QPushButton(campaign);
         about->setObjectName("about");
         about->setGeometry(QRect(440, 30, 111, 41));
-        about->setFont(font1);
+        about->setFont(font);
         about->setCursor(QCursor(Qt::PointingHandCursor));
         about->setStyleSheet(QString::fromUtf8("#about\n"
 "\n"
@@ -202,7 +128,7 @@ public:
         login = new QPushButton(campaign);
         login->setObjectName("login");
         login->setGeometry(QRect(1080, 30, 151, 41));
-        login->setFont(font1);
+        login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
 "{\n"
@@ -220,11 +146,6 @@ public:
         label->setObjectName("label");
         label->setGeometry(QRect(0, 0, 1280, 99));
         label->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        label_4 = new QLabel(campaign);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(1007, 127, 237, 306));
-        label_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"border-radius:5px;"));
         line_5 = new QFrame(campaign);
         line_5->setObjectName("line_5");
         line_5->setGeometry(QRect(140, 160, 845, 3));
@@ -244,7 +165,7 @@ public:
         why_2 = new QPushButton(campaign);
         why_2->setObjectName("why_2");
         why_2->setGeometry(QRect(560, 30, 231, 41));
-        why_2->setFont(font1);
+        why_2->setFont(font);
         why_2->setCursor(QCursor(Qt::PointingHandCursor));
         why_2->setStyleSheet(QString::fromUtf8("#why_2\n"
 "\n"
@@ -261,7 +182,7 @@ public:
         home_2 = new QPushButton(campaign);
         home_2->setObjectName("home_2");
         home_2->setGeometry(QRect(300, 30, 121, 41));
-        home_2->setFont(font1);
+        home_2->setFont(font);
         home_2->setCursor(QCursor(Qt::PointingHandCursor));
         home_2->setStyleSheet(QString::fromUtf8("#home_2\n"
 "\n"
@@ -277,7 +198,7 @@ public:
         about_2 = new QPushButton(campaign);
         about_2->setObjectName("about_2");
         about_2->setGeometry(QRect(430, 30, 141, 41));
-        about_2->setFont(font1);
+        about_2->setFont(font);
         about_2->setCursor(QCursor(Qt::PointingHandCursor));
         about_2->setStyleSheet(QString::fromUtf8("#about_2\n"
 "\n"
@@ -294,7 +215,7 @@ public:
         login_2 = new QPushButton(campaign);
         login_2->setObjectName("login_2");
         login_2->setGeometry(QRect(930, 30, 151, 41));
-        login_2->setFont(font1);
+        login_2->setFont(font);
         login_2->setCursor(QCursor(Qt::PointingHandCursor));
         login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
 "{\n"
@@ -308,71 +229,6 @@ public:
 "background-color:white;\n"
 "	color: rgb(144, 10, 18);\n"
 "}"));
-        label_58 = new QLabel(campaign);
-        label_58->setObjectName("label_58");
-        label_58->setGeometry(QRect(1030, 140, 201, 31));
-        label_58->setFont(font);
-        label_58->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        label_33 = new QLabel(campaign);
-        label_33->setObjectName("label_33");
-        label_33->setGeometry(QRect(1020, 270, 211, 66));
-        label_33->setCursor(QCursor(Qt::PointingHandCursor));
-        label_33->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_34 = new QLabel(campaign);
-        label_34->setObjectName("label_34");
-        label_34->setGeometry(QRect(1020, 190, 211, 66));
-        label_34->setCursor(QCursor(Qt::PointingHandCursor));
-        label_34->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_37 = new QLabel(campaign);
-        label_37->setObjectName("label_37");
-        label_37->setGeometry(QRect(1020, 350, 211, 66));
-        label_37->setCursor(QCursor(Qt::PointingHandCursor));
-        label_37->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        label_38 = new QLabel(campaign);
-        label_38->setObjectName("label_38");
-        label_38->setGeometry(QRect(1040, 360, 51, 41));
-        label_38->setCursor(QCursor(Qt::PointingHandCursor));
-        label_38->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/announcement.png);"));
-        label_39 = new QLabel(campaign);
-        label_39->setObjectName("label_39");
-        label_39->setGeometry(QRect(1110, 280, 121, 41));
-        label_39->setCursor(QCursor(Qt::PointingHandCursor));
-        label_39->setStyleSheet(QString::fromUtf8("\n"
-"#label_39::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
-        label_40 = new QLabel(campaign);
-        label_40->setObjectName("label_40");
-        label_40->setGeometry(QRect(1030, 200, 51, 41));
-        label_40->setCursor(QCursor(Qt::PointingHandCursor));
-        label_40->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/Donor.png);"));
-        label_41 = new QLabel(campaign);
-        label_41->setObjectName("label_41");
-        label_41->setGeometry(QRect(1100, 200, 121, 41));
-        label_41->setCursor(QCursor(Qt::PointingHandCursor));
-        label_41->setStyleSheet(QString::fromUtf8("\n"
-"#label_41::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
-        label_42 = new QLabel(campaign);
-        label_42->setObjectName("label_42");
-        label_42->setGeometry(QRect(1040, 280, 51, 41));
-        label_42->setCursor(QCursor(Qt::PointingHandCursor));
-        label_42->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/hospital.png);"));
-        label_43 = new QLabel(campaign);
-        label_43->setObjectName("label_43");
-        label_43->setGeometry(QRect(1110, 360, 121, 41));
-        label_43->setCursor(QCursor(Qt::PointingHandCursor));
-        label_43->setStyleSheet(QString::fromUtf8("\n"
-"#label_43::hover\n"
-"{\n"
-"\n"
-"	color: rgb(144, 10, 18);\n"
-"}"));
         line_3 = new QFrame(campaign);
         line_3->setObjectName("line_3");
         line_3->setGeometry(QRect(25, 370, 89, 3));
@@ -381,7 +237,10 @@ public:
         my_details_4 = new QPushButton(campaign);
         my_details_4->setObjectName("my_details_4");
         my_details_4->setGeometry(QRect(30, 300, 81, 61));
-        my_details_4->setFont(font);
+        QFont font1;
+        font1.setPointSize(11);
+        font1.setBold(true);
+        my_details_4->setFont(font1);
         my_details_4->setCursor(QCursor(Qt::PointingHandCursor));
         my_details_4->setStyleSheet(QString::fromUtf8("*{\n"
 " background-color:rgb(255, 255, 255);\n"
@@ -397,7 +256,7 @@ public:
         my_details_2 = new QPushButton(campaign);
         my_details_2->setObjectName("my_details_2");
         my_details_2->setGeometry(QRect(30, 220, 81, 61));
-        my_details_2->setFont(font);
+        my_details_2->setFont(font1);
         my_details_2->setCursor(QCursor(Qt::PointingHandCursor));
         my_details_2->setStyleSheet(QString::fromUtf8("#my_details_2\n"
 "\n"
@@ -420,7 +279,7 @@ public:
         my_details_3 = new QPushButton(campaign);
         my_details_3->setObjectName("my_details_3");
         my_details_3->setGeometry(QRect(30, 380, 81, 61));
-        my_details_3->setFont(font);
+        my_details_3->setFont(font1);
         my_details_3->setCursor(QCursor(Qt::PointingHandCursor));
         my_details_3->setStyleSheet(QString::fromUtf8("*{\n"
 " background-color:rgb(255, 255, 255);\n"
@@ -503,21 +362,11 @@ public:
         font5.setPointSize(10);
         time->setFont(font5);
         time->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        location = new QLineEdit(campaign);
-        location->setObjectName("location");
-        location->setGeometry(QRect(270, 590, 291, 20));
-        location->setFont(font5);
-        location->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         date = new QLineEdit(campaign);
         date->setObjectName("date");
         date->setGeometry(QRect(270, 510, 121, 20));
         date->setFont(font5);
         date->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
-        motive = new QLineEdit(campaign);
-        motive->setObjectName("motive");
-        motive->setGeometry(QRect(410, 540, 191, 20));
-        motive->setFont(font5);
-        motive->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         label_21 = new QLabel(campaign);
         label_21->setObjectName("label_21");
         label_21->setGeometry(QRect(170, 480, 451, 151));
@@ -533,7 +382,7 @@ public:
         login_3 = new QPushButton(campaign);
         login_3->setObjectName("login_3");
         login_3->setGeometry(QRect(1100, 30, 151, 41));
-        login_3->setFont(font1);
+        login_3->setFont(font);
         login_3->setCursor(QCursor(Qt::PointingHandCursor));
         login_3->setStyleSheet(QString::fromUtf8("#login_3\n"
 "{\n"
@@ -547,25 +396,35 @@ public:
 "background-color:white;\n"
 "	color: rgb(144, 10, 18);\n"
 "}"));
+        pushButton_4 = new QPushButton(campaign);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(1010, 130, 237, 306));
+        pushButton_4->setStyleSheet(QString::fromUtf8("background-color: rgb(250, 250, 250);\n"
+"border-radius:3px;\n"
+""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Images/donor_day.JPG"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_4->setIcon(icon);
+        pushButton_4->setIconSize(QSize(250, 400));
+        location = new QLineEdit(campaign);
+        location->setObjectName("location");
+        location->setGeometry(QRect(270, 590, 231, 20));
+        location->setFont(font5);
+        location->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
+        motive = new QLineEdit(campaign);
+        motive->setObjectName("motive");
+        motive->setGeometry(QRect(410, 540, 113, 20));
+        motive->setFont(font5);
+        motive->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         label_3->raise();
         label_21->raise();
         label_2->raise();
         label_7->raise();
-        label_31->raise();
-        label_25->raise();
-        label_32->raise();
-        label_26->raise();
-        label_23->raise();
-        label_24->raise();
-        label_30->raise();
         why->raise();
-        label_27->raise();
-        label_28->raise();
         home->raise();
         about->raise();
         login->raise();
         label->raise();
-        label_4->raise();
         line_5->raise();
         calendarWidget->raise();
         label_11->raise();
@@ -573,16 +432,6 @@ public:
         home_2->raise();
         about_2->raise();
         login_2->raise();
-        label_58->raise();
-        label_33->raise();
-        label_34->raise();
-        label_37->raise();
-        label_38->raise();
-        label_39->raise();
-        label_40->raise();
-        label_41->raise();
-        label_42->raise();
-        label_43->raise();
         line_3->raise();
         my_details_4->raise();
         my_details_2->raise();
@@ -599,12 +448,13 @@ public:
         label_9->raise();
         label_13->raise();
         time->raise();
-        location->raise();
         date->raise();
-        motive->raise();
         label_12->raise();
         label_6->raise();
         login_3->raise();
+        pushButton_4->raise();
+        location->raise();
+        motive->raise();
 
         retranslateUi(campaign);
 
@@ -615,41 +465,17 @@ public:
     {
         campaign->setWindowTitle(QCoreApplication::translate("campaign", "Dialog", nullptr));
         label_7->setText(QString());
-        label_31->setText(QCoreApplication::translate("campaign", "Donation time:\n"
-"9 December,2022", nullptr));
-        label_25->setText(QString());
-        label_32->setText(QCoreApplication::translate("campaign", "Announcements", nullptr));
-        label_26->setText(QString());
-        label_23->setText(QCoreApplication::translate("campaign", "Blood Donation ", nullptr));
-        label_24->setText(QString());
-        label_30->setText(QCoreApplication::translate("campaign", "Last donated:\n"
-"9 September,2022", nullptr));
         why->setText(QCoreApplication::translate("campaign", "Why become donor", nullptr));
-        label_27->setText(QString());
-        label_28->setText(QString());
         home->setText(QCoreApplication::translate("campaign", "Home", nullptr));
         label_3->setText(QString());
         about->setText(QCoreApplication::translate("campaign", "About us", nullptr));
         login->setText(QCoreApplication::translate("campaign", "Profile", nullptr));
         label->setText(QString());
-        label_4->setText(QString());
         label_11->setText(QString());
         why_2->setText(QCoreApplication::translate("campaign", "Why become donor", nullptr));
         home_2->setText(QCoreApplication::translate("campaign", "Home", nullptr));
         about_2->setText(QCoreApplication::translate("campaign", "About us", nullptr));
         login_2->setText(QCoreApplication::translate("campaign", "Dashboard", nullptr));
-        label_58->setText(QCoreApplication::translate("campaign", "Blood Donation Camps", nullptr));
-        label_33->setText(QString());
-        label_34->setText(QString());
-        label_37->setText(QString());
-        label_38->setText(QString());
-        label_39->setText(QCoreApplication::translate("campaign", "Donation time:\n"
-"9 December,2022", nullptr));
-        label_40->setText(QString());
-        label_41->setText(QCoreApplication::translate("campaign", "Last donated:\n"
-"9 September,2022", nullptr));
-        label_42->setText(QString());
-        label_43->setText(QCoreApplication::translate("campaign", "Accounment ", nullptr));
         my_details_4->setText(QCoreApplication::translate("campaign", "Donate\n"
 "Blood", nullptr));
         my_details_2->setText(QCoreApplication::translate("campaign", "My\n"
@@ -676,13 +502,14 @@ public:
         label_9->setText(QCoreApplication::translate("campaign", "Time:", nullptr));
         label_13->setText(QCoreApplication::translate("campaign", "Motive:", nullptr));
         time->setText(QString());
-        location->setText(QString());
         date->setText(QString());
-        motive->setText(QString());
         label_21->setText(QString());
         label_12->setText(QCoreApplication::translate("campaign", "Date:", nullptr));
         label_6->setText(QString());
         login_3->setText(QCoreApplication::translate("campaign", "Logout", nullptr));
+        pushButton_4->setText(QString());
+        location->setText(QString());
+        motive->setText(QString());
     } // retranslateUi
 
 };

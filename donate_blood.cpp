@@ -67,6 +67,12 @@ void donate_blood::on_donate_clicked()
 
     if(db.open())
     {
+        QDate todaysdate = QDate::currentDate();
+        QDate donationDate = todaysdate.addDays(7);
+
+        QString datetodonate = donationDate.toString();
+
+
         QString name=ui->name->text();
         QString location=ui->location->text();
         QString age=ui->age->text();
@@ -77,8 +83,8 @@ void donate_blood::on_donate_clicked()
         if(name != "" && location != "" && age != "" && blood_group != "" && gender != "" && phone_number != "" ){
 
         QSqlQuery qry;
-        qry.prepare("INSERT INTO donor_details(donor_name,location,age,blood_group,gender,phone_number,any_disease) "
-                    "VALUES('"+name+"', '"+location+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+phone_number+"', '"+disease+"')");
+        qry.prepare("INSERT INTO donor_details(donor_name,location,age,blood_group,gender,phone_number,any_disease,Donation_Date) "
+                    "VALUES('"+name+"', '"+location+"', '"+age+"', '"+blood_group+"', '"+gender+"', '"+phone_number+"', '"+disease+"','"+datetodonate+"')");
         qry.bindValue(":donor_name", name);
         qry.bindValue(":location", location);
         qry.bindValue(":age", age);
@@ -86,10 +92,16 @@ void donate_blood::on_donate_clicked()
         qry.bindValue(":gender", gender);
         qry.bindValue(":phone_number", phone_number);
         qry.bindValue(":any_disease", disease);
+        qry.bindValue(":Donation_Date", datetodonate);
+
 
         if(qry.exec())
         {
-               QMessageBox::information(this,"Information","You will be notified soon about blood donating location");
+               QMessageBox::information(this,"Information","Thanks for your help. /n Your Blood Donation Date is one week away");
+               donate_blood dq;
+               dq.setModal(true);
+               hide();
+               dq.exec();
         }
        }
         else
