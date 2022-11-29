@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1334</width>
+    <width>1270</width>
     <height>700</height>
    </rect>
   </property>
@@ -234,25 +234,6 @@ border-radius:20px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_24">
-   <property name="geometry">
-    <rect>
-     <x>1021</x>
-     <y>190</y>
-     <width>241</width>
-     <height>66</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -343,59 +324,12 @@ padding-bottom:7px;</string>
     <string>  Joined  :     October 14</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_31">
-   <property name="geometry">
-    <rect>
-     <x>1095</x>
-     <y>280</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-#label_31::hover
-{
-
-	color: rgb(144, 10, 18);
-}</string>
-   </property>
-   <property name="text">
-    <string>Donation time:
-9 December,2022</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_23">
-   <property name="geometry">
-    <rect>
-     <x>1080</x>
-     <y>140</y>
-     <width>141</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>Blood Donation </string>
-   </property>
-  </widget>
   <widget class="QCalendarWidget" name="calendarWidget">
    <property name="geometry">
     <rect>
-     <x>996</x>
+     <x>1010</x>
      <y>450</y>
-     <width>301</width>
+     <width>237</width>
      <height>219</height>
     </rect>
    </property>
@@ -448,25 +382,6 @@ padding-bottom:7px;</string>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/Images/background.png);
 border-radius:20px;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_25">
-   <property name="geometry">
-    <rect>
-     <x>1020</x>
-     <y>350</y>
-     <width>241</width>
-     <height>66</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;</string>
    </property>
    <property name="text">
     <string/>
@@ -555,25 +470,6 @@ Blood</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_27">
-   <property name="geometry">
-    <rect>
-     <x>1030</x>
-     <y>200</y>
-     <width>51</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/img/Images/Donor.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
@@ -628,30 +524,6 @@ padding-bottom:7px;</string>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_32">
-   <property name="geometry">
-    <rect>
-     <x>1095</x>
-     <y>360</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-#label_32::hover
-{
-
-	color: rgb(144, 10, 18);
-}</string>
-   </property>
-   <property name="text">
-    <string>Announcements</string>
    </property>
   </widget>
   <widget class="QLabel" name="age">
@@ -752,31 +624,6 @@ border-image: url(:/img/Images/logo1.png);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_30">
-   <property name="geometry">
-    <rect>
-     <x>1100</x>
-     <y>200</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-#label_30::hover
-{
-
-	color: rgb(144, 10, 18);
-}</string>
-   </property>
-   <property name="text">
-    <string>Last donated:
-9 September,2022</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_33">
    <property name="geometry">
     <rect>
@@ -800,25 +647,6 @@ border-image: url(:/img/Images/logo1.png);</string>
    </property>
    <property name="text">
     <string>Blood Group</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_29">
-   <property name="geometry">
-    <rect>
-     <x>1030</x>
-     <y>360</y>
-     <width>51</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/img/Images/announcement.png);</string>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="blood_group">
@@ -969,44 +797,6 @@ padding-bottom:7px;</string>
     <string>  Location  :</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_26">
-   <property name="geometry">
-    <rect>
-     <x>1020</x>
-     <y>270</y>
-     <width>241</width>
-     <height>66</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius:5px;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_28">
-   <property name="geometry">
-    <rect>
-     <x>1030</x>
-     <y>280</y>
-     <width>51</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-image: url(:/img/Images/hospital.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -1043,7 +833,7 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="login">
    <property name="geometry">
     <rect>
-     <x>1070</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -1072,24 +862,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>1010</x>
-     <y>140</y>
-     <width>281</width>
-     <height>306</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:5px;</string>
-   </property>
-   <property name="text">
-    <string/>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="email">
@@ -1216,11 +989,275 @@ border-radius:5px;
     <string>  Enter password</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_34">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>270</y>
+     <width>211</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_43">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>360</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#label_43::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Accounment </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_42">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>280</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/Images/hospital.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_37">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>350</y>
+     <width>211</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_58">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>140</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Blood Donation Camps</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_38">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>360</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/Images/announcement.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>1007</x>
+     <y>127</y>
+     <width>237</width>
+     <height>306</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_41">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>200</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#label_41::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Last donated:
+9 September,2022</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_35">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>190</y>
+     <width>211</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_39">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>280</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#label_39::hover
+{
+
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Donation time:
+9 December,2022</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_40">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>200</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/Images/Donor.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_2
+{
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>label_35</zorder>
+  <zorder>label_37</zorder>
   <zorder>label_3</zorder>
   <zorder>label_6</zorder>
   <zorder>label_2</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_26</zorder>
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
   <zorder>line_3</zorder>
@@ -1229,36 +1266,27 @@ border-radius:5px;
   <zorder>password_2</zorder>
   <zorder>name</zorder>
   <zorder>age_2</zorder>
-  <zorder>label_24</zorder>
   <zorder>label</zorder>
   <zorder>home</zorder>
   <zorder>line_4</zorder>
   <zorder>label_14</zorder>
-  <zorder>label_31</zorder>
-  <zorder>label_23</zorder>
   <zorder>calendarWidget</zorder>
   <zorder>email_2</zorder>
-  <zorder>label_25</zorder>
   <zorder>why</zorder>
   <zorder>my_details_3</zorder>
   <zorder>line_2</zorder>
-  <zorder>label_27</zorder>
   <zorder>phone_number_2</zorder>
   <zorder>line</zorder>
-  <zorder>label_32</zorder>
   <zorder>age</zorder>
   <zorder>label_5</zorder>
   <zorder>about</zorder>
   <zorder>label_7</zorder>
-  <zorder>label_30</zorder>
   <zorder>label_33</zorder>
-  <zorder>label_29</zorder>
   <zorder>blood_group</zorder>
   <zorder>name_2</zorder>
   <zorder>my_details_2</zorder>
   <zorder>my_details_4</zorder>
   <zorder>location_1</zorder>
-  <zorder>label_28</zorder>
   <zorder>label_10</zorder>
   <zorder>login</zorder>
   <zorder>pushButton_2</zorder>
@@ -1266,6 +1294,15 @@ border-radius:5px;
   <zorder>phone_number</zorder>
   <zorder>location</zorder>
   <zorder>password</zorder>
+  <zorder>label_34</zorder>
+  <zorder>label_43</zorder>
+  <zorder>label_42</zorder>
+  <zorder>label_58</zorder>
+  <zorder>label_38</zorder>
+  <zorder>label_41</zorder>
+  <zorder>label_39</zorder>
+  <zorder>label_40</zorder>
+  <zorder>login_2</zorder>
  </widget>
  <resources/>
  <connections/>

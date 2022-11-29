@@ -448,7 +448,7 @@ Requests</string>
   <widget class="QPushButton" name="login">
    <property name="geometry">
     <rect>
-     <x>1070</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -478,7 +478,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="QPushButton" name="why">
@@ -675,6 +675,42 @@ font-family:Andale Mono;</string>
     <string>   Search</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="login_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_2
+{
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
   <zorder>label_4</zorder>
   <zorder>label_2</zorder>
   <zorder>label</zorder>
@@ -705,6 +741,7 @@ font-family:Andale Mono;</string>
   <zorder>label_32</zorder>
   <zorder>tableView</zorder>
   <zorder>search</zorder>
+  <zorder>login_2</zorder>
  </widget>
  <resources/>
  <connections/>

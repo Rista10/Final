@@ -10,11 +10,13 @@
 #define UI_ABOUT_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QToolButton>
 
 QT_BEGIN_NAMESPACE
 
@@ -40,6 +42,14 @@ public:
     QLabel *label_12;
     QLabel *label_13;
     QLabel *label;
+    QToolButton *toolButton;
+    QToolButton *toolButton_2;
+    QToolButton *toolButton_3;
+    QToolButton *toolButton_4;
+    QLabel *label_14;
+    QLabel *label_15;
+    QLabel *label_16;
+    QLabel *label_17;
 
     void setupUi(QDialog *about)
     {
@@ -90,6 +100,7 @@ public:
 "{\n"
 " background-color:rgb(144, 10, 18);\n"
 "border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
 "#login::hover\n"
@@ -106,6 +117,7 @@ public:
 "{\n"
 " background-color:rgb(144, 10, 18);\n"
 "border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
 "#register_2::hover\n"
@@ -192,23 +204,72 @@ public:
         label_10 = new QLabel(about);
         label_10->setObjectName("label_10");
         label_10->setGeometry(QRect(830, 470, 150, 149));
-        label_10->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/person.jpg);"));
+        label_10->setStyleSheet(QString::fromUtf8(""));
         label_11 = new QLabel(about);
         label_11->setObjectName("label_11");
         label_11->setGeometry(QRect(1040, 470, 150, 149));
-        label_11->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/person.jpg);"));
+        label_11->setStyleSheet(QString::fromUtf8(""));
         label_12 = new QLabel(about);
         label_12->setObjectName("label_12");
         label_12->setGeometry(QRect(1040, 250, 150, 149));
-        label_12->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/person.jpg);"));
+        label_12->setStyleSheet(QString::fromUtf8(""));
         label_13 = new QLabel(about);
         label_13->setObjectName("label_13");
         label_13->setGeometry(QRect(830, 250, 150, 149));
-        label_13->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/person.jpg);"));
+        label_13->setStyleSheet(QString::fromUtf8(""));
         label = new QLabel(about);
         label->setObjectName("label");
         label->setGeometry(QRect(50, 140, 281, 61));
         label->setFont(font3);
+        toolButton = new QToolButton(about);
+        toolButton->setObjectName("toolButton");
+        toolButton->setGeometry(QRect(820, 250, 161, 151));
+        toolButton->setStyleSheet(QString::fromUtf8("border-radius:3px;"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Downloads/pr2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton->setIcon(icon);
+        toolButton->setIconSize(QSize(120, 120));
+        toolButton_2 = new QToolButton(about);
+        toolButton_2->setObjectName("toolButton_2");
+        toolButton_2->setGeometry(QRect(1030, 250, 161, 151));
+        toolButton_2->setStyleSheet(QString::fromUtf8("border-radius:3px;"));
+        toolButton_2->setIcon(icon);
+        toolButton_2->setIconSize(QSize(120, 120));
+        toolButton_3 = new QToolButton(about);
+        toolButton_3->setObjectName("toolButton_3");
+        toolButton_3->setGeometry(QRect(820, 470, 161, 151));
+        toolButton_3->setStyleSheet(QString::fromUtf8("border-radius:3px;"));
+        toolButton_3->setIcon(icon);
+        toolButton_3->setIconSize(QSize(120, 120));
+        toolButton_4 = new QToolButton(about);
+        toolButton_4->setObjectName("toolButton_4");
+        toolButton_4->setGeometry(QRect(1030, 470, 161, 151));
+        toolButton_4->setStyleSheet(QString::fromUtf8("border-radius:3px;"));
+        toolButton_4->setIcon(icon);
+        toolButton_4->setIconSize(QSize(120, 120));
+        label_14 = new QLabel(about);
+        label_14->setObjectName("label_14");
+        label_14->setGeometry(QRect(860, 420, 111, 20));
+        QFont font4;
+        font4.setPointSize(10);
+        font4.setBold(true);
+        label_14->setFont(font4);
+        label_14->setStyleSheet(QString::fromUtf8("color: rgb(144, 10, 18);"));
+        label_15 = new QLabel(about);
+        label_15->setObjectName("label_15");
+        label_15->setGeometry(QRect(1060, 420, 131, 20));
+        label_15->setFont(font4);
+        label_15->setStyleSheet(QString::fromUtf8("color: rgb(144, 10, 18);"));
+        label_16 = new QLabel(about);
+        label_16->setObjectName("label_16");
+        label_16->setGeometry(QRect(850, 640, 121, 20));
+        label_16->setFont(font4);
+        label_16->setStyleSheet(QString::fromUtf8("color: rgb(144, 10, 18);"));
+        label_17 = new QLabel(about);
+        label_17->setObjectName("label_17");
+        label_17->setGeometry(QRect(1050, 640, 131, 20));
+        label_17->setFont(font4);
+        label_17->setStyleSheet(QString::fromUtf8("color: rgb(144, 10, 18);"));
 
         retranslateUi(about);
 
@@ -245,6 +306,14 @@ public:
         label_12->setText(QString());
         label_13->setText(QString());
         label->setText(QCoreApplication::translate("about", "About Us", nullptr));
+        toolButton->setText(QString());
+        toolButton_2->setText(QString());
+        toolButton_3->setText(QString());
+        toolButton_4->setText(QString());
+        label_14->setText(QCoreApplication::translate("about", "Anuja Kafle", nullptr));
+        label_15->setText(QCoreApplication::translate("about", "Aakriti Poudel", nullptr));
+        label_16->setText(QCoreApplication::translate("about", "Rista Shrestha", nullptr));
+        label_17->setText(QCoreApplication::translate("about", "Krishita Pandey", nullptr));
     } // retranslateUi
 
 };

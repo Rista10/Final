@@ -89,6 +89,16 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QPushButton *login_2;
+    QLabel *label_20;
+    QLabel *label_21;
+    QLabel *label_22;
+    QLabel *label_55;
+    QLabel *label_56;
+    QLabel *label_57;
+    QLabel *label_60;
+    QLabel *label_61;
+    QLabel *label_63;
 
     void setupUi(QDialog *userDashboard)
     {
@@ -99,7 +109,7 @@ public:
         label_41 = new QLabel(userDashboard);
         label_41->setObjectName("label_41");
         label_41->setGeometry(QRect(680, 230, 63, 61));
-        label_41->setCursor(QCursor(Qt::PointingHandCursor));
+        label_41->setCursor(QCursor(Qt::ArrowCursor));
         label_41->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         about = new QPushButton(userDashboard);
         about->setObjectName("about");
@@ -128,7 +138,7 @@ public:
         label_37 = new QLabel(userDashboard);
         label_37->setObjectName("label_37");
         label_37->setGeometry(QRect(480, 340, 63, 61));
-        label_37->setCursor(QCursor(Qt::PointingHandCursor));
+        label_37->setCursor(QCursor(Qt::ArrowCursor));
         label_37->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         label_44 = new QLabel(userDashboard);
         label_44->setObjectName("label_44");
@@ -137,7 +147,7 @@ public:
         font2.setPointSize(20);
         font2.setBold(true);
         label_44->setFont(font2);
-        label_44->setCursor(QCursor(Qt::PointingHandCursor));
+        label_44->setCursor(QCursor(Qt::ArrowCursor));
         line_5 = new QFrame(userDashboard);
         line_5->setObjectName("line_5");
         line_5->setGeometry(QRect(138, 160, 845, 3));
@@ -146,7 +156,7 @@ public:
         label_6 = new QLabel(userDashboard);
         label_6->setObjectName("label_6");
         label_6->setGeometry(QRect(160, 220, 178, 80));
-        label_6->setCursor(QCursor(Qt::PointingHandCursor));
+        label_6->setCursor(QCursor(Qt::ArrowCursor));
         label_6->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         why = new QPushButton(userDashboard);
@@ -161,12 +171,13 @@ public:
 "}\n"
 "\n"
 "#why::hover{\n"
-"border-botton:3px solid rgb(144, 10, 18);\n"
+"border-bottom :3px solid rgb(144, 10, 18);\n"
 "color: rgb(144, 10, 18);}"));
         my_details = new QPushButton(userDashboard);
         my_details->setObjectName("my_details");
         my_details->setGeometry(QRect(30, 220, 81, 61));
         my_details->setFont(font1);
+        my_details->setCursor(QCursor(Qt::PointingHandCursor));
         my_details->setStyleSheet(QString::fromUtf8("#my_details\n"
 "\n"
 "\n"
@@ -189,13 +200,13 @@ public:
         label_11 = new QLabel(userDashboard);
         label_11->setObjectName("label_11");
         label_11->setGeometry(QRect(365, 330, 178, 80));
-        label_11->setCursor(QCursor(Qt::PointingHandCursor));
+        label_11->setCursor(QCursor(Qt::ArrowCursor));
         label_11->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         label_33 = new QLabel(userDashboard);
         label_33->setObjectName("label_33");
         label_33->setGeometry(QRect(270, 230, 63, 61));
-        label_33->setCursor(QCursor(Qt::PointingHandCursor));
+        label_33->setCursor(QCursor(Qt::ArrowCursor));
         label_33->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         label_31 = new QLabel(userDashboard);
         label_31->setObjectName("label_31");
@@ -209,11 +220,12 @@ public:
         label_42->setObjectName("label_42");
         label_42->setGeometry(QRect(640, 230, 41, 51));
         label_42->setFont(font2);
-        label_42->setCursor(QCursor(Qt::PointingHandCursor));
+        label_42->setCursor(QCursor(Qt::ArrowCursor));
         my_details_3 = new QPushButton(userDashboard);
         my_details_3->setObjectName("my_details_3");
         my_details_3->setGeometry(QRect(30, 380, 81, 61));
         my_details_3->setFont(font1);
+        my_details_3->setCursor(QCursor(Qt::PointingHandCursor));
         my_details_3->setStyleSheet(QString::fromUtf8("*{\n"
 " background-color:rgb(255, 255, 255);\n"
 "border-radius:5px;}\n"
@@ -226,21 +238,21 @@ public:
         label_46->setObjectName("label_46");
         label_46->setGeometry(QRect(830, 230, 66, 51));
         label_46->setFont(font2);
-        label_46->setCursor(QCursor(Qt::PointingHandCursor));
+        label_46->setCursor(QCursor(Qt::ArrowCursor));
         label_39 = new QLabel(userDashboard);
         label_39->setObjectName("label_39");
         label_39->setGeometry(QRect(480, 230, 63, 61));
-        label_39->setCursor(QCursor(Qt::PointingHandCursor));
+        label_39->setCursor(QCursor(Qt::ArrowCursor));
         label_39->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         label_47 = new QLabel(userDashboard);
         label_47->setObjectName("label_47");
         label_47->setGeometry(QRect(890, 340, 63, 61));
-        label_47->setCursor(QCursor(Qt::PointingHandCursor));
+        label_47->setCursor(QCursor(Qt::ArrowCursor));
         label_47->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         label_13 = new QLabel(userDashboard);
         label_13->setObjectName("label_13");
         label_13->setGeometry(QRect(775, 220, 178, 80));
-        label_13->setCursor(QCursor(Qt::PointingHandCursor));
+        label_13->setCursor(QCursor(Qt::ArrowCursor));
         label_13->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         label_5 = new QLabel(userDashboard);
@@ -291,18 +303,18 @@ public:
         label_43 = new QLabel(userDashboard);
         label_43->setObjectName("label_43");
         label_43->setGeometry(QRect(680, 340, 63, 61));
-        label_43->setCursor(QCursor(Qt::PointingHandCursor));
+        label_43->setCursor(QCursor(Qt::ArrowCursor));
         label_43->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         label_12 = new QLabel(userDashboard);
         label_12->setObjectName("label_12");
         label_12->setGeometry(QRect(160, 330, 178, 80));
-        label_12->setCursor(QCursor(Qt::PointingHandCursor));
+        label_12->setCursor(QCursor(Qt::ArrowCursor));
         label_12->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         label_9 = new QLabel(userDashboard);
         label_9->setObjectName("label_9");
         label_9->setGeometry(QRect(775, 330, 178, 80));
-        label_9->setCursor(QCursor(Qt::PointingHandCursor));
+        label_9->setCursor(QCursor(Qt::ArrowCursor));
         label_9->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         label_24 = new QLabel(userDashboard);
@@ -317,18 +329,18 @@ public:
         label_14 = new QLabel(userDashboard);
         label_14->setObjectName("label_14");
         label_14->setGeometry(QRect(570, 220, 178, 80));
-        label_14->setCursor(QCursor(Qt::PointingHandCursor));
+        label_14->setCursor(QCursor(Qt::ArrowCursor));
         label_14->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         label_40 = new QLabel(userDashboard);
         label_40->setObjectName("label_40");
         label_40->setGeometry(QRect(440, 230, 41, 51));
         label_40->setFont(font2);
-        label_40->setCursor(QCursor(Qt::PointingHandCursor));
+        label_40->setCursor(QCursor(Qt::ArrowCursor));
         label_45 = new QLabel(userDashboard);
         label_45->setObjectName("label_45");
         label_45->setGeometry(QRect(890, 230, 63, 61));
-        label_45->setCursor(QCursor(Qt::PointingHandCursor));
+        label_45->setCursor(QCursor(Qt::ArrowCursor));
         label_45->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         label_18 = new QLabel(userDashboard);
         label_18->setObjectName("label_18");
@@ -358,7 +370,7 @@ public:
 "color: rgb(144, 10, 18);}"));
         login = new QPushButton(userDashboard);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -383,7 +395,7 @@ public:
         label_48->setObjectName("label_48");
         label_48->setGeometry(QRect(830, 340, 61, 51));
         label_48->setFont(font2);
-        label_48->setCursor(QCursor(Qt::PointingHandCursor));
+        label_48->setCursor(QCursor(Qt::ArrowCursor));
         label_17 = new QLabel(userDashboard);
         label_17->setObjectName("label_17");
         label_17->setGeometry(QRect(700, 460, 253, 175));
@@ -398,18 +410,18 @@ public:
         label_36->setObjectName("label_36");
         label_36->setGeometry(QRect(230, 340, 41, 51));
         label_36->setFont(font2);
-        label_36->setCursor(QCursor(Qt::PointingHandCursor));
+        label_36->setCursor(QCursor(Qt::ArrowCursor));
         label_10 = new QLabel(userDashboard);
         label_10->setObjectName("label_10");
         label_10->setGeometry(QRect(570, 330, 178, 80));
-        label_10->setCursor(QCursor(Qt::PointingHandCursor));
+        label_10->setCursor(QCursor(Qt::ArrowCursor));
         label_10->setStyleSheet(QString::fromUtf8("border-color: rgb(0, 0, 0);\n"
 "border-radius:5px;"));
         label_34 = new QLabel(userDashboard);
         label_34->setObjectName("label_34");
         label_34->setGeometry(QRect(230, 230, 41, 51));
         label_34->setFont(font2);
-        label_34->setCursor(QCursor(Qt::PointingHandCursor));
+        label_34->setCursor(QCursor(Qt::ArrowCursor));
         label_23 = new QLabel(userDashboard);
         label_23->setObjectName("label_23");
         label_23->setGeometry(QRect(1060, 140, 141, 31));
@@ -452,7 +464,7 @@ public:
         label_38->setObjectName("label_38");
         label_38->setGeometry(QRect(440, 340, 41, 51));
         label_38->setFont(font2);
-        label_38->setCursor(QCursor(Qt::PointingHandCursor));
+        label_38->setCursor(QCursor(Qt::ArrowCursor));
         label_50 = new QLabel(userDashboard);
         label_50->setObjectName("label_50");
         label_50->setGeometry(QRect(470, 500, 51, 51));
@@ -466,6 +478,7 @@ public:
         my_details_2->setObjectName("my_details_2");
         my_details_2->setGeometry(QRect(30, 300, 81, 61));
         my_details_2->setFont(font1);
+        my_details_2->setCursor(QCursor(Qt::PointingHandCursor));
         my_details_2->setStyleSheet(QString::fromUtf8("*{\n"
 " background-color:rgb(255, 255, 255);\n"
 "border-radius:5px;}\n"
@@ -492,12 +505,13 @@ public:
         label_35 = new QLabel(userDashboard);
         label_35->setObjectName("label_35");
         label_35->setGeometry(QRect(270, 340, 63, 61));
-        label_35->setCursor(QCursor(Qt::PointingHandCursor));
+        label_35->setCursor(QCursor(Qt::ArrowCursor));
         label_35->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood_drop.png);"));
         pushButton = new QPushButton(userDashboard);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(430, 580, 253, 58));
         pushButton->setFont(font1);
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("#pushButton{border-radius:5px;\n"
 "background-color: #E6E6E6;}\n"
 "\n"
@@ -510,6 +524,7 @@ public:
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(700, 580, 253, 58));
         pushButton_2->setFont(font1);
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_2->setStyleSheet(QString::fromUtf8("#pushButton_2{border-radius:5px;\n"
 "background-color: #E6E6E6;}\n"
 "\n"
@@ -525,11 +540,51 @@ public:
         pushButton_3->setStyleSheet(QString::fromUtf8("#pushButton_3{border-radius:5px;\n"
 "background-color: #E6E6E6;}\n"
 "\n"
-"#pushButton_3::hover\n"
+""));
+        login_2 = new QPushButton(userDashboard);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
 "{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
 "\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
 "	color: rgb(144, 10, 18);\n"
 "}"));
+        label_20 = new QLabel(userDashboard);
+        label_20->setObjectName("label_20");
+        label_20->setGeometry(QRect(170, 250, 51, 20));
+        label_21 = new QLabel(userDashboard);
+        label_21->setObjectName("label_21");
+        label_21->setGeometry(QRect(380, 250, 51, 20));
+        label_22 = new QLabel(userDashboard);
+        label_22->setObjectName("label_22");
+        label_22->setGeometry(QRect(585, 250, 51, 20));
+        label_55 = new QLabel(userDashboard);
+        label_55->setObjectName("label_55");
+        label_55->setGeometry(QRect(780, 250, 48, 20));
+        label_56 = new QLabel(userDashboard);
+        label_56->setObjectName("label_56");
+        label_56->setGeometry(QRect(170, 358, 51, 20));
+        label_57 = new QLabel(userDashboard);
+        label_57->setObjectName("label_57");
+        label_57->setGeometry(QRect(780, 358, 51, 20));
+        label_60 = new QLabel(userDashboard);
+        label_60->setObjectName("label_60");
+        label_60->setGeometry(QRect(380, 358, 51, 20));
+        label_61 = new QLabel(userDashboard);
+        label_61->setObjectName("label_61");
+        label_61->setGeometry(QRect(585, 358, 51, 20));
+        label_63 = new QLabel(userDashboard);
+        label_63->setObjectName("label_63");
+        label_63->setGeometry(QRect(870, 650, 51, 20));
         label->raise();
         label_3->raise();
         label_17->raise();
@@ -597,6 +652,16 @@ public:
         pushButton->raise();
         pushButton_2->raise();
         pushButton_3->raise();
+        login_2->raise();
+        label_20->raise();
+        label_21->raise();
+        label_22->raise();
+        label_55->raise();
+        label_56->raise();
+        label_57->raise();
+        label_60->raise();
+        label_61->raise();
+        label_63->raise();
 
         retranslateUi(userDashboard);
 
@@ -650,7 +715,7 @@ public:
         label_18->setText(QCoreApplication::translate("userDashboard", "Welcome back!!", nullptr));
         label_15->setText(QString());
         label_32->setText(QCoreApplication::translate("userDashboard", "Announcements", nullptr));
-        login->setText(QCoreApplication::translate("userDashboard", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("userDashboard", "Dashboard", nullptr));
         label_48->setText(QCoreApplication::translate("userDashboard", "AB-", nullptr));
         label_17->setText(QString());
         label_4->setText(QString());
@@ -675,6 +740,16 @@ public:
         pushButton->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
         pushButton_2->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
         pushButton_3->setText(QCoreApplication::translate("userDashboard", "      View Details", nullptr));
+        login_2->setText(QCoreApplication::translate("userDashboard", "Logout ", nullptr));
+        label_20->setText(QString());
+        label_21->setText(QString());
+        label_22->setText(QString());
+        label_55->setText(QString());
+        label_56->setText(QString());
+        label_57->setText(QString());
+        label_60->setText(QString());
+        label_61->setText(QString());
+        label_63->setText(QString());
     } // retranslateUi
 
 };

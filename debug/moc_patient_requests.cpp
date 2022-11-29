@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_patient_requests_t {
-    uint offsetsAndSizes[22];
+    uint offsetsAndSizes[24];
     char stringdata0[17];
     char stringdata1[17];
     char stringdata2[1];
@@ -38,6 +38,7 @@ struct qt_meta_stringdata_patient_requests_t {
     char stringdata8[22];
     char stringdata9[22];
     char stringdata10[5];
+    char stringdata11[19];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_patient_requests_t::offsetsAndSizes) + ofs), len 
@@ -53,7 +54,8 @@ Q_CONSTINIT static const qt_meta_stringdata_patient_requests_t qt_meta_stringdat
         QT_MOC_LITERAL(113, 15),  // "on_home_clicked"
         QT_MOC_LITERAL(129, 21),  // "on_pushButton_clicked"
         QT_MOC_LITERAL(151, 21),  // "on_search_textChanged"
-        QT_MOC_LITERAL(173, 4)   // "arg1"
+        QT_MOC_LITERAL(173, 4),  // "arg1"
+        QT_MOC_LITERAL(178, 18)   // "on_login_2_clicked"
     },
     "patient_requests",
     "on_about_clicked",
@@ -65,7 +67,8 @@ Q_CONSTINIT static const qt_meta_stringdata_patient_requests_t qt_meta_stringdat
     "on_home_clicked",
     "on_pushButton_clicked",
     "on_search_textChanged",
-    "arg1"
+    "arg1",
+    "on_login_2_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -76,7 +79,7 @@ Q_CONSTINIT static const uint qt_meta_data_patient_requests[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -84,14 +87,15 @@ Q_CONSTINIT static const uint qt_meta_data_patient_requests[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x08,    1 /* Private */,
-       3,    0,   63,    2, 0x08,    2 /* Private */,
-       4,    0,   64,    2, 0x08,    3 /* Private */,
-       5,    0,   65,    2, 0x08,    4 /* Private */,
-       6,    0,   66,    2, 0x08,    5 /* Private */,
-       7,    0,   67,    2, 0x08,    6 /* Private */,
-       8,    0,   68,    2, 0x08,    7 /* Private */,
-       9,    1,   69,    2, 0x08,    8 /* Private */,
+       1,    0,   68,    2, 0x08,    1 /* Private */,
+       3,    0,   69,    2, 0x08,    2 /* Private */,
+       4,    0,   70,    2, 0x08,    3 /* Private */,
+       5,    0,   71,    2, 0x08,    4 /* Private */,
+       6,    0,   72,    2, 0x08,    5 /* Private */,
+       7,    0,   73,    2, 0x08,    6 /* Private */,
+       8,    0,   74,    2, 0x08,    7 /* Private */,
+       9,    1,   75,    2, 0x08,    8 /* Private */,
+      11,    0,   78,    2, 0x08,   10 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -102,6 +106,7 @@ Q_CONSTINIT static const uint qt_meta_data_patient_requests[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   10,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -131,7 +136,9 @@ Q_CONSTINIT const QMetaObject patient_requests::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_search_textChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'on_login_2_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -150,6 +157,7 @@ void patient_requests::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         case 5: _t->on_home_clicked(); break;
         case 6: _t->on_pushButton_clicked(); break;
         case 7: _t->on_search_textChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 8: _t->on_login_2_clicked(); break;
         default: ;
         }
     }
@@ -174,13 +182,13 @@ int patient_requests::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

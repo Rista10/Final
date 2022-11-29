@@ -67,6 +67,7 @@ public:
     QLabel *label_34;
     QLineEdit *required_unit;
     QPushButton *register_3;
+    QPushButton *login_2;
 
     void setupUi(QDialog *request_blood)
     {
@@ -129,7 +130,7 @@ public:
 "}"));
         login = new QPushButton(request_blood);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -440,6 +441,23 @@ public:
 "background-color:white;\n"
 "	color: rgb(144, 10, 18);\n"
 "}"));
+        login_2 = new QPushButton(request_blood);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label->raise();
         label_7->raise();
         home->raise();
@@ -484,6 +502,7 @@ public:
         label_34->raise();
         required_unit->raise();
         register_3->raise();
+        login_2->raise();
 
         retranslateUi(request_blood);
 
@@ -497,7 +516,7 @@ public:
         home->setText(QCoreApplication::translate("request_blood", "Home", nullptr));
         about->setText(QCoreApplication::translate("request_blood", "About us", nullptr));
         why->setText(QCoreApplication::translate("request_blood", "Why become donor", nullptr));
-        login->setText(QCoreApplication::translate("request_blood", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("request_blood", "Dashboard", nullptr));
         label->setText(QString());
         label_2->setText(QString());
         label_5->setText(QString());
@@ -543,6 +562,7 @@ public:
         required_unit->setText(QString());
         required_unit->setPlaceholderText(QCoreApplication::translate("request_blood", "  Required unit", nullptr));
         register_3->setText(QCoreApplication::translate("request_blood", "Emergency request", nullptr));
+        login_2->setText(QCoreApplication::translate("request_blood", "Logout", nullptr));
     } // retranslateUi
 
 };

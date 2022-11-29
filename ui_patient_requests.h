@@ -56,6 +56,7 @@ public:
     QTableView *tableView;
     QLineEdit *search;
     QPushButton *pushButton;
+    QPushButton *login_2;
 
     void setupUi(QDialog *patient_requests)
     {
@@ -113,7 +114,7 @@ public:
         label_27->setStyleSheet(QString::fromUtf8("background-image: url(:/img/Images/blood.png);"));
         login = new QPushButton(patient_requests);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font1);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -327,9 +328,34 @@ public:
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(840, 150, 101, 38));
         pushButton->setFont(font);
-        pushButton->setStyleSheet(QString::fromUtf8("background-color: rgb(144, 10, 18);\n"
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("*{background-color: rgb(144, 10, 18);\n"
 "color: rgb(255, 255, 255);\n"
-"border-radius:10px;"));
+"border-radius:10px;}\n"
+"\n"
+"#pushButton::hoever\n"
+"{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	color: rgb(144, 10, 18);\n"
+"}\n"
+""));
+        login_2 = new QPushButton(patient_requests);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font1);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_4->raise();
         label_2->raise();
         label->raise();
@@ -361,6 +387,7 @@ public:
         tableView->raise();
         search->raise();
         pushButton->raise();
+        login_2->raise();
 
         retranslateUi(patient_requests);
 
@@ -375,7 +402,7 @@ public:
 "Details", nullptr));
         about->setText(QCoreApplication::translate("patient_requests", "About us", nullptr));
         label_27->setText(QString());
-        login->setText(QCoreApplication::translate("patient_requests", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("patient_requests", "Dashboard", nullptr));
         label_3->setText(QString());
         label_28->setText(QString());
         label_7->setText(QString());
@@ -399,6 +426,7 @@ public:
         search->setText(QString());
         search->setPlaceholderText(QCoreApplication::translate("patient_requests", "   Search", nullptr));
         pushButton->setText(QCoreApplication::translate("patient_requests", "Edit", nullptr));
+        login_2->setText(QCoreApplication::translate("patient_requests", "Logout", nullptr));
     } // retranslateUi
 
 };

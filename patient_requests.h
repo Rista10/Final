@@ -36,6 +36,8 @@ private slots:
 
     void on_search_textChanged(const QString &arg1);
 
+    void on_login_2_clicked();
+
 private:
     Ui::patient_requests *ui;
 };

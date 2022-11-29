@@ -224,7 +224,7 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="login">
    <property name="geometry">
     <rect>
-     <x>1070</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -244,7 +244,7 @@ border-radius:5px;</string>
 {
  background-color:rgb(144, 10, 18);
 border-radius:20px;
-	color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255)
 }
 
 #login::hover
@@ -254,7 +254,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="QPushButton" name="about">
@@ -974,7 +974,7 @@ background-color: rgb(255, 255, 255);
     <string/>
    </property>
    <property name="placeholderText">
-    <string> Enter motive</string>
+    <string>Enter motive</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
@@ -991,6 +991,42 @@ background-color: rgb(255, 255, 255);
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_2
+{
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
    </property>
   </widget>
   <zorder>label_4</zorder>
@@ -1038,6 +1074,7 @@ background-color: rgb(255, 255, 255);
   <zorder>label_13</zorder>
   <zorder>motive</zorder>
   <zorder>label_6</zorder>
+  <zorder>login_2</zorder>
  </widget>
  <resources/>
  <connections/>

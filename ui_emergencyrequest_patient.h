@@ -67,6 +67,7 @@ public:
     QLabel *label_19;
     QPushButton *pushButton;
     QLabel *label_4;
+    QPushButton *login_2;
 
     void setupUi(QDialog *emergencyRequest_patient)
     {
@@ -98,7 +99,7 @@ public:
 "border-radius:5px;"));
         about = new QPushButton(emergencyRequest_patient);
         about->setObjectName("about");
-        about->setGeometry(QRect(430, 30, 151, 41));
+        about->setGeometry(QRect(435, 30, 121, 41));
         QFont font;
         font.setPointSize(12);
         font.setBold(true);
@@ -176,7 +177,7 @@ public:
         label_27->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/Donor.png);"));
         home = new QPushButton(emergencyRequest_patient);
         home->setObjectName("home");
-        home->setGeometry(QRect(300, 30, 141, 41));
+        home->setGeometry(QRect(300, 30, 111, 41));
         home->setFont(font);
         home->setCursor(QCursor(Qt::PointingHandCursor));
         home->setStyleSheet(QString::fromUtf8("#home\n"
@@ -243,7 +244,7 @@ public:
         label_28->setStyleSheet(QString::fromUtf8("border-image: url(:/img/Images/hospital.png);"));
         login = new QPushButton(emergencyRequest_patient);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -403,7 +404,25 @@ public:
         label_4 = new QLabel(emergencyRequest_patient);
         label_4->setObjectName("label_4");
         label_4->setGeometry(QRect(640, 150, 321, 481));
-        label_4->setStyleSheet(QString::fromUtf8("background-image: url(:/Images/emergency.png);"));
+        label_4->setStyleSheet(QString::fromUtf8("background-image: url(:/Images/emergency.png);\n"
+"background-image:no-repeat;"));
+        login_2 = new QPushButton(emergencyRequest_patient);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_6->raise();
         label_2->raise();
         label->raise();
@@ -446,6 +465,7 @@ public:
         label_19->raise();
         pushButton->raise();
         label_4->raise();
+        login_2->raise();
 
         retranslateUi(emergencyRequest_patient);
 
@@ -479,7 +499,7 @@ public:
         my_details->setText(QCoreApplication::translate("emergencyRequest_patient", "My\n"
 "Details", nullptr));
         label_28->setText(QString());
-        login->setText(QCoreApplication::translate("emergencyRequest_patient", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("emergencyRequest_patient", "Dashboard", nullptr));
         label_6->setText(QString());
         label_33->setText(QCoreApplication::translate("emergencyRequest_patient", "Announcements", nullptr));
         label_37->setText(QString());
@@ -497,6 +517,7 @@ public:
         label_19->setText(QCoreApplication::translate("emergencyRequest_patient", "Ready to Donate ?", nullptr));
         pushButton->setText(QCoreApplication::translate("emergencyRequest_patient", "Yes", nullptr));
         label_4->setText(QString());
+        login_2->setText(QCoreApplication::translate("emergencyRequest_patient", "Logout", nullptr));
     } // retranslateUi
 
 };

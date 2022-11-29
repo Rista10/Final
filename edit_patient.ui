@@ -151,7 +151,7 @@ Requests</string>
   <widget class="QPushButton" name="login">
    <property name="geometry">
     <rect>
-     <x>1070</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -181,7 +181,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -511,7 +511,7 @@ color: rgb(144, 10, 18);}</string>
     <rect>
      <x>420</x>
      <y>30</y>
-     <width>151</width>
+     <width>130</width>
      <height>41</height>
     </rect>
    </property>
@@ -580,7 +580,7 @@ Details</string>
   <widget class="QPushButton" name="why">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>555</x>
      <y>30</y>
      <width>231</width>
      <height>41</height>
@@ -682,10 +682,21 @@ color: rgb(144, 10, 18);}</string>
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(144, 10, 18);
+    <string notr="true">*{background-color: rgb(144, 10, 18);
 color: rgb(255, 255, 255);
-border-radius:5px;</string>
+border-radius:5px;}
+
+
+#pushButton::hoever
+{
+	background-color: rgb(255, 255, 255);
+	color: rgb(144, 10, 18);
+}
+</string>
    </property>
    <property name="text">
     <string>Delete</string>
@@ -708,6 +719,42 @@ border-color:black;
    </property>
    <property name="placeholderText">
     <string>  Enter Patient ID</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_2
+{
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
    </property>
   </widget>
   <zorder>label_2</zorder>
@@ -741,6 +788,7 @@ border-color:black;
   <zorder>line_4</zorder>
   <zorder>pushButton</zorder>
   <zorder>userid</zorder>
+  <zorder>login_2</zorder>
  </widget>
  <resources/>
  <connections/>

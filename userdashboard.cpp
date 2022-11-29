@@ -9,6 +9,7 @@
 #include "emergencyrequest_patient.h"
 #include "campaign.h"
 
+
 userDashboard::userDashboard(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::userDashboard)
@@ -100,5 +101,13 @@ void userDashboard::on_pushButton_clicked()
     ca.setModal(true);
     hide();
     ca.exec();
+}
+
+
+void userDashboard::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

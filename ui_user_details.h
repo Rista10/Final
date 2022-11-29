@@ -55,6 +55,7 @@ public:
     QLabel *label_26;
     QTableView *tableView;
     QLineEdit *search;
+    QPushButton *login_2;
 
     void setupUi(QDialog *user_details)
     {
@@ -211,7 +212,7 @@ public:
 ""));
         login = new QPushButton(user_details);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -301,6 +302,23 @@ public:
 "color:grey;\n"
 "border-radius:15px;\n"
 "font-family:Andale Mono;"));
+        login_2 = new QPushButton(user_details);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_4->raise();
         label_2->raise();
         label->raise();
@@ -331,6 +349,7 @@ public:
         label_32->raise();
         tableView->raise();
         search->raise();
+        login_2->raise();
 
         retranslateUi(user_details);
 
@@ -358,7 +377,7 @@ public:
         label_3->setText(QString());
         my_details_2->setText(QCoreApplication::translate("user_details", "Donor\n"
 "Requests", nullptr));
-        login->setText(QCoreApplication::translate("user_details", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("user_details", "Dashboard", nullptr));
         why->setText(QCoreApplication::translate("user_details", "Why become donor", nullptr));
         label_24->setText(QString());
         my_details_3->setText(QCoreApplication::translate("user_details", "Blood\n"
@@ -368,6 +387,7 @@ public:
         label_26->setText(QString());
         search->setText(QString());
         search->setPlaceholderText(QCoreApplication::translate("user_details", "   Search", nullptr));
+        login_2->setText(QCoreApplication::translate("user_details", "Logout", nullptr));
     } // retranslateUi
 
 };

@@ -36,6 +36,8 @@ private slots:
 
     void on_home_clicked();
 
+    void on_login_2_clicked();
+
 private:
     Ui::donate_blood *ui;
 };

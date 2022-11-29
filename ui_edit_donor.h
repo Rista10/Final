@@ -56,6 +56,7 @@ public:
     QFrame *line_4;
     QPushButton *pushButton;
     QLineEdit *userid;
+    QPushButton *login_2;
 
     void setupUi(QDialog *edit_donor)
     {
@@ -112,7 +113,7 @@ public:
 "}"));
         login = new QPushButton(edit_donor);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         QFont font1;
         font1.setPointSize(12);
         font1.setBold(true);
@@ -244,7 +245,7 @@ public:
         line->setFrameShadow(QFrame::Sunken);
         about = new QPushButton(edit_donor);
         about->setObjectName("about");
-        about->setGeometry(QRect(420, 30, 151, 41));
+        about->setGeometry(QRect(400, 30, 151, 41));
         about->setFont(font1);
         about->setCursor(QCursor(Qt::PointingHandCursor));
         about->setStyleSheet(QString::fromUtf8("#about\n"
@@ -276,7 +277,7 @@ public:
 "}"));
         why = new QPushButton(edit_donor);
         why->setObjectName("why");
-        why->setGeometry(QRect(550, 30, 231, 41));
+        why->setGeometry(QRect(560, 30, 231, 41));
         why->setFont(font1);
         why->setCursor(QCursor(Qt::PointingHandCursor));
         why->setStyleSheet(QString::fromUtf8("#why\n"
@@ -316,13 +317,14 @@ public:
         font2.setPointSize(10);
         font2.setBold(true);
         pushButton->setFont(font2);
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("*{background-color: rgb(144, 10, 18);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius:5px;}\n"
-"#pushButton::hover\n"
-"{\n"
-"\n"
+"#pushButton::hover{\n"
+"background-color:white;\n"
 "	color: rgb(144, 10, 18);\n"
+"\n"
 "}"));
         userid = new QLineEdit(edit_donor);
         userid->setObjectName("userid");
@@ -330,6 +332,23 @@ public:
         userid->setStyleSheet(QString::fromUtf8("color: black;\n"
 "background-color: rgb(255, 255, 255);\n"
 "border-color:black;"));
+        login_2 = new QPushButton(edit_donor);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font1);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_2->raise();
         label_4->raise();
         label_25->raise();
@@ -361,6 +380,7 @@ public:
         line_4->raise();
         pushButton->raise();
         userid->raise();
+        login_2->raise();
 
         retranslateUi(edit_donor);
 
@@ -377,7 +397,7 @@ public:
         label->setText(QString());
         my_details_2->setText(QCoreApplication::translate("edit_donor", "Donor\n"
 "Requests", nullptr));
-        login->setText(QCoreApplication::translate("edit_donor", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("edit_donor", "Dashboard", nullptr));
         label_2->setText(QString());
         label_24->setText(QString());
         label_27->setText(QString());
@@ -398,6 +418,7 @@ public:
         label_31->setText(QCoreApplication::translate("edit_donor", "12 December,2022", nullptr));
         pushButton->setText(QCoreApplication::translate("edit_donor", "Delete", nullptr));
         userid->setPlaceholderText(QCoreApplication::translate("edit_donor", "  Enter Donor ID", nullptr));
+        login_2->setText(QCoreApplication::translate("edit_donor", "Logout", nullptr));
     } // retranslateUi
 
 };

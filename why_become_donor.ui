@@ -248,8 +248,7 @@ border-image: url(:/img/Images/output-onlinepngtools (1).png);  }
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/Images/bg.png);
-background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -266,13 +265,14 @@ background-color: rgb(243, 130, 135);</string>
     </property>
     <property name="font">
      <font>
+      <family>AcadEref</family>
       <pointsize>10</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>1. There is no substitute for human blood</string>
@@ -288,7 +288,7 @@ background-color: rgb(243, 130, 135);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>It only comes from a person who donate it</string>
@@ -311,7 +311,7 @@ background-color: rgb(243, 130, 135);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>2. One blood donation can save 3 lives</string>
@@ -334,7 +334,7 @@ background-color: rgb(243, 130, 135);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>3.Its a volunteering activity</string>
@@ -357,7 +357,7 @@ background-color: rgb(243, 130, 135);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>4. There is always need for donors</string>
@@ -373,7 +373,7 @@ background-color: rgb(243, 130, 135);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Its a great help to community and takes only about an hour !</string>
@@ -389,7 +389,7 @@ background-color: rgb(243, 130, 135);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>RBC in your blood can help in surgeries, platelets often goes to cancer patients</string>
@@ -405,7 +405,7 @@ background-color: rgb(243, 130, 135);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Your small help would help those who are in need </string>
@@ -428,7 +428,7 @@ background-color: rgb(243, 130, 135);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>YOU  WILL LEARN  ABOUT YOUR BLOOD TYPE AND MORE !! :) </string>
@@ -465,8 +465,7 @@ background-color: rgb(243, 130, 135);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/img/Images/istockphoto-1091728056-612x612-removebg-preview.png);
-background-color: rgb(243, 130, 135);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -488,6 +487,85 @@ border-radius: 50px;
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>131</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:3px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/Downloads/bg.png</normaloff>:/Downloads/bg.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>160</width>
+      <height>160</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>160</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:3px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/Downloads/istockphoto-1091728056-612x612-removebg-preview.png</normaloff>:/Downloads/istockphoto-1091728056-612x612-removebg-preview.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>160</width>
+      <height>160</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>350</y>
+      <width>131</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:3px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/Downloads/istockphoto-1179369531-612x612-removebg-preview.png</normaloff>:/Downloads/istockphoto-1179369531-612x612-removebg-preview.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>150</width>
+      <height>150</height>
+     </size>
     </property>
    </widget>
   </widget>

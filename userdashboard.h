@@ -34,6 +34,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_login_2_clicked();
+
 private:
     Ui::userDashboard *ui;
 };

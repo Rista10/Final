@@ -68,6 +68,7 @@ public:
     QLabel *label_13;
     QLineEdit *motive;
     QLabel *label_6;
+    QPushButton *login_2;
 
     void setupUi(QDialog *camaign_admin)
     {
@@ -149,14 +150,14 @@ public:
 "border-radius:5px;"));
         login = new QPushButton(camaign_admin);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
 "{\n"
 " background-color:rgb(144, 10, 18);\n"
 "border-radius:20px;\n"
-"	color: rgb(255, 255, 255);\n"
+"	color: rgb(255, 255, 255)\n"
 "}\n"
 "\n"
 "#login::hover\n"
@@ -396,6 +397,23 @@ public:
         label_6->setObjectName("label_6");
         label_6->setGeometry(QRect(690, 180, 271, 441));
         label_6->setStyleSheet(QString::fromUtf8("background-image: url(:/Images/campaign.png);"));
+        login_2 = new QPushButton(camaign_admin);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_4->raise();
         label->raise();
         label_25->raise();
@@ -441,6 +459,7 @@ public:
         label_13->raise();
         motive->raise();
         label_6->raise();
+        login_2->raise();
 
         retranslateUi(camaign_admin);
 
@@ -458,7 +477,7 @@ public:
         label_2->setText(QString());
         label->setText(QString());
         label_7->setText(QString());
-        login->setText(QCoreApplication::translate("camaign_admin", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("camaign_admin", "Dashboard", nullptr));
         about->setText(QCoreApplication::translate("camaign_admin", "About us", nullptr));
         my_details_2->setText(QCoreApplication::translate("camaign_admin", "Donor\n"
 "Requests", nullptr));
@@ -504,8 +523,9 @@ public:
         Post->setText(QCoreApplication::translate("camaign_admin", "Post", nullptr));
         label_13->setText(QCoreApplication::translate("camaign_admin", "Motive:", nullptr));
         motive->setText(QString());
-        motive->setPlaceholderText(QCoreApplication::translate("camaign_admin", " Enter motive", nullptr));
+        motive->setPlaceholderText(QCoreApplication::translate("camaign_admin", "Enter motive", nullptr));
         label_6->setText(QString());
+        login_2->setText(QCoreApplication::translate("camaign_admin", "Logout", nullptr));
     } // retranslateUi
 
 };

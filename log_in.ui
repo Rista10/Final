@@ -35,14 +35,14 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>702</x>
-     <y>33</y>
+     <x>705</x>
+     <y>14</y>
      <width>491</width>
-     <height>601</height>
+     <height>641</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-radius:53px;
+    <string notr="true">border-radius:30px;
 background-color:#F1EEEE;</string>
    </property>
    <property name="text">
@@ -52,8 +52,8 @@ background-color:#F1EEEE;</string>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>900</x>
-     <y>89</y>
+     <x>920</x>
+     <y>56</y>
      <width>81</width>
      <height>81</height>
     </rect>
@@ -69,8 +69,8 @@ background-color:#F1EEEE;</string>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>885</x>
-     <y>170</y>
+     <x>890</x>
+     <y>140</y>
      <width>141</width>
      <height>81</height>
     </rect>
@@ -91,10 +91,10 @@ background-color:#F1EEEE;</string>
   <widget class="QPushButton" name="signin">
    <property name="geometry">
     <rect>
-     <x>748</x>
-     <y>520</y>
-     <width>400</width>
-     <height>50</height>
+     <x>740</x>
+     <y>460</y>
+     <width>421</width>
+     <height>45</height>
     </rect>
    </property>
    <property name="font">
@@ -110,7 +110,7 @@ background-color:#F1EEEE;</string>
     <string notr="true">#signin
 {
  background-color:rgb(144, 10, 18);
-border-radius:20px;
+border-radius:10px;
 	color: rgb(255, 255, 255);
 }
 #signin::hover
@@ -126,8 +126,8 @@ background-color:white;
   <widget class="QLineEdit" name="email">
    <property name="geometry">
     <rect>
-     <x>748</x>
-     <y>306</y>
+     <x>750</x>
+     <y>270</y>
      <width>400</width>
      <height>50</height>
     </rect>
@@ -143,8 +143,8 @@ background-color:rgb(255, 255, 255)
   <widget class="QLabel" name="password_2">
    <property name="geometry">
     <rect>
-     <x>747</x>
-     <y>385</y>
+     <x>750</x>
+     <y>344</y>
      <width>71</width>
      <height>20</height>
     </rect>
@@ -165,8 +165,8 @@ background-color:rgb(255, 255, 255)
   <widget class="QLabel" name="email_2">
    <property name="geometry">
     <rect>
-     <x>747</x>
-     <y>279</y>
+     <x>750</x>
+     <y>243</y>
      <width>63</width>
      <height>20</height>
     </rect>
@@ -186,8 +186,8 @@ background-color:rgb(255, 255, 255)
   <widget class="QLineEdit" name="password">
    <property name="geometry">
     <rect>
-     <x>748</x>
-     <y>412</y>
+     <x>751</x>
+     <y>373</y>
      <width>400</width>
      <height>50</height>
     </rect>
@@ -213,7 +213,7 @@ background-color:rgb(255, 255, 255)
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/Images/login.jpg);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -225,7 +225,7 @@ background-color:rgb(255, 255, 255)
      <x>40</x>
      <y>30</y>
      <width>60</width>
-     <height>59</height>
+     <height>61</height>
     </rect>
    </property>
    <property name="font">
@@ -237,24 +237,340 @@ background-color:rgb(255, 255, 255)
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
    <property name="styleSheet">
     <string notr="true">#home_2
-
 {
-	border-color: rgb(0, 0, 0);
-    border: 2px solid #555;
     border-radius: 20px;
     border-style: outset;
-    padding: 5px;
-	border-image: url(:/Images/back_arrow.png);
-}
+    padding: 5px;}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/back_arrow.png</normaloff>:/Images/back_arrow.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>78</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="signin_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>610</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#signin_2
+{
+
+ background-color:#F1EEEE;
+border-radius:20px;
+	}
+</string>
+   </property>
+   <property name="text">
+    <string>Create New Account</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="email_3">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>525</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#F1EEEE;</string>
+   </property>
+   <property name="text">
+    <string>OR</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>100</y>
+     <width>591</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
 </string>
    </property>
    <property name="text">
     <string/>
    </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/login.jpg</normaloff>:/Images/login.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>10500</width>
+     <height>10500</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>557</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Social Media Circled</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_4{
+background-color:rgba(0,0,0,0);
+ color: rgb(255, 164, 170)
+
+   
+}
+
+QPushButton#pushButton_4:hover{
+background-color: rgba(0,0,0,0);
+ color: rgba(205,200,250,230);
+
+   
+}
+QPushButton#pushButton_4:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(105,110,132,200);
+
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>D</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>557</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Social Media Circled</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_2{
+background-color:rgba(0,0,0,0);
+ color: rgb(255, 164, 170)
+   
+}
+
+QPushButton#pushButton_2:hover{
+background-color: rgba(0,0,0,0);
+ color: rgba(205,200,250,230);
+
+   
+}
+QPushButton#pushButton_2:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(105,110,132,200);
+
+   
+}
+QPushButton#pushButton_3:hover{
+background-color: rgba(0,0,0,0);
+ color: rgba(205,200,250,230);
+
+   
+}
+QPushButton#pushButton_3:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(105,110,132,200);
+
+   
+}
+QPushButton#pushButton_4:hover{
+background-color: rgba(0,0,0,0);
+ color: rgba(205,200,250,230);
+
+   
+}
+QPushButton#pushButton_4:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(105,110,132,200);
+
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>E</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>557</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Social Media Circled</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_3{
+background-color:rgba(0,0,0,0);
+ color: rgb(255, 164, 170)
+
+   
+}
+
+QPushButton#pushButton_3:hover{
+background-color: rgba(0,0,0,0);
+ color: rgba(205,200,250,230);
+
+   
+}
+QPushButton#pushButton_3:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(105,110,132,200);
+
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>Q</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>557</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Social Media Circled</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton_5{
+background-color:rgba(0,0,0,0);
+ color: rgb(255, 164, 170)
+
+   
+}
+
+QPushButton#pushButton_5:hover{
+background-color: rgba(0,0,0,0);
+ color: rgba(205,200,250,230);
+
+   
+}
+QPushButton#pushButton_5:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(105,110,132,200);
+
+   
+}</string>
+   </property>
+   <property name="text">
+    <string>k</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>747</x>
+     <y>530</y>
+     <width>411</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#F1EEEE;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>611</y>
+     <width>81</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#F1EEEE;
+border-radius:5px;</string>
+   </property>
+   <property name="text">
+    <string>Join us now</string>
+   </property>
   </widget>
   <zorder>label_2</zorder>
+  <zorder>line</zorder>
   <zorder>label_5</zorder>
   <zorder>label</zorder>
   <zorder>label_3</zorder>
@@ -265,7 +581,17 @@ background-color:rgb(255, 255, 255)
   <zorder>email_2</zorder>
   <zorder>password</zorder>
   <zorder>home_2</zorder>
+  <zorder>signin_2</zorder>
+  <zorder>email_3</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>lineEdit</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

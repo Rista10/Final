@@ -73,6 +73,7 @@ public:
     QLabel *label_36;
     QLabel *label_37;
     QLabel *label_38;
+    QPushButton *login_2;
 
     void setupUi(QDialog *donate_blood)
     {
@@ -138,7 +139,7 @@ public:
 "}"));
         login = new QPushButton(donate_blood);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -470,6 +471,23 @@ public:
         label_38->setGeometry(QRect(1060, 140, 141, 31));
         label_38->setFont(font1);
         label_38->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        login_2 = new QPushButton(donate_blood);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label->raise();
         label_7->raise();
         home->raise();
@@ -520,6 +538,7 @@ public:
         label_30->raise();
         label_36->raise();
         label_38->raise();
+        login_2->raise();
 
         retranslateUi(donate_blood);
 
@@ -533,7 +552,7 @@ public:
         home->setText(QCoreApplication::translate("donate_blood", "Home", nullptr));
         about->setText(QCoreApplication::translate("donate_blood", "About us", nullptr));
         why->setText(QCoreApplication::translate("donate_blood", "Why become donor", nullptr));
-        login->setText(QCoreApplication::translate("donate_blood", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("donate_blood", "Dashboard", nullptr));
         label->setText(QString());
         label_2->setText(QString());
         label_5->setText(QString());
@@ -584,6 +603,7 @@ public:
         label_36->setText(QString());
         label_37->setText(QString());
         label_38->setText(QCoreApplication::translate("donate_blood", "Blood Donation ", nullptr));
+        login_2->setText(QCoreApplication::translate("donate_blood", "Logout", nullptr));
     } // retranslateUi
 
 };

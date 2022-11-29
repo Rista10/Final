@@ -106,3 +106,11 @@ void admin_dashboard::on_pushButton_3_clicked()
     ca.exec();
 }
 
+
+void admin_dashboard::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

@@ -114,3 +114,11 @@ void campaign::on_my_details_4_clicked()
     di.exec();
 }
 
+
+void campaign::on_login_3_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

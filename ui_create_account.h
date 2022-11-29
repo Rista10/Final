@@ -10,6 +10,7 @@
 #define UI_CREATE_ACCOUNT_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
@@ -159,16 +160,17 @@ public:
         back->setGeometry(QRect(30, 30, 60, 60));
         back->setCursor(QCursor(Qt::PointingHandCursor));
         back->setStyleSheet(QString::fromUtf8("#back {\n"
-"	border-color: rgb(0, 0, 0);\n"
-"    border: 2px solid #555;\n"
 "    border-radius: 20px;\n"
 "    border-style: outset;\n"
 "    padding: 5px;\n"
-"	border-image: url(:/Images/back_arrow.png);\n"
 "  }\n"
 "\n"
 "\n"
 ""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Images/back_arrow.png"), QSize(), QIcon::Normal, QIcon::Off);
+        back->setIcon(icon);
+        back->setIconSize(QSize(60, 78));
 
         retranslateUi(create_account);
 

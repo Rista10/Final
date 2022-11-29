@@ -250,7 +250,13 @@ debug/qrc_Resources.cpp: Resources.qrc \
 		Images/blood_donor.png \
 		Images/announcement.png \
 		Images/blood_drop.png \
-		Images/hospital.png
+		Images/hospital.png \
+		../../../Downloads/pr2.png \
+		../../../Downloads/istockphoto-1091728056-612x612-removebg-preview.png \
+		../../../Downloads/vector-illustration-of-donate-blood-concept-for-world-blood-donor-day-T7393X-removebg-preview.png \
+		../../../Downloads/output-onlinepngtools\ (1).png \
+		../../../Downloads/istockphoto-1179369531-612x612-removebg-preview.png \
+		../../../Downloads/bg.png
 	C:\Qt\6.4.0\mingw_64\bin\rcc.exe -name Resources Resources.qrc -o debug\qrc_Resources.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -6585,6 +6591,12 @@ debug/admin_dashboard.o: admin_dashboard.cpp admin_dashboard.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -7646,7 +7658,15 @@ debug/change_information.o: change_information.cpp change_information.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-		my_details.h
+		my_details.h \
+		donate_blood.h \
+		request_blood.h \
+		mainwindow.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		about.h \
+		why_become_donor.h \
+		userdashboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\change_information.o change_information.cpp
 
 debug/create_account.o: create_account.cpp create_account.h \
@@ -7969,6 +7989,7 @@ debug/create_account.o: create_account.cpp create_account.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_create_account.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -9408,7 +9429,8 @@ debug/edit_patient.o: edit_patient.cpp edit_patient.h \
 		admin_dashboard.h \
 		user_details.h \
 		patient_requests.h \
-		edit_donor.h
+		edit_donor.h \
+		donor_request.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\edit_patient.o edit_patient.cpp
 
 debug/emergencyrequest_admin.o: emergencyrequest_admin.cpp emergencyrequest_admin.h \
@@ -9755,7 +9777,16 @@ debug/emergencyrequest_admin.o: emergencyrequest_admin.cpp emergencyrequest_admi
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QTableView \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtableview.h
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtableview.h \
+		user_details.h \
+		donor_request.h \
+		patient_requests.h \
+		mainwindow.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		about.h \
+		why_become_donor.h \
+		userdashboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\emergencyrequest_admin.o emergencyrequest_admin.cpp
 
 debug/emergencyrequest_patient.o: emergencyrequest_patient.cpp emergencyrequest_patient.h \
@@ -10102,7 +10133,17 @@ debug/emergencyrequest_patient.o: emergencyrequest_patient.cpp emergencyrequest_
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QTableView \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtableview.h
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtableview.h \
+		donate_blood.h \
+		request_blood.h \
+		my_details.h \
+		mainwindow.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		about.h \
+		why_become_donor.h \
+		user_details.h \
+		userdashboard.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\emergencyrequest_patient.o emergencyrequest_patient.cpp
 
 debug/log_in.o: log_in.cpp log_in.h \
@@ -10425,6 +10466,7 @@ debug/log_in.o: log_in.cpp log_in.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		ui_log_in.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -10443,11 +10485,14 @@ debug/log_in.o: log_in.cpp log_in.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QToolButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtoolbutton.h \
 		mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		userdashboard.h \
-		admin_dashboard.h
+		admin_dashboard.h \
+		create_account.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\log_in.o log_in.cpp
 
 debug/main.o: main.cpp mainwindow.h \
@@ -12363,7 +12408,8 @@ debug/user_details.o: user_details.cpp user_details.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		admin_dashboard.h \
-		donor_request.h
+		donor_request.h \
+		patient_requests.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\user_details.o user_details.cpp
 
 debug/userdashboard.o: userdashboard.cpp userdashboard.h \

@@ -7,6 +7,7 @@
 #include "user_details.h"
 #include "patient_requests.h"
 #include "edit_donor.h"
+#include "donor_request.h".h"
 extern int id;
 
 
@@ -103,5 +104,75 @@ else
 
 
 }
+}
+
+
+void edit_patient::on_my_details_clicked()
+{
+    user_details u1;
+    u1.setModal(true);
+    hide();
+    u1.exec();
+}
+
+
+void edit_patient::on_my_details_2_clicked()
+{
+    patient_requests r1;
+    r1.setModal(true);
+    hide();
+    r1.exec();
+}
+
+
+void edit_patient::on_my_details_3_clicked()
+{
+    donor_request dr;
+    dr.setModal(true);
+    hide();
+    dr.exec();
+}
+
+
+void edit_patient::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+
+
+void edit_patient::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void edit_patient::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
+}
+
+
+void edit_patient::on_login_clicked()
+{
+    admin_dashboard u1;
+    u1.setModal(true);
+    hide();
+    u1.exec();
+}
+
+
+void edit_patient::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

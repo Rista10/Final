@@ -6,7 +6,7 @@
 #include <mainwindow.h>
 #include <about.h>
 #include <why_become_donor.h>
-#include <userdashboard.h>
+#include <admin_dashboard.h>
 
 camaign_admin::camaign_admin(QWidget *parent) :
     QDialog(parent),
@@ -49,10 +49,10 @@ void camaign_admin::on_my_details_3_clicked()
 
 void camaign_admin::on_login_clicked()
 {
-    user_details u1;
-    u1.setModal(true);
+    admin_dashboard ud;
+    ud.setModal(true);
     hide();
-    u1.exec();
+    ud.exec();
 }
 
 
@@ -121,7 +121,7 @@ void camaign_admin::on_Post_clicked()
 
         if(qry.exec())
         {
-               QMessageBox::information(this,"Information","You will be notified soon about blood");
+               QMessageBox::information(this,"Information","Campaign updated");
         }
         }
         else
@@ -134,5 +134,13 @@ void camaign_admin::on_Post_clicked()
         QMessageBox::information(this,"Error"," Database not connected");
     }
 
+}
+
+
+void camaign_admin::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

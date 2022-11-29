@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_my_details_t {
-    uint offsetsAndSizes[18];
+    uint offsetsAndSizes[20];
     char stringdata0[11];
     char stringdata1[24];
     char stringdata2[1];
@@ -36,6 +36,7 @@ struct qt_meta_stringdata_my_details_t {
     char stringdata6[15];
     char stringdata7[16];
     char stringdata8[24];
+    char stringdata9[19];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_my_details_t::offsetsAndSizes) + ofs), len 
@@ -49,7 +50,8 @@ Q_CONSTINIT static const qt_meta_stringdata_my_details_t qt_meta_stringdata_my_d
         QT_MOC_LITERAL(77, 16),  // "on_about_clicked"
         QT_MOC_LITERAL(94, 14),  // "on_why_clicked"
         QT_MOC_LITERAL(109, 15),  // "on_home_clicked"
-        QT_MOC_LITERAL(125, 23)   // "on_pushButton_2_clicked"
+        QT_MOC_LITERAL(125, 23),  // "on_pushButton_2_clicked"
+        QT_MOC_LITERAL(149, 18)   // "on_login_2_clicked"
     },
     "my_details",
     "on_my_details_4_clicked",
@@ -59,7 +61,8 @@ Q_CONSTINIT static const qt_meta_stringdata_my_details_t qt_meta_stringdata_my_d
     "on_about_clicked",
     "on_why_clicked",
     "on_home_clicked",
-    "on_pushButton_2_clicked"
+    "on_pushButton_2_clicked",
+    "on_login_2_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -70,7 +73,7 @@ Q_CONSTINIT static const uint qt_meta_data_my_details[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -78,15 +81,17 @@ Q_CONSTINIT static const uint qt_meta_data_my_details[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   56,    2, 0x08,    1 /* Private */,
-       3,    0,   57,    2, 0x08,    2 /* Private */,
-       4,    0,   58,    2, 0x08,    3 /* Private */,
-       5,    0,   59,    2, 0x08,    4 /* Private */,
-       6,    0,   60,    2, 0x08,    5 /* Private */,
-       7,    0,   61,    2, 0x08,    6 /* Private */,
-       8,    0,   62,    2, 0x08,    7 /* Private */,
+       1,    0,   62,    2, 0x08,    1 /* Private */,
+       3,    0,   63,    2, 0x08,    2 /* Private */,
+       4,    0,   64,    2, 0x08,    3 /* Private */,
+       5,    0,   65,    2, 0x08,    4 /* Private */,
+       6,    0,   66,    2, 0x08,    5 /* Private */,
+       7,    0,   67,    2, 0x08,    6 /* Private */,
+       8,    0,   68,    2, 0x08,    7 /* Private */,
+       9,    0,   69,    2, 0x08,    8 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -120,6 +125,8 @@ Q_CONSTINIT const QMetaObject my_details::staticMetaObject = { {
         // method 'on_home_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_2_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_login_2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -138,6 +145,7 @@ void my_details::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->on_why_clicked(); break;
         case 5: _t->on_home_clicked(); break;
         case 6: _t->on_pushButton_2_clicked(); break;
+        case 7: _t->on_login_2_clicked(); break;
         default: ;
         }
     }
@@ -163,13 +171,13 @@ int my_details::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }

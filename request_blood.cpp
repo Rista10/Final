@@ -166,7 +166,7 @@ void request_blood::on_register_3_clicked()
 
         if(qry.exec())
         {
-               QMessageBox::information(this,"Information","You will be notified soon about blood");
+               QMessageBox::information(this,"Information","You will soon be notified  about blood");
         }
         }
         else
@@ -178,5 +178,13 @@ void request_blood::on_register_3_clicked()
     {
         QMessageBox::information(this,"Error"," Database not connected");
     }
+}
+
+
+void request_blood::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

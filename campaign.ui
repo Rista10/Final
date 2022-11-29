@@ -557,7 +557,7 @@ color: rgb(144, 10, 18);
   <widget class="QPushButton" name="login_2">
    <property name="geometry">
     <rect>
-     <x>1080</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -587,7 +587,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_58">
@@ -1070,7 +1070,7 @@ color: rgb(144, 10, 18);</string>
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>230</y>
+     <y>240</y>
      <width>521</width>
      <height>161</height>
     </rect>
@@ -1290,6 +1290,42 @@ blood stocks healthy
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="login_3">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_3
+{
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login_3::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
   <zorder>label_3</zorder>
   <zorder>label_21</zorder>
   <zorder>label_2</zorder>
@@ -1347,6 +1383,7 @@ blood stocks healthy
   <zorder>motive</zorder>
   <zorder>label_12</zorder>
   <zorder>label_6</zorder>
+  <zorder>login_3</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -115,3 +115,11 @@ void my_details::on_pushButton_2_clicked()
     ci.exec();
 }
 
+
+void my_details::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

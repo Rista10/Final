@@ -115,3 +115,64 @@ void edit_donor::on_my_details_3_clicked()
     pr.exec();
 }
 
+
+void edit_donor::on_my_details_clicked()
+{
+    user_details u1;
+    u1.setModal(true);
+    hide();
+    u1.exec();
+}
+
+
+void edit_donor::on_my_details_2_clicked()
+{
+    donor_request d1;
+    d1.setModal(true);
+    hide();
+    d1.exec();
+}
+
+
+void edit_donor::on_home_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+
+
+void edit_donor::on_about_clicked()
+{
+    about ab;
+    ab.setModal(true);
+    hide();
+    ab.exec();
+}
+
+
+void edit_donor::on_why_clicked()
+{
+    why_become_donor wh;
+    wh.setModal(true);
+    hide();
+    wh.exec();
+}
+
+
+void edit_donor::on_login_clicked()
+{
+    admin_dashboard u1;
+    u1.setModal(true);
+    hide();
+    u1.exec();
+}
+
+
+void edit_donor::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

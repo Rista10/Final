@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_donate_blood_t {
-    uint offsetsAndSizes[20];
+    uint offsetsAndSizes[22];
     char stringdata0[13];
     char stringdata1[24];
     char stringdata2[1];
@@ -37,6 +37,7 @@ struct qt_meta_stringdata_donate_blood_t {
     char stringdata7[17];
     char stringdata8[15];
     char stringdata9[16];
+    char stringdata10[19];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_donate_blood_t::offsetsAndSizes) + ofs), len 
@@ -51,7 +52,8 @@ Q_CONSTINIT static const qt_meta_stringdata_donate_blood_t qt_meta_stringdata_do
         QT_MOC_LITERAL(101, 17),  // "on_donate_clicked"
         QT_MOC_LITERAL(119, 16),  // "on_about_clicked"
         QT_MOC_LITERAL(136, 14),  // "on_why_clicked"
-        QT_MOC_LITERAL(151, 15)   // "on_home_clicked"
+        QT_MOC_LITERAL(151, 15),  // "on_home_clicked"
+        QT_MOC_LITERAL(167, 18)   // "on_login_2_clicked"
     },
     "donate_blood",
     "on_my_details_3_clicked",
@@ -62,7 +64,8 @@ Q_CONSTINIT static const qt_meta_stringdata_donate_blood_t qt_meta_stringdata_do
     "on_donate_clicked",
     "on_about_clicked",
     "on_why_clicked",
-    "on_home_clicked"
+    "on_home_clicked",
+    "on_login_2_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -73,7 +76,7 @@ Q_CONSTINIT static const uint qt_meta_data_donate_blood[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -81,16 +84,18 @@ Q_CONSTINIT static const uint qt_meta_data_donate_blood[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x08,    1 /* Private */,
-       3,    0,   63,    2, 0x08,    2 /* Private */,
-       4,    0,   64,    2, 0x08,    3 /* Private */,
-       5,    0,   65,    2, 0x08,    4 /* Private */,
-       6,    0,   66,    2, 0x08,    5 /* Private */,
-       7,    0,   67,    2, 0x08,    6 /* Private */,
-       8,    0,   68,    2, 0x08,    7 /* Private */,
-       9,    0,   69,    2, 0x08,    8 /* Private */,
+       1,    0,   68,    2, 0x08,    1 /* Private */,
+       3,    0,   69,    2, 0x08,    2 /* Private */,
+       4,    0,   70,    2, 0x08,    3 /* Private */,
+       5,    0,   71,    2, 0x08,    4 /* Private */,
+       6,    0,   72,    2, 0x08,    5 /* Private */,
+       7,    0,   73,    2, 0x08,    6 /* Private */,
+       8,    0,   74,    2, 0x08,    7 /* Private */,
+       9,    0,   75,    2, 0x08,    8 /* Private */,
+      10,    0,   76,    2, 0x08,    9 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -127,6 +132,8 @@ Q_CONSTINIT const QMetaObject donate_blood::staticMetaObject = { {
         // method 'on_why_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_home_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_login_2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -146,6 +153,7 @@ void donate_blood::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 5: _t->on_about_clicked(); break;
         case 6: _t->on_why_clicked(); break;
         case 7: _t->on_home_clicked(); break;
+        case 8: _t->on_login_2_clicked(); break;
         default: ;
         }
     }
@@ -171,13 +179,13 @@ int donate_blood::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

@@ -36,6 +36,8 @@ private slots:
 
     void on_Post_clicked();
 
+    void on_login_2_clicked();
+
 private:
     Ui::camaign_admin *ui;
 };

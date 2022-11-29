@@ -141,7 +141,7 @@ color: rgb(144, 10, 18);
   <widget class="QPushButton" name="login">
    <property name="geometry">
     <rect>
-     <x>1070</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -171,7 +171,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="Line" name="line">
@@ -1092,6 +1092,42 @@ background-color:white;
     <string>Blood Donation </string>
    </property>
   </widget>
+  <widget class="QPushButton" name="login_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_2
+{
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
+
+#login_2::hover
+{
+background-color:white;
+	color: rgb(144, 10, 18);
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>label_7</zorder>
   <zorder>home</zorder>
@@ -1142,6 +1178,7 @@ background-color:white;
   <zorder>label_30</zorder>
   <zorder>label_36</zorder>
   <zorder>label_38</zorder>
+  <zorder>login_2</zorder>
  </widget>
  <resources/>
  <connections/>

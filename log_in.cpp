@@ -3,6 +3,8 @@
 #include "mainwindow.h"
 #include "userdashboard.h"
 #include "admin_dashboard.h"
+#include "create_account.h"
+#include <QDesktopServices>
 int id;
 
 log_in::log_in(QWidget *parent) :
@@ -94,5 +96,38 @@ void log_in::on_home_2_clicked()
     this->close();
     MainWindow *mainWindow = new MainWindow();
     mainWindow->show();
+}
+
+
+void log_in::on_signin_2_clicked()
+{
+    create_account ca;
+    ca.setModal(true);
+    hide();
+    ca.exec();
+}
+
+
+void log_in::on_pushButton_2_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://www.facebook.com/profile.php?id=100088266220543"));
+}
+
+
+void log_in::on_pushButton_3_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://www.instagram.com/reliv03/"));
+}
+
+
+void log_in::on_pushButton_4_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://twitter.com/RentUs44528430"));
+}
+
+
+void log_in::on_pushButton_5_clicked()
+{
+    QDesktopServices::openUrl(QUrl("mailto:reliv3011@gmail.com"));
 }
 

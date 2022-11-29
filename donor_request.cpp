@@ -121,3 +121,11 @@ void donor_request::on_search_textChanged(const QString &arg1)
     }
 }
 
+
+void donor_request::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

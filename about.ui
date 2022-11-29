@@ -117,6 +117,7 @@ color: rgb(144, 10, 18);
 {
  background-color:rgb(144, 10, 18);
 border-radius:20px;
+	color: rgb(255, 255, 255);
 }
 
 #login::hover
@@ -152,6 +153,7 @@ background-color:white;
 {
  background-color:rgb(144, 10, 18);
 border-radius:20px;
+	color: rgb(255, 255, 255);
 }
 
 #register_2::hover
@@ -395,7 +397,7 @@ donation programs.
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Images/person.jpg);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -411,7 +413,7 @@ donation programs.
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Images/person.jpg);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -427,7 +429,7 @@ donation programs.
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Images/person.jpg);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -443,7 +445,7 @@ donation programs.
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/Images/person.jpg);</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -468,7 +470,201 @@ donation programs.
     <string>About Us</string>
    </property>
   </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>250</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:3px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Downloads/pr2.png</normaloff>:/Downloads/pr2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_2">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>250</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:3px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Downloads/pr2.png</normaloff>:/Downloads/pr2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_3">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>470</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:3px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Downloads/pr2.png</normaloff>:/Downloads/pr2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_4">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>470</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:3px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Downloads/pr2.png</normaloff>:/Downloads/pr2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>420</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(144, 10, 18);</string>
+   </property>
+   <property name="text">
+    <string>Anuja Kafle</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>420</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(144, 10, 18);</string>
+   </property>
+   <property name="text">
+    <string>Aakriti Poudel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>640</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(144, 10, 18);</string>
+   </property>
+   <property name="text">
+    <string>Rista Shrestha</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>640</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(144, 10, 18);</string>
+   </property>
+   <property name="text">
+    <string>Krishita Pandey</string>
+   </property>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

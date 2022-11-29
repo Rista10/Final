@@ -124,3 +124,14 @@ void patient_requests::on_search_textChanged(const QString &arg1)
 }
 
 
+
+
+
+
+void patient_requests::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

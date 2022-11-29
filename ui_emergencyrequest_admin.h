@@ -55,6 +55,7 @@ public:
     QLabel *label;
     QTableView *tableView;
     QLineEdit *search;
+    QPushButton *login_2;
 
     void setupUi(QDialog *emergencyRequest_admin)
     {
@@ -151,7 +152,7 @@ public:
         label_25->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         login = new QPushButton(emergencyRequest_admin);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         QFont font1;
         font1.setPointSize(12);
         font1.setBold(true);
@@ -303,6 +304,23 @@ public:
 "color:grey;\n"
 "border-radius:15px;\n"
 "font-family:Andale Mono;"));
+        login_2 = new QPushButton(emergencyRequest_admin);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font1);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_4->raise();
         label_24->raise();
         label_25->raise();
@@ -333,6 +351,7 @@ public:
         why->raise();
         tableView->raise();
         search->raise();
+        login_2->raise();
 
         retranslateUi(emergencyRequest_admin);
 
@@ -354,7 +373,7 @@ public:
         label_3->setText(QString());
         label_26->setText(QString());
         label_25->setText(QString());
-        login->setText(QCoreApplication::translate("emergencyRequest_admin", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("emergencyRequest_admin", "Dashboard", nullptr));
         home->setText(QCoreApplication::translate("emergencyRequest_admin", "Home", nullptr));
         about->setText(QCoreApplication::translate("emergencyRequest_admin", "About us", nullptr));
         why->setText(QCoreApplication::translate("emergencyRequest_admin", "Why become donor", nullptr));
@@ -370,6 +389,7 @@ public:
         label->setText(QString());
         search->setText(QString());
         search->setPlaceholderText(QCoreApplication::translate("emergencyRequest_admin", "   Search", nullptr));
+        login_2->setText(QCoreApplication::translate("emergencyRequest_admin", "Logout", nullptr));
     } // retranslateUi
 
 };

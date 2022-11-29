@@ -33,6 +33,10 @@ private slots:
 
     void on_search_textChanged(const QString &arg1);
 
+    void on_my_details_3_clicked();
+
+    void on_login_2_clicked();
+
 private:
     Ui::user_details *ui;
 };

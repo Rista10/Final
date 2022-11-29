@@ -5,6 +5,7 @@
 #include "mainwindow.h"
 #include "admin_dashboard.h"
 #include "donor_request.h"
+#include "patient_requests.h"
 
 user_details::user_details(QWidget *parent) :
     QDialog(parent),
@@ -101,5 +102,22 @@ void user_details::on_search_textChanged(const QString &arg1)
         ui->tableView->setModel(modal);
         qDebug()<<(modal->rowCount());
     }
+}
+
+
+void user_details::on_my_details_3_clicked()
+{
+    patient_requests pr;
+    pr.setModal(true);
+    hide();
+    pr.exec();
+}
+
+
+void user_details::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

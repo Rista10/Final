@@ -37,6 +37,8 @@ private slots:
 
     void on_my_details_4_clicked();
 
+    void on_login_3_clicked();
+
 private:
     Ui::campaign *ui;
 };

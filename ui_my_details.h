@@ -72,6 +72,7 @@ public:
     QLabel *phone_number_2;
     QLabel *location;
     QLabel *password_2;
+    QPushButton *login_2;
 
     void setupUi(QDialog *my_details)
     {
@@ -130,7 +131,7 @@ public:
 "border-radius:5px;"));
         why = new QPushButton(my_details);
         why->setObjectName("why");
-        why->setGeometry(QRect(570, 30, 231, 41));
+        why->setGeometry(QRect(578, 30, 231, 41));
         QFont font1;
         font1.setPointSize(12);
         font1.setBold(true);
@@ -149,7 +150,7 @@ public:
 "}"));
         login = new QPushButton(my_details);
         login->setObjectName("login");
-        login->setGeometry(QRect(1070, 30, 151, 41));
+        login->setGeometry(QRect(930, 30, 151, 41));
         login->setFont(font1);
         login->setCursor(QCursor(Qt::PointingHandCursor));
         login->setStyleSheet(QString::fromUtf8("#login\n"
@@ -199,7 +200,7 @@ public:
         line->setFrameShadow(QFrame::Sunken);
         about = new QPushButton(my_details);
         about->setObjectName("about");
-        about->setGeometry(QRect(430, 30, 151, 41));
+        about->setGeometry(QRect(430, 30, 145, 41));
         about->setFont(font1);
         about->setCursor(QCursor(Qt::PointingHandCursor));
         about->setStyleSheet(QString::fromUtf8("#about\n"
@@ -322,19 +323,19 @@ public:
         label_6 = new QLabel(my_details);
         label_6->setObjectName("label_6");
         label_6->setGeometry(QRect(180, 170, 361, 471));
-        label_6->setCursor(QCursor(Qt::PointingHandCursor));
+        label_6->setCursor(QCursor(Qt::ArrowCursor));
         label_6->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/background.png);\n"
 "border-radius:20px;"));
         label_8 = new QLabel(my_details);
         label_8->setObjectName("label_8");
         label_8->setGeometry(QRect(580, 170, 361, 181));
-        label_8->setCursor(QCursor(Qt::PointingHandCursor));
+        label_8->setCursor(QCursor(Qt::ArrowCursor));
         label_8->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/background.png);\n"
 "border-radius:20px;"));
         label_9 = new QLabel(my_details);
         label_9->setObjectName("label_9");
         label_9->setGeometry(QRect(580, 390, 361, 251));
-        label_9->setCursor(QCursor(Qt::PointingHandCursor));
+        label_9->setCursor(QCursor(Qt::ArrowCursor));
         label_9->setStyleSheet(QString::fromUtf8("border-image: url(:/Images/background.png);\n"
 "border-radius:20px;"));
         label_10 = new QLabel(my_details);
@@ -364,7 +365,7 @@ public:
         QFont font4;
         font4.setPointSize(12);
         name->setFont(font4);
-        name->setCursor(QCursor(Qt::PointingHandCursor));
+        name->setCursor(QCursor(Qt::ArrowCursor));
         name->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -372,7 +373,7 @@ public:
         age->setObjectName("age");
         age->setGeometry(QRect(290, 500, 221, 31));
         age->setFont(font4);
-        age->setCursor(QCursor(Qt::PointingHandCursor));
+        age->setCursor(QCursor(Qt::ArrowCursor));
         age->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -380,7 +381,7 @@ public:
         gender->setObjectName("gender");
         gender->setGeometry(QRect(290, 540, 221, 31));
         gender->setFont(font4);
-        gender->setCursor(QCursor(Qt::PointingHandCursor));
+        gender->setCursor(QCursor(Qt::ArrowCursor));
         gender->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -388,31 +389,31 @@ public:
         label_14->setObjectName("label_14");
         label_14->setGeometry(QRect(200, 580, 301, 31));
         label_14->setFont(font4);
-        label_14->setCursor(QCursor(Qt::PointingHandCursor));
+        label_14->setCursor(QCursor(Qt::ArrowCursor));
         label_14->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
         email = new QLabel(my_details);
         email->setObjectName("email");
-        email->setGeometry(QRect(680, 420, 231, 31));
+        email->setGeometry(QRect(780, 420, 141, 31));
         email->setFont(font4);
-        email->setCursor(QCursor(Qt::PointingHandCursor));
+        email->setCursor(QCursor(Qt::ArrowCursor));
         email->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
         phone_number = new QLabel(my_details);
         phone_number->setObjectName("phone_number");
-        phone_number->setGeometry(QRect(730, 460, 141, 31));
+        phone_number->setGeometry(QRect(780, 460, 141, 31));
         phone_number->setFont(font4);
-        phone_number->setCursor(QCursor(Qt::PointingHandCursor));
+        phone_number->setCursor(QCursor(Qt::ArrowCursor));
         phone_number->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
         password = new QLabel(my_details);
         password->setObjectName("password");
-        password->setGeometry(QRect(715, 540, 191, 31));
+        password->setGeometry(QRect(780, 540, 141, 31));
         password->setFont(font4);
-        password->setCursor(QCursor(Qt::PointingHandCursor));
+        password->setCursor(QCursor(Qt::ArrowCursor));
         password->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -443,15 +444,15 @@ public:
         name_2->setObjectName("name_2");
         name_2->setGeometry(QRect(200, 460, 91, 31));
         name_2->setFont(font4);
-        name_2->setCursor(QCursor(Qt::PointingHandCursor));
+        name_2->setCursor(QCursor(Qt::ArrowCursor));
         name_2->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
         age_2 = new QLabel(my_details);
         age_2->setObjectName("age_2");
-        age_2->setGeometry(QRect(210, 500, 61, 31));
+        age_2->setGeometry(QRect(210, 500, 71, 31));
         age_2->setFont(font4);
-        age_2->setCursor(QCursor(Qt::PointingHandCursor));
+        age_2->setCursor(QCursor(Qt::ArrowCursor));
         age_2->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -459,7 +460,7 @@ public:
         gender_2->setObjectName("gender_2");
         gender_2->setGeometry(QRect(210, 540, 81, 31));
         gender_2->setFont(font4);
-        gender_2->setCursor(QCursor(Qt::PointingHandCursor));
+        gender_2->setCursor(QCursor(Qt::ArrowCursor));
         gender_2->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -467,23 +468,23 @@ public:
         email_2->setObjectName("email_2");
         email_2->setGeometry(QRect(620, 420, 61, 31));
         email_2->setFont(font4);
-        email_2->setCursor(QCursor(Qt::PointingHandCursor));
+        email_2->setCursor(QCursor(Qt::ArrowCursor));
         email_2->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
         phone_number_2 = new QLabel(my_details);
         phone_number_2->setObjectName("phone_number_2");
-        phone_number_2->setGeometry(QRect(610, 460, 151, 31));
+        phone_number_2->setGeometry(QRect(610, 460, 141, 31));
         phone_number_2->setFont(font4);
-        phone_number_2->setCursor(QCursor(Qt::PointingHandCursor));
+        phone_number_2->setCursor(QCursor(Qt::ArrowCursor));
         phone_number_2->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
         location = new QLabel(my_details);
         location->setObjectName("location");
-        location->setGeometry(QRect(710, 500, 171, 31));
+        location->setGeometry(QRect(780, 500, 141, 31));
         location->setFont(font4);
-        location->setCursor(QCursor(Qt::PointingHandCursor));
+        location->setCursor(QCursor(Qt::ArrowCursor));
         location->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
@@ -491,10 +492,27 @@ public:
         password_2->setObjectName("password_2");
         password_2->setGeometry(QRect(610, 540, 101, 31));
         password_2->setFont(font4);
-        password_2->setCursor(QCursor(Qt::PointingHandCursor));
+        password_2->setCursor(QCursor(Qt::ArrowCursor));
         password_2->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0,0,0,0);\n"
 "padding-bottom:7px;"));
+        login_2 = new QPushButton(my_details);
+        login_2->setObjectName("login_2");
+        login_2->setGeometry(QRect(1100, 30, 151, 41));
+        login_2->setFont(font1);
+        login_2->setCursor(QCursor(Qt::PointingHandCursor));
+        login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_2::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_2->raise();
         label->raise();
         label_4->raise();
@@ -545,6 +563,7 @@ public:
         phone_number_2->raise();
         location->raise();
         password_2->raise();
+        login_2->raise();
 
         retranslateUi(my_details);
 
@@ -563,7 +582,7 @@ public:
         label_7->setText(QString());
         label_4->setText(QString());
         why->setText(QCoreApplication::translate("my_details", "Why become donor", nullptr));
-        login->setText(QCoreApplication::translate("my_details", "Profile", nullptr));
+        login->setText(QCoreApplication::translate("my_details", "Dashboard", nullptr));
         label_30->setText(QCoreApplication::translate("my_details", "Last donated:\n"
 "9 September,2022", nullptr));
         label->setText(QString());
@@ -597,13 +616,14 @@ public:
         password->setText(QString());
         location_1->setText(QCoreApplication::translate("my_details", "  Location  :", nullptr));
         pushButton_2->setText(QCoreApplication::translate("my_details", "Change information", nullptr));
-        name_2->setText(QCoreApplication::translate("my_details", "  Name  : ", nullptr));
-        age_2->setText(QCoreApplication::translate("my_details", "Age :", nullptr));
+        name_2->setText(QCoreApplication::translate("my_details", "  Name: ", nullptr));
+        age_2->setText(QCoreApplication::translate("my_details", "Age:", nullptr));
         gender_2->setText(QCoreApplication::translate("my_details", "Gender:", nullptr));
         email_2->setText(QCoreApplication::translate("my_details", "Email:", nullptr));
-        phone_number_2->setText(QCoreApplication::translate("my_details", "  Phone number  : ", nullptr));
+        phone_number_2->setText(QCoreApplication::translate("my_details", "  Phone number: ", nullptr));
         location->setText(QString());
         password_2->setText(QCoreApplication::translate("my_details", "  Password  : ", nullptr));
+        login_2->setText(QCoreApplication::translate("my_details", "Logout", nullptr));
     } // retranslateUi
 
 };

@@ -130,3 +130,11 @@ void donate_blood::on_home_clicked()
     mainWindow->show();
 }
 
+
+void donate_blood::on_login_2_clicked()
+{
+    this->close();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

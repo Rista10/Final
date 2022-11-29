@@ -80,6 +80,7 @@ public:
     QLabel *label_21;
     QLabel *label_12;
     QLabel *label_6;
+    QPushButton *login_3;
 
     void setupUi(QDialog *campaign)
     {
@@ -292,7 +293,7 @@ public:
 "}"));
         login_2 = new QPushButton(campaign);
         login_2->setObjectName("login_2");
-        login_2->setGeometry(QRect(1080, 30, 151, 41));
+        login_2->setGeometry(QRect(930, 30, 151, 41));
         login_2->setFont(font1);
         login_2->setCursor(QCursor(Qt::PointingHandCursor));
         login_2->setStyleSheet(QString::fromUtf8("#login_2\n"
@@ -477,7 +478,7 @@ public:
 "color: rgb(144, 10, 18);"));
         label_8 = new QLabel(campaign);
         label_8->setObjectName("label_8");
-        label_8->setGeometry(QRect(170, 230, 521, 161));
+        label_8->setGeometry(QRect(170, 240, 521, 161));
         label_8->setFont(font3);
         label_8->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_10 = new QLabel(campaign);
@@ -529,6 +530,23 @@ public:
         label_6->setObjectName("label_6");
         label_6->setGeometry(QRect(680, 180, 271, 451));
         label_6->setStyleSheet(QString::fromUtf8("background-image: url(:/Images/campaign.png);"));
+        login_3 = new QPushButton(campaign);
+        login_3->setObjectName("login_3");
+        login_3->setGeometry(QRect(1100, 30, 151, 41));
+        login_3->setFont(font1);
+        login_3->setCursor(QCursor(Qt::PointingHandCursor));
+        login_3->setStyleSheet(QString::fromUtf8("#login_3\n"
+"{\n"
+" background-color:rgb(144, 10, 18);\n"
+"border-radius:20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#login_3::hover\n"
+"{\n"
+"background-color:white;\n"
+"	color: rgb(144, 10, 18);\n"
+"}"));
         label_3->raise();
         label_21->raise();
         label_2->raise();
@@ -586,6 +604,7 @@ public:
         motive->raise();
         label_12->raise();
         label_6->raise();
+        login_3->raise();
 
         retranslateUi(campaign);
 
@@ -618,7 +637,7 @@ public:
         why_2->setText(QCoreApplication::translate("campaign", "Why become donor", nullptr));
         home_2->setText(QCoreApplication::translate("campaign", "Home", nullptr));
         about_2->setText(QCoreApplication::translate("campaign", "About us", nullptr));
-        login_2->setText(QCoreApplication::translate("campaign", "Profile", nullptr));
+        login_2->setText(QCoreApplication::translate("campaign", "Dashboard", nullptr));
         label_58->setText(QCoreApplication::translate("campaign", "Blood Donation Camps", nullptr));
         label_33->setText(QString());
         label_34->setText(QString());
@@ -663,6 +682,7 @@ public:
         label_21->setText(QString());
         label_12->setText(QCoreApplication::translate("campaign", "Date:", nullptr));
         label_6->setText(QString());
+        login_3->setText(QCoreApplication::translate("campaign", "Logout", nullptr));
     } // retranslateUi
 
 };

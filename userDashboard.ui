@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -98,7 +98,7 @@ Requests</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -123,7 +123,7 @@ Requests</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>O-</string>
@@ -152,7 +152,7 @@ Requests</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -188,7 +188,7 @@ border-radius:0.5px;
 }
 
 #why::hover{
-border-botton:3px solid rgb(144, 10, 18);
+border-bottom :3px solid rgb(144, 10, 18);
 color: rgb(144, 10, 18);}</string>
    </property>
    <property name="text">
@@ -209,6 +209,9 @@ color: rgb(144, 10, 18);}</string>
      <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">#my_details
@@ -274,7 +277,7 @@ History</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -294,7 +297,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -342,7 +345,7 @@ color: rgb(144, 10, 18);}</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>O+</string>
@@ -362,6 +365,9 @@ color: rgb(144, 10, 18);}</string>
      <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">*{
@@ -394,7 +400,7 @@ Blood</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>AB+</string>
@@ -410,7 +416,7 @@ Blood</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -429,7 +435,7 @@ Blood</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -448,7 +454,7 @@ Blood</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -620,7 +626,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -639,7 +645,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -659,7 +665,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -712,7 +718,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -738,7 +744,7 @@ border-radius:5px;</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>B+</string>
@@ -754,7 +760,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -846,7 +852,7 @@ color: rgb(144, 10, 18);}</string>
   <widget class="QPushButton" name="login">
    <property name="geometry">
     <rect>
-     <x>1070</x>
+     <x>930</x>
      <y>30</y>
      <width>151</width>
      <height>41</height>
@@ -876,7 +882,7 @@ background-color:white;
 }</string>
    </property>
    <property name="text">
-    <string>Profile</string>
+    <string>Dashboard</string>
    </property>
   </widget>
   <widget class="QCalendarWidget" name="calendarWidget">
@@ -912,7 +918,7 @@ border-radius:5px;</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>AB-</string>
@@ -970,7 +976,7 @@ border-radius:5px;</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>A-</string>
@@ -986,7 +992,7 @@ border-radius:5px;</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">border-color: rgb(0, 0, 0);
@@ -1012,7 +1018,7 @@ border-radius:5px;</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>A+</string>
@@ -1162,7 +1168,7 @@ color: rgb(144, 10, 18);}</string>
     </font>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="text">
     <string>B-</string>
@@ -1215,6 +1221,9 @@ border-radius:5px;</string>
      <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">*{
@@ -1301,7 +1310,7 @@ Blood</string>
     </rect>
    </property>
    <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/img/Images/blood_drop.png);</string>
@@ -1324,6 +1333,9 @@ Blood</string>
      <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">#pushButton{border-radius:5px;
@@ -1353,6 +1365,9 @@ background-color: #E6E6E6;}
      <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">#pushButton_2{border-radius:5px;
@@ -1387,14 +1402,163 @@ background-color: #E6E6E6;}
     <string notr="true">#pushButton_3{border-radius:5px;
 background-color: #E6E6E6;}
 
-#pushButton_3::hover
+</string>
+   </property>
+   <property name="text">
+    <string>      View Details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_2
 {
+ background-color:rgb(144, 10, 18);
+border-radius:20px;
+	color: rgb(255, 255, 255);
+}
 
+#login_2::hover
+{
+background-color:white;
 	color: rgb(144, 10, 18);
 }</string>
    </property>
    <property name="text">
-    <string>      View Details</string>
+    <string>Logout </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>250</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>250</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>585</x>
+     <y>250</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_55">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>250</y>
+     <width>48</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_56">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>358</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_57">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>358</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_60">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>358</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_61">
+   <property name="geometry">
+    <rect>
+     <x>585</x>
+     <y>358</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_63">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>650</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <zorder>label</zorder>
@@ -1464,6 +1628,16 @@ background-color: #E6E6E6;}
   <zorder>pushButton</zorder>
   <zorder>pushButton_2</zorder>
   <zorder>pushButton_3</zorder>
+  <zorder>login_2</zorder>
+  <zorder>label_20</zorder>
+  <zorder>label_21</zorder>
+  <zorder>label_22</zorder>
+  <zorder>label_55</zorder>
+  <zorder>label_56</zorder>
+  <zorder>label_57</zorder>
+  <zorder>label_60</zorder>
+  <zorder>label_61</zorder>
+  <zorder>label_63</zorder>
  </widget>
  <resources/>
  <connections/>
